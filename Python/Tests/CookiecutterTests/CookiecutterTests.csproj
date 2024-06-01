@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Choose>
+    <When Condition=" '$(VisualStudioVersion)'=='15.0'  Or '$(TargetVisualStudioVersion)'=='VS150' ">
+      <PropertyGroup>
+        <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+        <FileUpgradeFlags>
+        </FileUpgradeFlags>
+        <UpgradeBackupLocation>
+        </UpgradeBackupLocation>
+        <OldToolsVersion>14.0</OldToolsVersion>
+      </PropertyGroup>
+    </When>
+    <When Condition=" '$(VisualStudioVersion)'=='16.0'  Or '$(TargetVisualStudioVersion)'=='VS160' ">
+      <PropertyGroup>
+        <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+        <FileUpgradeFlags>
+        </FileUpgradeFlags>
+        <UpgradeBackupLocation>
+        </UpgradeBackupLocation>
+        <OldToolsVersion>16.0</OldToolsVersion>
+      </PropertyGroup>
+    </When>
+    <When Condition=" '$(VisualStudioVersion)'=='17.0'  Or '$(TargetVisualStudioVersion)'=='VS170' ">
+      <PropertyGroup>
+        <MinimumVisualStudioVersion>17.0</MinimumVisualStudioVersion>
+        <FileUpgradeFlags>
+        </FileUpgradeFlags>
+        <UpgradeBackupLocation>
+        </UpgradeBackupLocation>
+        <OldToolsVersion>17.0</OldToolsVersion>
+      </PropertyGroup>
+    </When>
+  </Choose>
+  <Import Project="..\TestProjectBefore.settings" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBE6395C-B428-4B48-A9A5-1153E7DBDD7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CookiecutterTests</RootNamespace>
+    <AssemblyName>CookiecutterTests</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.CoreUtility" />
+    <Reference Include="Microsoft.VisualStudio.Interop" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+    <Reference Include="Microsoft.VisualStudio.Shell.15.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Framework" />
+    <Reference Include="Microsoft.VisualStudio.Text.Data" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContextItemViewModelComparer.cs" />
+    <Compile Include="GitHubClientTests.cs" />
+    <Compile Include="GitClientTests.cs" />
+    <Compile Include="GitHubDiscoveryTests.cs" />
+    <Compile Include="ITelemetryTestSupport.cs" />
+    <Compile Include="MockProjectSystemClient.cs" />
+    <Compile Include="StringTelemetryRecorderTests.cs" />
+    <Compile Include="TelemetryTestService.cs" />
+    <Compile Include="TelemetryTestServiceTests.cs" />
+    <Compile Include="TestTelemetryRecorder.cs" />
+    <Compile Include="CookiecutterIntegrationTests.cs" />
+    <Compile Include="FeedTemplateSourceTests.cs" />
+    <Compile Include="CookiecutterViewModelTests.cs" />
+    <Compile Include="MockCookiecutterClient.cs" />
+    <Compile Include="MockGitClient.cs" />
+    <Compile Include="MockGitHubClient.cs" />
+    <Compile Include="MockRedirector.cs" />
+    <Compile Include="MockTemplateSource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CookiecutterClientTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Tests\Utilities\TestUtilities.csproj">
+      <Project>{D092D54E-FF29-4D32-9AEE-4EF704C92F67}</Project>
+      <Name>TestUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Product\Cookiecutter\Cookiecutter.csproj">
+      <Project>{376840cf-9f60-4225-8b08-e1d168b6717a}</Project>
+      <Name>Cookiecutter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\TestProjectAfter.settings" />
+</Project>

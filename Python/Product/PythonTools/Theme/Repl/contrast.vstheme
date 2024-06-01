@@ -1,0 +1,54 @@
+<Themes>
+  <Theme Name="High Contrast" GUID="{a5c004b4-2d4b-494e-bf01-45fc492522c7}">
+    <Category Name="Text Editor" GUID="{75A05685-00A8-4DED-BAE5-E7A50BFA929A}">
+      <Color Name="Python Interactive - Black">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - Blue">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - Cyan">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - DarkBlue">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - DarkCyan">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - DarkGray">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - DarkGreen">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - DarkMagenta">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - DarkRed">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - DarkYellow">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - Gray">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - Green">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - Magenta">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - Red">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - White">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+      <Color Name="Python Interactive - Yellow">
+        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+      </Color>
+    </Category>
+  </Theme>
+</Themes>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- Ensures that if this file changes it forces a rebuild -->
+  <PropertyGroup>
+    <MSBuildAllProjects>
+      $(MSBuildAllProjects);$(TargetsPath)\Common.Build.Traversal.targets
+    </MSBuildAllProjects>
+    
+    <StopOnFirstFailure Condition="$(StopOnFirstFailure) == ''">false</StopOnFirstFailure>
+  </PropertyGroup>
+
+  <Target Name="PrepareForBuild" />
+
+  <Target Name="Rebuild" DependsOnTargets="PrepareForBuild;Clean;Build">
+  </Target>
+
+  <Target Name="Build" DependsOnTargets="PrepareForBuild">
+    <MSBuild Projects="@(ProjectFile)" Targets="%(BuildTarget)" StopOnFirstFailure="$(StopOnFirstFailure)"/>
+    <MSBuild Projects="@(SequencedProjectFile)" Targets="%(BuildTarget)" StopOnFirstFailure="$(StopOnFirstFailure)"/>
+  </Target>
+
+  <Target Name="BeforeBuild" BeforeTargets="Build" />
+  <Target Name="AfterBuild" AfterTargets="Build" />
+
+  <Target Name="Clean" DependsOnTargets="PrepareForBuild">
+    <MSBuild Projects="@(ProjectFile)" Targets="%(CleanTarget)"/>
+    <MSBuild Projects="@(SequencedProjectFile)" Targets="%(CleanTarget)"/>
+  </Target>
+
+  <Target Name="BeforeClean" BeforeTargets="Clean" />
+  <Target Name="AfterClean" AfterTargets="Clean" />
+</Project>

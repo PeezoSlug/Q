@@ -1,0 +1,44 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\SetupProjectBefore.settings" />
+
+  <ItemDefinitionGroup>
+    <!--
+    We explicitly disable signing for individual projects and batch
+    sign all outputs in one go.
+    -->
+    <ProjectFile>
+      <Properties>SignType=none</Properties>
+    </ProjectFile>
+  </ItemDefinitionGroup>
+
+  <PropertyGroup>
+    <StopOnFirstFailure>true</StopOnFirstFailure>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectFile Include="Microsoft.CookiecutterTools.Vsix.swixproj"/>
+    <ProjectFile Include="Microsoft.PythonTools.BuildCore.Vsix.swixproj"/>
+    <ProjectFile Include="Microsoft.PythonTools.Core.Vsix.swixproj"/>
+    <ProjectFile Include="Microsoft.PythonTools.Core.Templates.Vsix.swixproj"/>
+    <ProjectFile Include="Microsoft.PythonTools.Django.Vsix.swixproj" Condition="'$(IncludeDjango)' == 'True'"/>
+    <ProjectFile Include="Microsoft.PythonTools.Django.Templates.Vsix.swixproj" Condition="'$(IncludeDjango)' == 'True'"/>
+    <ProjectFile Include="Microsoft.PythonTools.NativeDevelopment.Templates.Vsix.swixproj"/>
+    <ProjectFile Include="Microsoft.PythonTools.Profiling.Vsix.swixproj"/>
+    <ProjectFile Include="Microsoft.PythonTools.Web.Templates.Vsix.swixproj"/>
+    <LocProjectFile Include="Microsoft.CookiecutterTools.Vsix.Resources.swixproj" Condition="'$(LocType)' != ''"/>
+    <LocProjectFile Include="Microsoft.PythonTools.Core.Vsix.Resources.swixproj" Condition="'$(LocType)' != ''"/>
+    <LocProjectFile Include="Microsoft.PythonTools.Django.Vsix.Resources.swixproj" Condition="'$(LocType)' != ''"/>
+    <LocProjectFile Include="Microsoft.PythonTools.Profiling.Vsix.Resources.swixproj" Condition="'$(LocType)' != ''"/>
+  </ItemGroup>
+
+  <Target Name="AddLocProjects" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <_Langs Include="$([msbuild]::Unescape($(Languages.Replace(`,`, `;`))))" />
+      <ProjectFile Include="@(LocProjectFile)">
+        <Properties>Lang=%(_Langs.Identity)</Properties>
+      </ProjectFile>
+    </ItemGroup>
+  </Target>
+
+  <Import Project="$(TargetsPath)\Common.Build.Traversal.targets" />
+</Project>

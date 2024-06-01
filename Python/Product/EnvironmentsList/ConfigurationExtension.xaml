@@ -1,0 +1,179 @@
+<UserControl x:Class="Microsoft.PythonTools.EnvironmentsList.ConfigurationExtension"
+             x:ClassModifier="internal"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:s="clr-namespace:System;assembly=mscorlib"
+             xmlns:l="clr-namespace:Microsoft.PythonTools.EnvironmentsList"
+             xmlns:wpf="clr-namespace:Microsoft.VisualStudioTools.Wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ResourceDictionary Source="pack://application:,,,/Microsoft.PythonTools.EnvironmentsList;component/EnvironmentView.xaml" />
+    </UserControl.Resources>
+    
+    <UserControl.CommandBindings>
+        <CommandBinding Command="{x:Static l:ConfigurationExtension.Apply}"
+                        CanExecute="Apply_CanExecute"
+                        Executed="Apply_Executed" />
+        <CommandBinding Command="{x:Static l:ConfigurationExtension.Reset}"
+                        CanExecute="Reset_CanExecute"
+                        Executed="Reset_Executed" />
+        <CommandBinding Command="{x:Static l:ConfigurationExtension.AutoDetect}"
+                        CanExecute="AutoDetect_CanExecute"
+                        Executed="AutoDetect_Executed" />
+        <CommandBinding Command="{x:Static l:ConfigurationExtension.Remove}"
+                        CanExecute="Remove_CanExecute"
+                        Executed="Remove_Executed" />
+        <CommandBinding Command="{x:Static wpf:Commands.BrowseFolder}"
+                        CanExecute="Browse_CanExecute"
+                        Executed="Browse_Executed" />
+        <CommandBinding Command="{x:Static wpf:Commands.BrowseOpenFile}"
+                        CanExecute="Browse_CanExecute"
+                        Executed="Browse_Executed" />
+    </UserControl.CommandBindings>
+    
+    <Grid x:Name="Subcontext">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+        
+        <ScrollViewer Grid.Column="0"
+                      CanContentScroll="False"
+                      VerticalScrollBarVisibility="Auto">
+            <Grid Grid.IsSharedSizeScope="True">
+                <Grid.Resources>
+                    <Style TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
+                        <Setter Property="Padding" Value="6 6 3 0" />
+                    </Style>
+                </Grid.Resources>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0"
+                       Name="DescriptionLabel"
+                       Content="{x:Static l:Resources.ConfigurationExtensionDescriptionLabel}"/>
+                <wpf:ConfigurationTextBoxWithHelp Grid.Column="0" Grid.Row="1"
+                                                  Text="{Binding Description,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                                  HelpText="{x:Static l:Resources.ConfigurationExtensionDescriptionHelp}"
+                                                  Watermark="{x:Static l:Resources.ConfigurationExtensionDescriptionWatermark}"
+                                                  AutomationProperties.LabeledBy="{Binding ElementName=DescriptionLabel}"/>
+
+                <Label Grid.Column="0" Grid.Row="2"
+                       Name="PrefixPathLabel"
+                       Content="{x:Static l:Resources.ConfigurationExtensionPrefixPathLabel}"/>
+                <wpf:ConfigurationTextBoxWithHelp Grid.Column="0" Grid.Row="3"
+                                                  Text="{Binding PrefixPath,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                                  Watermark="{x:Static l:Resources.ConfigurationExtensionPrefixPathWatermark}"
+                                                  HelpText="{x:Static l:Resources.ConfigurationExtensionPrefixPathHelp}"
+                                                  AutomationProperties.LabeledBy="{Binding ElementName=PrefixPathLabel}"
+                                                  BrowseButtonStyle="{StaticResource BrowseFolderButton}"
+                                                  BrowseAutomationName="{x:Static l:Resources.ConfigurationExtensionPrefixPathBrowseButton}"/>
+
+                <Label Grid.Column="0" Grid.Row="4"
+                       Name="InterpreterPathLabel"
+                       Content="{x:Static l:Resources.ConfigurationExtensionInterpreterPathLabel}"/>
+                <wpf:ConfigurationTextBoxWithHelp Grid.Column="0" Grid.Row="5"
+                                                  Text="{Binding InterpreterPath,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                                  Watermark="{x:Static l:Resources.ConfigurationExtensionInterpreterPathWatermark}"
+                                                  HelpText="{x:Static l:Resources.ConfigurationExtensionInterpreterPathHelp}"
+                                                  AutomationProperties.LabeledBy="{Binding ElementName=InterpreterPathLabel}"
+                                                  BrowseButtonStyle="{StaticResource BrowseOpenFileButton}"
+                                                  BrowseCommandParameter="{x:Static l:Resources.ConfigurationExtensionInterpreterPathBrowseFilter}"
+                                                  BrowseAutomationName="{x:Static l:Resources.ConfigurationExtensionInterpreterPathBrowseButton}"/>
+
+                <Label Grid.Column="0" Grid.Row="6"
+                       Name="WindowedInterpreterPathLabel"
+                       Content="{x:Static l:Resources.ConfigurationExtensionWindowedInterpreterPathLabel}"/>
+                <wpf:ConfigurationTextBoxWithHelp Grid.Column="0" Grid.Row="7"
+                                                  Text="{Binding WindowsInterpreterPath,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                                  Watermark="{x:Static l:Resources.ConfigurationExtensionWindowedInterpreterPathWatermark}"
+                                                  HelpText="{x:Static l:Resources.ConfigurationExtensionWindowedInterpreterPathHelp}"
+                                                  AutomationProperties.LabeledBy="{Binding ElementName=WindowedInterpreterPathLabel}"
+                                                  BrowseButtonStyle="{StaticResource BrowseOpenFileButton}"
+                                                  BrowseCommandParameter="{x:Static l:Resources.ConfigurationExtensionWindowedInterpreterPathBrowseFilter}"
+                                                  BrowseAutomationName="{x:Static l:Resources.ConfigurationExtensionWindowedInterpreterPathBrowseButton}"/>
+
+                <Label Grid.Column="0" Grid.Row="8"
+                       Name="LanguageVersionLabel"
+                       Content="{x:Static l:Resources.ConfigurationExtensionLanguageVersionLabel}"/>
+                <wpf:ConfigurationComboBoxWithHelp Grid.Column="0" Grid.Row="9"
+                                                   Value="{Binding VersionName,Mode=TwoWay}"
+                                                   Values="{Binding VersionNames}"
+                                                   Watermark="{x:Static l:Resources.ConfigurationExtensionLanguageVersionWatermark}"
+                                                   HelpText="{x:Static l:Resources.ConfigurationExtensionLanguageVersionHelp}"
+                                                   AutomationProperties.LabeledBy="{Binding ElementName=LanguageVersionLabel}"/>
+
+                <Label Grid.Column="0" Grid.Row="10"
+                       Name="ArchitectureLabel"
+                       Content="{x:Static l:Resources.ConfigurationExtensionArchitectureLabel}"/>
+                <wpf:ConfigurationComboBoxWithHelp Grid.Column="0" Grid.Row="11"
+                                                   Value="{Binding ArchitectureName,Mode=TwoWay}"
+                                                   Values="{Binding ArchitectureNames}"
+                                                   Watermark="{x:Static l:Resources.ConfigurationExtensionArchitectureWatermark}"
+                                                   HelpText="{x:Static l:Resources.ConfigurationExtensionArchitectureHelp}"
+                                                   AutomationProperties.LabeledBy="{Binding ElementName=ArchitectureLabel}"/>
+
+                <Label Grid.Column="0" Grid.Row="12"
+                       Name="PathEnvVarLabel"
+                       Content="{x:Static l:Resources.ConfigurationExtensionPathEnvVarLabel}"/>
+                <wpf:ConfigurationTextBoxWithHelp Grid.Column="0" Grid.Row="13"
+                                                  Text="{Binding PathEnvironmentVariable,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                                  Watermark="{x:Static l:Resources.ConfigurationExtensionPathEnvVarWatermark}"
+                                                  HelpText="{x:Static l:Resources.ConfigurationExtensionPathEnvVarHelp}"
+                                                  AutomationProperties.LabeledBy="{Binding ElementName=PathEnvVarLabel}"/>
+            </Grid>
+        </ScrollViewer>
+        
+        <StackPanel Grid.Column="1"
+                    Margin="4 0 6 0"
+                    Orientation="Vertical">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}" BasedOn="{StaticResource NavigationButton}">
+                    <Setter Property="Margin" Value="4" />
+                    <Setter Property="CommandParameter" Value="{Binding}" />
+                </Style>
+            </StackPanel.Resources>
+            <Button Command="{x:Static l:ConfigurationExtension.Apply}"
+                    Content="{x:Static l:Resources.ConfigurationExtensionApplyLabel}"
+                    ToolTip="{x:Static l:Resources.ConfigurationExtensionApplyTooltip}"/>
+            <Button Command="{x:Static l:ConfigurationExtension.Reset}"
+                    Content="{x:Static l:Resources.ConfigurationExtensionResetLabel}"
+                    ToolTip="{x:Static l:Resources.ConfigurationExtensionResetTooltip}"/>
+            <Button Command="{x:Static l:ConfigurationExtension.AutoDetect}"
+                    Content="{x:Static l:Resources.ConfigurationExtensionAutoDetectLabel}"
+                    ToolTip="{x:Static l:Resources.ConfigurationExtensionAutoDetectTooltip}">
+                <Button.Style>
+                    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsAutoDetectRunning}" Value="True">
+                                <Setter Property="Content" Value="Detecting" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Border Height="16" Background="Transparent" />
+            <Button Command="{x:Static l:ConfigurationExtension.Remove}"
+                    Content="{x:Static l:Resources.ConfigurationExtensionRemoveLabel}"
+                    ToolTip="{x:Static l:Resources.ConfigurationExtensionRemoveTooltip}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

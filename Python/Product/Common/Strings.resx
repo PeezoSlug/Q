@@ -1,0 +1,3453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="QuickInfo_TypeNoDocs" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="QuickInfo_UnknownType" xml:space="preserve">
+    <value>{0}: unknown type</value>
+  </data>
+  <data name="EnvironmentDeleteConfirmation" xml:space="preserve">
+    <value>'{0}' will be removed from the project and the directory
+'{1}'
+and all its contents will be deleted from disk.</value>
+  </data>
+  <data name="EnvironmentDeleteError" xml:space="preserve">
+    <value>We weren't able to delete all the files from {0}.
+
+Some files may need to be removed manually.</value>
+  </data>
+  <data name="EnvironmentIdDescription" xml:space="preserve">
+    <value>The identifier of the environment.</value>
+  </data>
+  <data name="EnvironmentIdDisplayName" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="EnvironmentRemoveConfirmation" xml:space="preserve">
+    <value>'{0}' will be removed from the project.
+No files will be deleted from disk.</value>
+  </data>
+  <data name="Environments" xml:space="preserve">
+    <value>Python Environments</value>
+  </data>
+  <data name="EnvironmentVersionDescription" xml:space="preserve">
+    <value>The Python language version supported by the environment.</value>
+  </data>
+  <data name="EnvironmentVersionDisplayName" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="NoSurveyNewsAvailable" xml:space="preserve">
+    <value>There are no surveys or news available at this time.  Please check again later.</value>
+  </data>
+  <data name="PackageFullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="PackageFullNameDescription" xml:space="preserve">
+    <value>The full name of the package, including the version if known.</value>
+  </data>
+  <data name="PackageInstallFailed" xml:space="preserve">
+    <value>'{0}' failed to install.</value>
+  </data>
+  <data name="PackageInstallFailedExitCode" xml:space="preserve">
+    <value>'{0}' failed to install. Exit code: {1}</value>
+  </data>
+  <data name="PackageInstalling" xml:space="preserve">
+    <value>Installing '{0}'</value>
+  </data>
+  <data name="PackageInstallingSeeOutputWindow" xml:space="preserve">
+    <value>Installing '{0}'. See the Output Window for more information.</value>
+  </data>
+  <data name="PackageInstallSucceeded" xml:space="preserve">
+    <value>'{0}' was installed successfully.</value>
+  </data>
+  <data name="PackageUninstallFailed" xml:space="preserve">
+    <value>'{0}' failed to uninstall.</value>
+  </data>
+  <data name="PackageUninstallFailedExitCode" xml:space="preserve">
+    <value>'{0}' failed to uninstall. Exit code: {1}</value>
+  </data>
+  <data name="PackageUninstalling" xml:space="preserve">
+    <value>Uninstalling '{0}'</value>
+  </data>
+  <data name="PackageUninstallingSeeOutputWindow" xml:space="preserve">
+    <value>Uninstalling '{0}'. See the Output Window for more information.</value>
+  </data>
+  <data name="PackageUninstallSucceeded" xml:space="preserve">
+    <value>'{0}' was uninstalled successfully.</value>
+  </data>
+  <data name="PipInstallFailedExitCode" xml:space="preserve">
+    <value>'pip' failed to install. Exit code: {0}</value>
+  </data>
+  <data name="PipInstalling" xml:space="preserve">
+    <value>Installing 'pip' package manager.</value>
+  </data>
+  <data name="PipInstallSucceeded" xml:space="preserve">
+    <value>'pip' was installed successfully.</value>
+  </data>
+  <data name="ReferencesNodeName" xml:space="preserve">
+    <value>References</value>
+  </data>
+  <data name="SearchPaths" xml:space="preserve">
+    <value>Search Paths</value>
+  </data>
+  <data name="SearchPathsDescription" xml:space="preserve">
+    <value>The list of directories to search for modules and files.</value>
+  </data>
+  <data name="UninstallPackage" xml:space="preserve">
+    <value>'{0}' will be uninstalled from {1} ({2}).</value>
+  </data>
+  <data name="VirtualEnvSaveDeferredSolution" xml:space="preserve">
+    <value>Your project must be saved before adding a virtual environment.</value>
+  </data>
+  <data name="VirtualEnvCreating" xml:space="preserve">
+    <value>Virtual environment is being created at '{0}'</value>
+  </data>
+  <data name="VirtualEnvCreationFailed" xml:space="preserve">
+    <value>Virtual environment was not created at '{0}'</value>
+  </data>
+  <data name="VirtualEnvCreationFailedExitCode" xml:space="preserve">
+    <value>Virtual environment was not created at '{0}'. Exit code: {1}</value>
+  </data>
+  <data name="VirtualEnvCreationSucceeded" xml:space="preserve">
+    <value>Virtual environment was successfully created at '{0}'</value>
+  </data>
+  <data name="WarningAnalysisNotCurrent" xml:space="preserve">
+    <value>Warning: the completion database is currently not up to date. Intellisense may be incomplete.</value>
+  </data>
+  <data name="InstallEasyInstall" xml:space="preserve">
+    <value>To install your Python package, we will install setuptools and the pip package manager.
+
+Continue?</value>
+  </data>
+  <data name="SearchPathProperties" xml:space="preserve">
+    <value>Search Path Properties</value>
+  </data>
+  <data name="SearchPathContainerProperties" xml:space="preserve">
+    <value>Search Paths Properties</value>
+  </data>
+  <data name="CustomCommandCanceled" xml:space="preserve">
+    <value>Command {0} has been canceled</value>
+  </data>
+  <data name="ErrorRunningCustomCommand" xml:space="preserve">
+    <value>An error occurred while running {0}.
+
+{1}</value>
+  </data>
+  <data name="ErrorBuildingCustomCommand" xml:space="preserve">
+    <value>Failed to get command {0} from project</value>
+  </data>
+  <data name="FailedToReadResource" xml:space="preserve">
+    <value>Could not get resource {1}.{2} from {0}.
+
+{3}</value>
+  </data>
+  <data name="CustomCommandReplTitle" xml:space="preserve">
+    <value>{0} Interactive Window</value>
+    <comment>{0} is the command name taken from the menu item</comment>
+  </data>
+  <data name="PythonMenuLabel" xml:space="preserve">
+    <value>&amp;Python</value>
+  </data>
+  <data name="ErrorCommandAlreadyRunning" xml:space="preserve">
+    <value>A command is already running.</value>
+  </data>
+  <data name="NoInterpretersAvailable" xml:space="preserve">
+    <value>No Python environments are configured. Please install or configure an environment and try again. See https://go.microsoft.com/fwlink/?LinkID=299429 for information on setting up a Python environment.</value>
+  </data>
+  <data name="ErrorImportWizardException" xml:space="preserve">
+    <value>An unexpected error {0} occurred while creating your project.
+
+If Visual Studio is running with the /Log option, the full exception has been written to the activity log.</value>
+  </data>
+  <data name="ErrorImportWizardUnauthorizedAccess" xml:space="preserve">
+    <value>Some file paths could not be accessed.
+
+Try moving your source code to a location where you can read and write files.</value>
+  </data>
+  <data name="StatusImportWizardError" xml:space="preserve">
+    <value>An error occurred and your project was not created.</value>
+  </data>
+  <data name="StatusImportWizardStarting" xml:space="preserve">
+    <value>Importing project...</value>
+  </data>
+  <data name="DefaultLauncherDescription" xml:space="preserve">
+    <value>Launches and debugs Python programs. This is the default.</value>
+  </data>
+  <data name="DefaultLauncherName" xml:space="preserve">
+    <value>Standard Python launcher</value>
+  </data>
+  <data name="PythonWebLauncherDescription" xml:space="preserve">
+    <value>Launches web sites using the Python debugger. This enables the web server commands specified in the project file, and launches a browser window when the server has started.</value>
+  </data>
+  <data name="PythonWebLauncherName" xml:space="preserve">
+    <value>Web launcher</value>
+  </data>
+  <data name="DebugWebServerLabel" xml:space="preserve">
+    <value>Start &amp;debug server</value>
+  </data>
+  <data name="RunWebServerLabel" xml:space="preserve">
+    <value>&amp;Start server</value>
+  </data>
+  <data name="ImportWizardProjectExists" xml:space="preserve">
+    <value>The specified project file already exists. Overwrite?</value>
+  </data>
+  <data name="ReplEvaluatorInterpreterNotFound" xml:space="preserve">
+    <value>The interactive window could not be started because the associated Python environment could not be found.
+
+If this version of Python has recently been uninstalled, you can close this window.</value>
+  </data>
+  <data name="ReplEvaluatorInterpreterNotConfigured" xml:space="preserve">
+    <value>{0} cannot be started because the path to the interpreter has not been configured.
+Please update the environment in Tools-&gt;Options-&gt;Python Tools-&gt;Environment Options
+</value>
+  </data>
+  <data name="ReplInitializationMessage" xml:space="preserve">
+    <value>&amp;#x1b;[94;21m{0} interactive window &amp;#x1b;[m[PTVS {1}-{2}]
+Type $help for a list of commands.</value>
+    <comment>{0} is the Python language version, {1} is the PTVS version, {2} is the VS version</comment>
+  </data>
+  <data name="CustomCommandPrerequisitesContent" xml:space="preserve">
+    <value>'{0}' command requires some packages that are not installed in your Python environment. Those packages need to be installed first before the command can be run.</value>
+  </data>
+  <data name="UnresolvedModuleTooltip" xml:space="preserve">
+    <value>Unable to resolve "{0}". IntelliSense may be missing for this module.</value>
+  </data>
+  <data name="FillCommentSelectionError" xml:space="preserve">
+    <value>Fill Comment Paragraph fills the text in a contiguous block of comment lines or multiline strings.
+
+It must be invoked on a comment line or within a triple quoted line.</value>
+  </data>
+  <data name="UnresolvedModuleTooltipRefreshing" xml:space="preserve">
+    <value>Unable to resolve "{0}".
+The completion DB for the active environment needs to be refreshed,
+and IntelliSense may be missing until that has completed.
+See the Python Environments window for details.</value>
+  </data>
+  <data name="UpgradedToolsVersion" xml:space="preserve">
+    <value>The tools version has been changed to 4.0. This will not affect compatibility with other versions of Visual Studio.</value>
+  </data>
+  <data name="ImportWizard_SelectProjectFileLocation" xml:space="preserve">
+    <value>Select where to save your project file.</value>
+  </data>
+  <data name="ImportWizard_SelectProjectFileLocationHelp" xml:space="preserve">
+    <value>We won't move any files, and you can use Save As to move the project file later.</value>
+  </data>
+  <data name="ImportWizard_ProjectFileFilter" xml:space="preserve">
+    <value>Python Project Files (*.pyproj)|*.pyproj|All Files (*.*)|*.*</value>
+  </data>
+  <data name="ImportWizard_SelectFeatures" xml:space="preserve">
+    <value>Select any other features for your project.</value>
+  </data>
+  <data name="ImportWizard_SelectFeaturesHelp" xml:space="preserve">
+    <value>These can not be changed later without creating a new project.</value>
+  </data>
+  <data name="ImportWizard_DetectVirtualEnvironment" xml:space="preserve">
+    <value>Detect _Virtual Environments</value>
+  </data>
+  <data name="ImportWizard_CustomizeProjectType" xml:space="preserve">
+    <value>Customize Project _Type:</value>
+  </data>
+  <data name="ImportWizard_SaveProjectPageTitle" xml:space="preserve">
+    <value>Save Project</value>
+  </data>
+  <data name="ImportWizard_SelectInterpreter" xml:space="preserve">
+    <value>Select the Python interpreter and version to use.</value>
+  </data>
+  <data name="ImportWizard_SelectInterpreterHelp" xml:space="preserve">
+    <value>This setting can be changed later in Project Properties.</value>
+  </data>
+  <data name="ImportWizard_SelectStartupFile" xml:space="preserve">
+    <value>Choose which file to run when F5 is pressed.</value>
+  </data>
+  <data name="ImportWizard_SelectStartupFileHelp" xml:space="preserve">
+    <value>If it is not in this list, you can right-click any file in your project and choose "Set as startup file"</value>
+    <comment>"Set as startup file" is the text of a command and must match the translation of that command.</comment>
+  </data>
+  <data name="ImportWizard_CreateProjectFromExistingCodeTitle" xml:space="preserve">
+    <value>Create New Project from Existing Python Code</value>
+  </data>
+  <data name="ImportWizard_CreateProjectFromExistingCodeDescription" xml:space="preserve">
+    <value>Welcome to the Create New Project from Existing Python Code Wizard</value>
+  </data>
+  <data name="ImportWizard_BackButton" xml:space="preserve">
+    <value>_Back</value>
+  </data>
+  <data name="ImportWizard_NextButton" xml:space="preserve">
+    <value>_Next</value>
+  </data>
+  <data name="ImportWizard_FinishButton" xml:space="preserve">
+    <value>_Finish</value>
+  </data>
+  <data name="ImportWizard_CancelButton" xml:space="preserve">
+    <value>_Cancel</value>
+  </data>
+  <data name="ImportWizard_FileSourceLocation" xml:space="preserve">
+    <value>Enter or browse to the folder containing your Python code.</value>
+  </data>
+  <data name="ImportWizard_FileSourceLocationHelp" xml:space="preserve">
+    <value>We won't move any files from where they are now.</value>
+  </data>
+  <data name="ImportWizard_FileSourceLocationDoesntExistHelp" xml:space="preserve">
+    <value>Specified path does not exist</value>
+  </data>
+  <data name="ImportWizard_FileSourceFilter" xml:space="preserve">
+    <value>Enter the filter for files to include.</value>
+  </data>
+  <data name="ImportWizard_FileSourceFilterHelp" xml:space="preserve">
+    <value>Files with the .py extension are always included.</value>
+  </data>
+  <data name="ImportWizard_SearchPath" xml:space="preserve">
+    <value>Enter any search paths your project needs.</value>
+  </data>
+  <data name="ImportWizard_SearchPathHelp" xml:space="preserve">
+    <value>One on each line, and we'll make them relative to the project file for you.</value>
+  </data>
+  <data name="ImportWizard_GlobalOrAutoDetectedVirtualEnvironment" xml:space="preserve">
+    <value>(Global default or an auto-detected virtual environment)</value>
+  </data>
+  <data name="ImportWizardBottleProjectCustomization" xml:space="preserve">
+    <value>Bottle Web Project</value>
+  </data>
+  <data name="ImportWizardDefaultProjectCustomization" xml:space="preserve">
+    <value>(No customizations)</value>
+  </data>
+  <data name="ImportWizardDjangoProjectCustomization" xml:space="preserve">
+    <value>Django Web Project</value>
+  </data>
+  <data name="ImportWizardFlaskProjectCustomization" xml:space="preserve">
+    <value>Flask Web Project</value>
+  </data>
+  <data name="PythonWebPropertyPageTitle" xml:space="preserve">
+    <value>Web</value>
+  </data>
+  <data name="StaticPatternHelp" xml:space="preserve">
+    <value>A regex pattern to identify static URIs, for example: '^static/.*'
+The web.config file will be configured to resolve URIs matching this pattern to a file system path rather than your application.</value>
+  </data>
+  <data name="UpgradedUserToolsVersion" xml:space="preserve">
+    <value>The tools version of the .user file has been changed to 4.0 for compatibility between versions of Visual Studio.</value>
+  </data>
+  <data name="VirtualEnvAddFailed" xml:space="preserve">
+    <value>Failed to create or add the virtual environment. See the Output window for details.</value>
+  </data>
+  <data name="UnexpectedUpgradeError" xml:space="preserve">
+    <value>An error occurred while upgrading projects: {0}</value>
+  </data>
+  <data name="WsgiHandlerHelp" xml:space="preserve">
+    <value>Specifies the source WSGI app to execute. This may be a combination of module names, variable names, and callable objects (without arguments). For example, "app.get_wsgi_app()".</value>
+  </data>
+  <data name="ImportWizardGenericWebProjectCustomization" xml:space="preserve">
+    <value>Generic Web Project</value>
+  </data>
+  <data name="SelectFolderForSearchPath" xml:space="preserve">
+    <value>Select a folder to add to the Search Path</value>
+  </data>
+  <data name="SelectZipFileForSearchPath" xml:space="preserve">
+    <value>Select a .zip file to add to the Search Path</value>
+  </data>
+  <data name="ReplOpeningError" xml:space="preserve">
+    <value>An error occurred opening the interactive window.
+
+{0}</value>
+  </data>
+  <data name="AddReferenceExtensions" xml:space="preserve">
+    <value>Python Extension Modules (*.dll;*.pyd)|*.dll;*.pyd|All Files (*.*)|*.*</value>
+  </data>
+  <data name="UninstallPackages" xml:space="preserve">
+    <value>The following packages will be uninstalled from {1} ({2}):
+
+{0}</value>
+  </data>
+  <data name="DebugLaunchInterpreterMissing" xml:space="preserve">
+    <value>The project cannot be launched because no Python interpreter is specified. Please check the Python Environments window and ensure the version of Python is installed and has all settings specified.</value>
+  </data>
+  <data name="DebugLaunchWorkingDirectoryMissing_Path" xml:space="preserve">
+    <value>The project cannot be launched because the specified working directory "{0}" does not exist. Please check the Project Properties window and correct any configuration errors.</value>
+  </data>
+  <data name="MixedModeDebugSymbolsRequiredTitle" xml:space="preserve">
+    <value>Python Symbols Required</value>
+  </data>
+  <data name="MixedModeDebugSymbolsRequiredMessage" xml:space="preserve">
+    <value>Python/native mixed-mode debugging requires symbol files for the Python interpreter that is being debugged. Please add the folder containing those symbol files to your symbol search path, and force a reload of symbols for {0}.</value>
+  </data>
+  <data name="MixedModeDebugSymbolsRequiredOpenSymbolSettings" xml:space="preserve">
+    <value>Open symbol settings dialog</value>
+  </data>
+  <data name="MixedModeDebugSymbolsRequiredDownloadSymbols" xml:space="preserve">
+    <value>Download symbols for my interpreter</value>
+  </data>
+  <data name="WaitForCompleteAnalysisDialog_Waiting" xml:space="preserve">
+    <value>Waiting for analysis to complete...</value>
+  </data>
+  <data name="WaitForCompleteAnalysisDialog_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="FindReferencesCaretMustBeOnValidExpression" xml:space="preserve">
+    <value>The caret must be on valid expression to find all references.</value>
+  </data>
+  <data name="SourceAnalysisNotUpToDate" xml:space="preserve">
+    <value>Python source analysis is not up to date</value>
+  </data>
+  <data name="PythonNavigateToItemDisplay_ProjectHeader" xml:space="preserve">
+    <value>Project:</value>
+  </data>
+  <data name="PythonNavigateToItemDisplay_FileHeader" xml:space="preserve">
+    <value>File:</value>
+  </data>
+  <data name="PythonNavigateToItemDisplay_LineHeader" xml:space="preserve">
+    <value>Line:</value>
+  </data>
+  <data name="PythonNavigateToItemDisplay_ProjectInfo" xml:space="preserve">
+    <value>Project: {0}</value>
+    <comment>{0} is project name</comment>
+  </data>
+  <data name="PythonNavigateToItemDisplay_FileInfo" xml:space="preserve">
+    <value>File: {0}</value>
+    <comment>{0} is file name</comment>
+  </data>
+  <data name="SymbolListDefinitions" xml:space="preserve">
+    <value>Definitions</value>
+  </data>
+  <data name="SymbolListValues" xml:space="preserve">
+    <value>Values</value>
+  </data>
+  <data name="SymbolListReferences" xml:space="preserve">
+    <value>References</value>
+  </data>
+  <data name="LibraryNodeAliasOf" xml:space="preserve">
+    <value>{0} (alias of {1})</value>
+    <comment>{0} and {1} or python data types</comment>
+  </data>
+  <data name="ErrorOpeningInteractiveWindow" xml:space="preserve">
+    <value>An error occurred opening this interactive window.</value>
+  </data>
+  <data name="ErrorStartingInterpreter" xml:space="preserve">
+    <value>An error occurred starting this interpreter.</value>
+  </data>
+  <data name="ErrorOpeningCommandPrompt" xml:space="preserve">
+    <value>An error occurred opening command prompt.</value>
+  </data>
+  <data name="ErrorOpeningPowershell" xml:space="preserve">
+    <value>An error occurred opening PowerShell.</value>
+  </data>
+  <data name="ErrorStartingInteractiveProcess" xml:space="preserve">
+    <value>Failed to start interactive process:
+{0}
+</value>
+  </data>
+  <data name="AddWebRoleSupportFiles" xml:space="preserve">
+    <value>To ensure your project will deploy correctly to Microsoft Azure Cloud Service, add the Web Role Support Files item to your project through the Add New Item dialog and follow the instructions provided.</value>
+  </data>
+  <data name="AddVirtualEnvironmentWindow_InstallPip" xml:space="preserve">
+    <value>Install pip</value>
+  </data>
+  <data name="AddVirtualEnvironmentWindow_InstallVirtualEnv" xml:space="preserve">
+    <value>Install the virtualenv package</value>
+    <comment>'virtualenv' is a package name and must not be translated</comment>
+  </data>
+  <data name="AddVirtualEnvironmentWindow_RegisterGlobally" xml:space="preserve">
+    <value>Write registry keys under HKCU\Software\Python\VisualStudio</value>
+  </data>
+  <data name="AddVirtualEnvironmentWindow_CreateVirtualEnv" xml:space="preserve">
+    <value>Create a virtual environment using virtualenv</value>
+  </data>
+  <data name="AddVirtualEnvironmentWindow_CreateVEnv" xml:space="preserve">
+    <value>Create a virtual environment using venv</value>
+  </data>
+  <data name="AddVirtualEnvironmentWindow_InstallPackages" xml:space="preserve">
+    <value>Install packages</value>
+  </data>
+  <data name="AddVirtualEnvironmentWindow_CannotCreate" xml:space="preserve">
+    <value>No action will be taken.</value>
+  </data>
+  <data name="AddVirtualEnvironmentWindow_Create" xml:space="preserve">
+    <value>C_reate</value>
+  </data>
+  <data name="AddVirtualEnvironmentWindow_NoInterpreterHelp" xml:space="preserve">
+    <value>You will need to install a Python interpreter before creating a virtual environment.</value>
+  </data>
+  <data name="CurrentWorkingDirectoryCaption" xml:space="preserve">
+    <value>Working Directory ({0})</value>
+    <comment>{0} is a folder path</comment>
+  </data>
+  <data name="ProjectDoesNotSupportedMSBuild" xml:space="preserve">
+    <value>Project does not support MSBuild</value>
+  </data>
+  <data name="CustomCommandExecutingScript" xml:space="preserve">
+    <value>Executing {0} {1}</value>
+    <comment>{0} is filename
+{1} is arguments</comment>
+  </data>
+  <data name="CustomCommandExecutingModule" xml:space="preserve">
+    <value>Executing -m {0} {1}</value>
+    <comment>{0} is module name
+{1} is arguments</comment>
+  </data>
+  <data name="CustomCommandExecutingOther" xml:space="preserve">
+    <value>Executing {0} {1}</value>
+    <comment>{0} is filename
+{1} is arguments</comment>
+  </data>
+  <data name="FilePublisherIncorrectUsernameOrPassword" xml:space="preserve">
+    <value>Incorrect user name or password: {0}</value>
+    <comment>{0} is error details</comment>
+  </data>
+  <data name="FilePublisherDestinationDescription" xml:space="preserve">
+    <value>file path</value>
+  </data>
+  <data name="FtpPublisherDestinationDescription" xml:space="preserve">
+    <value>ftp server</value>
+  </data>
+  <data name="FtpPublisherDirExistsCheckException" xml:space="preserve">
+    <value>Failed to check if directory exists: {0}</value>
+    <comment>{0} is error details</comment>
+  </data>
+  <data name="FtpPublisherDirCreateException" xml:space="preserve">
+    <value>Failed to create directory: {0}</value>
+    <comment>{0} is error details</comment>
+  </data>
+  <data name="FtpPublisherUploadFileException" xml:space="preserve">
+    <value>Failed to upload file: {0}</value>
+    <comment>{0} is error details</comment>
+  </data>
+  <data name="PublishPropertyControl_LocationLabel" xml:space="preserve">
+    <value>Publishing folder location ({0}): </value>
+    <comment>{0} is a dynamically built list of location types
+Location types examples:
+ftp or file
+web, ftp or file
+azure, web, ftp or file</comment>
+  </data>
+  <data name="PublishPropertyControl_LocationTypeSeparatorLast" xml:space="preserve">
+    <value> or </value>
+    <comment>This is used to concatenate a dynamically built list of location types.
+This separator is used before the last element.
+See PublishPropertyControl_LocationLabel for examples.</comment>
+  </data>
+  <data name="PublishPropertyControl_LocationTypeSeparator" xml:space="preserve">
+    <value>, </value>
+    <comment>This is used to concatenate a dynamically built list of location types.
+This separator is used between all elements except before the last element.
+See PublishPropertyControl_LocationLabel for examples.</comment>
+  </data>
+  <data name="PythonPublishPropertyPageLabel" xml:space="preserve">
+    <value>Publish</value>
+  </data>
+  <data name="PythonTestPropertyPageLabel" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="PythonDebugPropertyPageLabel" xml:space="preserve">
+    <value>Debug</value>
+  </data>
+  <data name="PythonGeneralPropertyPageLabel" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="PythonGeneralPropertyPageControl_OtherInterpretersSeparator" xml:space="preserve">
+    <value> -- Other installed interpreters --</value>
+  </data>
+  <data name="PythonGeneralPropertyPageControl_UseGlobalDefaultInterpreter" xml:space="preserve">
+    <value>(Use global default)</value>
+  </data>
+  <data name="PythonTestPropertyPageFrameworkLabel" xml:space="preserve">
+    <value>Test _framework:</value>
+  </data>
+  <data name="PythonTestPropertyPageFrameworkHelpText" xml:space="preserve">
+    <value>Test framework</value>
+  </data>
+  <data name="PythonTestPropertyPageUnittestRootDirectoryLabel" xml:space="preserve">
+    <value>Root _directory:</value>
+  </data>
+  <data name="PythonTestPropertyPageUnittestRootDirectoryHelpText" xml:space="preserve">
+    <value>Root directory</value>
+  </data>
+  <data name="PythonTestPropertyPageUnittestPatternLabel" xml:space="preserve">
+    <value>_Pattern:</value>
+  </data>
+  <data name="PythonTestPropertyPageUnittestPatternHelpText" xml:space="preserve">
+    <value>Pattern</value>
+  </data>
+  <data name="AddingProjectEnvironmentToWrongProjectException" xml:space="preserve">
+    <value>Adding project environment {0} to wrong project {1}</value>
+    <comment>{0} is environment id
+{1} is project path</comment>
+  </data>
+  <data name="ZipAndEggArchiveFileFilter" xml:space="preserve">
+    <value>Zip Archives (*.zip;*.egg)|*.zip;*.egg|All Files (*.*)|*.*</value>
+  </data>
+  <data name="UnknownRoleTypeException" xml:space="preserve">
+    <value>Unknown role type: {0}</value>
+    <comment>{0} is role type</comment>
+  </data>
+  <data name="MissingRoleEntryException" xml:space="preserve">
+    <value>Missing role entry</value>
+  </data>
+  <data name="MissingStartupEntryException" xml:space="preserve">
+    <value>Missing Startup entry</value>
+  </data>
+  <data name="ClassClassificationType" xml:space="preserve">
+    <value>Python Class</value>
+  </data>
+  <data name="CommaClassificationType" xml:space="preserve">
+    <value>Python Comma</value>
+  </data>
+  <data name="DotClassificationType" xml:space="preserve">
+    <value>Python Dot</value>
+  </data>
+  <data name="FunctionClassificationType" xml:space="preserve">
+    <value>Python Function</value>
+  </data>
+  <data name="GroupingClassificationType" xml:space="preserve">
+    <value>Python Grouping</value>
+  </data>
+  <data name="ModuleClassificationType" xml:space="preserve">
+    <value>Python Module</value>
+  </data>
+  <data name="OperatorClassificationType" xml:space="preserve">
+    <value>Python Operator</value>
+  </data>
+  <data name="ParameterClassificationType" xml:space="preserve">
+    <value>Python Parameter</value>
+  </data>
+  <data name="BuiltinClassificationType" xml:space="preserve">
+    <value>Python Builtins</value>
+  </data>
+  <data name="StaticPatternError" xml:space="preserve">
+    <value>The specified pattern is an invalid regular expression.</value>
+  </data>
+  <data name="StaticRewriteHelp" xml:space="preserve">
+    <value>A rewrite pattern to apply to URIs matching the static URI pattern, for example 'static_files/{R:1}' for a pattern '^static/(.*)'
+By default, URIs matching the pattern are mapped directly to a file system path.</value>
+  </data>
+  <data name="UpgradedBottleImports" xml:space="preserve">
+    <value>This Bottle project has been upgraded and will no longer work with PTVS 2.1 Beta.</value>
+  </data>
+  <data name="UpgradedFlaskImports" xml:space="preserve">
+    <value>This Flask project has been upgraded and will no longer work with PTVS 2.1 Beta.</value>
+  </data>
+  <data name="NoStartupFileAvailable" xml:space="preserve">
+    <value>Your project needs a Python script marked as the startup file to perform this operation.</value>
+  </data>
+  <data name="RequirementsTxtContentCollapsed" xml:space="preserve">
+    <value>View e&amp;xisting requirements.txt</value>
+  </data>
+  <data name="RequirementsTxtContentExpanded" xml:space="preserve">
+    <value>Hide e&amp;xisting requirements.txt</value>
+  </data>
+  <data name="RequirementsTxtExists" xml:space="preserve">
+    <value>A file named requirements.txt already exists</value>
+  </data>
+  <data name="RequirementsTxtExistsQuestion" xml:space="preserve">
+    <value>Would you like to update or replace this file?</value>
+  </data>
+  <data name="RequirementsTxtRefresh" xml:space="preserve">
+    <value>Re&amp;fresh existing entries</value>
+  </data>
+  <data name="RequirementsTxtReplace" xml:space="preserve">
+    <value>&amp;Replace entire file</value>
+  </data>
+  <data name="RequirementsTxtUpdate" xml:space="preserve">
+    <value>Update and &amp;add entries</value>
+  </data>
+  <data name="RequirementsTxtFailedToAddToProject" xml:space="preserve">
+    <value>An error occurred adding requirements.txt to your project.</value>
+  </data>
+  <data name="RequirementsTxtFailedToRead" xml:space="preserve">
+    <value>An error occurred reading from the existing requirements.txt file.</value>
+  </data>
+  <data name="RequirementsTxtFailedToWrite" xml:space="preserve">
+    <value>An error occurred writing to requirements.txt.</value>
+  </data>
+  <data name="RequirementsTxtInstalling" xml:space="preserve">
+    <value>Installing packages from '{0}'</value>
+    <comment>{0} is a full path to a user's file</comment>
+  </data>
+  <data name="RequirementsTxtRefreshHelp" xml:space="preserve">
+    <value>Packages that are already specified will have their versions updated.</value>
+  </data>
+  <data name="RequirementsTxtReplaceHelp" xml:space="preserve">
+    <value>The existing file will be completely overwritten.</value>
+  </data>
+  <data name="RequirementsTxtUpdateHelp" xml:space="preserve">
+    <value>Packages will be updated or added, and all other contents will be preserved.</value>
+  </data>
+  <data name="ShouldInstallRequirementsTxtCollapsedControl" xml:space="preserve">
+    <value>Show &amp;requirements.txt</value>
+  </data>
+  <data name="ShouldInstallRequirementsTxtContent" xml:space="preserve">
+    <value>Please review the contents of the file below before continuing.
+
+Packages that cannot be installed using pip may prevent all listed packages from being installed.</value>
+  </data>
+  <data name="ShouldInstallRequirementsTxtExpandedControl" xml:space="preserve">
+    <value>Hide &amp;requirements.txt</value>
+  </data>
+  <data name="ShouldInstallRequirementsTxtHeader" xml:space="preserve">
+    <value>Install requirements.txt</value>
+  </data>
+  <data name="ShouldInstallRequirementsTxtInstallInto" xml:space="preserve">
+    <value>&amp;Install into {0}</value>
+  </data>
+  <data name="NoCompletionsCompletion" xml:space="preserve">
+    <value>&lt;No completions&gt;</value>
+  </data>
+  <data name="WarningUnknownType" xml:space="preserve">
+    <value>The type of this expression is unknown.</value>
+  </data>
+  <data name="FailedToSaveDiagnosticInfo" xml:space="preserve">
+    <value>An error occurred saving the diagnostic info.</value>
+  </data>
+  <data name="FailedToCollectFilesForPublish" xml:space="preserve">
+    <value>Failed to collect files to publish.</value>
+  </data>
+  <data name="FailedToCollectFilesForPublishMessage" xml:space="preserve">
+    <value>An error occurred while collecting files to publish. Review the details below and retry or cancel the operation.</value>
+  </data>
+  <data name="InsertSnippet" xml:space="preserve">
+    <value>Insert Snippet</value>
+  </data>
+  <data name="SurroundWith" xml:space="preserve">
+    <value>Surround With</value>
+  </data>
+  <data name="GlobalDefaultSuffix" xml:space="preserve">
+    <value> (global default)</value>
+    <comment>Leading space is important</comment>
+  </data>
+  <data name="UpgradedRemoveCommonProps" xml:space="preserve">
+    <value>This project has had old build references removed and may no longer work with prior PTVS versions.</value>
+  </data>
+  <data name="UpgradedRemoveCommonTargets" xml:space="preserve">
+    <value>This project has been upgraded and may no longer work with prior PTVS versions.</value>
+  </data>
+  <data name="DebugLaunchInterpreterMissing_Path" xml:space="preserve">
+    <value>The project cannot be launched because no Python interpreter is available at "{0}". Please check the Python Environments window and ensure the version of Python is installed and has all settings specified.</value>
+  </data>
+  <data name="MissingEnvironment" xml:space="preserve">
+    <value>The environment "{0}" appears to be incorrectly configured or missing. You may need to install Python {1} or re-create a virtual environment.</value>
+  </data>
+  <data name="AnalyzingProject" xml:space="preserve">
+    <value>Analyzing current project. IntelliSense will be limited.</value>
+  </data>
+  <data name="CustomCommandPrerequisitesDoNotRun" xml:space="preserve">
+    <value>Do not run the command</value>
+  </data>
+  <data name="CustomCommandPrerequisitesInstallMissing" xml:space="preserve">
+    <value>Install missing packages and then run the command</value>
+  </data>
+  <data name="CustomCommandPrerequisitesInstallMissingSubtext" xml:space="preserve">
+    <value>The following packages will be installed using pip:</value>
+  </data>
+  <data name="CustomCommandPrerequisitesInstruction" xml:space="preserve">
+    <value>The packages required to run this command are missing</value>
+  </data>
+  <data name="CustomCommandPrerequisitesRunAnyway" xml:space="preserve">
+    <value>Run the command without installing the packages</value>
+  </data>
+  <data name="ErrorLoadingEnvironmentViewExtension" xml:space="preserve">
+    <value>An error occurred loading '{0}' for the environments window.
+{1}</value>
+  </data>
+  <data name="ErrorLoadingEnvironmentViewExtensions" xml:space="preserve">
+    <value>An error occurred loading extensions for the environments window.
+{1}</value>
+  </data>
+  <data name="ProductTitle" xml:space="preserve">
+    <value>Visual Studio - Python support</value>
+  </data>
+  <data name="UnhandledException" xml:space="preserve">
+    <value>Unhandled exception in {3} ({1}:{2})
+{0}</value>
+  </data>
+  <data name="SeeActivityLog" xml:space="preserve">
+    <value>An unexpected error occurred.
+
+You can get more information by running Visual Studio with the /log parameter on the command line, and then examining the file '{0}', or by checking Event Viewer.</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="ErrorDetail" xml:space="preserve">
+    <value>Error &amp;details</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>&amp;Retry</value>
+  </data>
+  <data name="CookiecutterComponentInstallInstructions" xml:space="preserve">
+    <value>These tools are an installable component for your version of Visual Studio that allow you to create projects from Cookiecutter templates.</value>
+  </data>
+  <data name="CookiecutterComponentRequired" xml:space="preserve">
+    <value>This project requires Cookiecutter template support for Visual Studio.</value>
+  </data>
+  <data name="CookiecutterWizardUnresolvedTemplate" xml:space="preserve">
+    <value>The Cookiecutter template at '{0}' was not found.
+
+Please check your internet connection.
+</value>
+  </data>
+  <data name="AzureToolsInstallInstructions" xml:space="preserve">
+    <value>These tools are an installable workload for your version of Visual Studio that allow you to write, deploy and debug applications for Microsoft Azure in a range of programming languages.</value>
+  </data>
+  <data name="AzureToolsRequired" xml:space="preserve">
+    <value>This project requires Microsoft Azure Tools for Visual Studio.</value>
+  </data>
+  <data name="AzureToolsUpgradeInstructions" xml:space="preserve">
+    <value>Your project can still be created, but some manual configuration of your project will be required and features may be missing or limited.
+
+We recommend installing the latest version of Microsoft Azure Tools for Visual Studio.</value>
+  </data>
+  <data name="AzureToolsUpgradeRecommended" xml:space="preserve">
+    <value>You have an old version of Microsoft Azure Tools for Visual Studio.</value>
+  </data>
+  <data name="ContinueWithoutAzureToolsUpgrade" xml:space="preserve">
+    <value>&amp;Continue
+Some manual steps will be required to configure your project.</value>
+  </data>
+  <data name="CurrentInterpreterDescription" xml:space="preserve">
+    <value>your current environment</value>
+  </data>
+  <data name="DefaultInterpreterDescription" xml:space="preserve">
+    <value>your default environment</value>
+    <comment>Used with InstallRequirementsIntoGlobalEnv if no description can be obtained from the project.</comment>
+  </data>
+  <data name="DontShowAgain" xml:space="preserve">
+    <value>Don't show this warning again.</value>
+  </data>
+  <data name="DownloadAndInstall" xml:space="preserve">
+    <value>&amp;Download and install now
+You will need to restart Visual Studio after installation.</value>
+  </data>
+  <data name="ErrorNoDte" xml:space="preserve">
+    <value>Unable to start wizard: no automation object available.</value>
+  </data>
+  <data name="InstallRequirementsFailed" xml:space="preserve">
+    <value>Your packages may not have been installed.</value>
+  </data>
+  <data name="InstallRequirementsHeading" xml:space="preserve">
+    <value>This project requires external packages</value>
+  </data>
+  <data name="InstallRequirementsHidePackages" xml:space="preserve">
+    <value>Hide required &amp;packages</value>
+  </data>
+  <data name="InstallRequirementsIntoCurrentEnv" xml:space="preserve">
+    <value>&amp;Install into {0}</value>
+    <comment>{0} is the localized (and/or user-provided) title of the destination environment</comment>
+  </data>
+  <data name="InstallRequirementsIntoGlobalEnv" xml:space="preserve">
+    <value>&amp;Install into {0}</value>
+    <comment>{0} is the localized (and/or user-provided) title of the destination environment</comment>
+  </data>
+  <data name="InstallRequirementsIntoGlobalEnvTip" xml:space="preserve">
+    <value>Packages will be shared by all projects</value>
+  </data>
+  <data name="InstallRequirementsIntoVirtualEnv" xml:space="preserve">
+    <value>Install into a &amp;virtual environment...</value>
+  </data>
+  <data name="InstallRequirementsIntoVirtualEnvTip" xml:space="preserve">
+    <value>Packages will only be available for this project (recommended)</value>
+  </data>
+  <data name="InstallRequirementsMessage" xml:space="preserve">
+    <value>We can download and install these packages for you automatically, but we need to know whether you want to install them for just this project or for all your projects.</value>
+  </data>
+  <data name="InstallRequirementsNowhere" xml:space="preserve">
+    <value>I will install them &amp;myself</value>
+  </data>
+  <data name="InstallRequirementsShowPackages" xml:space="preserve">
+    <value>Show required &amp;packages</value>
+  </data>
+  <data name="ErrorInvalidLaunchUrl" xml:space="preserve">
+    <value>Project is configured to launch to invalid URL: "{0}"
+
+Your web browser will not be opened.</value>
+  </data>
+  <data name="FormattingOptionPreviewNotAltered" xml:space="preserve">
+    <value># The existing formatting will not be altered:
+
+{0}
+    # or
+{1}</value>
+    <comment>{0} and {1} are Python code snippets, and the whole string is valid Python code, # indicates a comment.</comment>
+  </data>
+  <data name="FormattingOptionsDefaultText" xml:space="preserve">
+    <value># Select an option to see a preview</value>
+    <comment>This is valid Python code, # indicates a comment.</comment>
+  </data>
+  <data name="FormattingOptionsClassDeclarations" xml:space="preserve">
+    <value>Class Declarations</value>
+  </data>
+  <data name="FormattingOptionsCategoryClassDefinitions" xml:space="preserve">
+    <value>Class Definitions</value>
+  </data>
+  <data name="FormattingOptionsCategoryFunctionDefinitions" xml:space="preserve">
+    <value>Function Definitions</value>
+  </data>
+  <data name="FormattingOptionsCategoryOperators" xml:space="preserve">
+    <value>Operators</value>
+  </data>
+  <data name="FormattingOptionsCategoryExpressionSpacing" xml:space="preserve">
+    <value>Expression Spacing</value>
+  </data>
+  <data name="FormattingOptionsCategoryStatements" xml:space="preserve">
+    <value>Statements</value>
+  </data>
+  <data name="FormattingOptionsCategoryWrapping" xml:space="preserve">
+    <value>Wrapping</value>
+  </data>
+  <data name="ReplCannotReadFile" xml:space="preserve">
+    <value>Unable to read file '{0}'</value>
+  </data>
+  <data name="ReplDisconnected" xml:space="preserve">
+    <value>Current interactive window is disconnected.</value>
+  </data>
+  <data name="ReplDisconnectedReset" xml:space="preserve">
+    <value>The interactive window has encountered an issue. Please reset the window</value>
+  </data>
+  <data name="ReplExited" xml:space="preserve">
+    <value>The interactive Python process has exited.</value>
+  </data>
+  <data name="ReplModuleCannotChange" xml:space="preserve">
+    <value>Cannot change module because the interactive window needs to be reset.</value>
+  </data>
+  <data name="ReplModuleChanged" xml:space="preserve">
+    <value>Current module changed to {0}</value>
+  </data>
+  <data name="ReplNotStarted" xml:space="preserve">
+    <value>The interactive window has not yet started.</value>
+  </data>
+  <data name="ReplReset" xml:space="preserve">
+    <value>Resetting Python state.</value>
+  </data>
+  <data name="ReplUnknownCommand" xml:space="preserve">
+    <value>Unknown command '{0}', use '$help' for a list of commands.</value>
+  </data>
+  <data name="ReplCaption" xml:space="preserve">
+    <value>{0} Interactive {1}</value>
+    <comment>{0} is the name of the Python environment, {1} is the window id</comment>
+  </data>
+  <data name="ReplCaptionNoEvaluator" xml:space="preserve">
+    <value>Python Interactive</value>
+  </data>
+  <data name="DebugReplDisplayName" xml:space="preserve">
+    <value>Debug</value>
+  </data>
+  <data name="RememberMySelection" xml:space="preserve">
+    <value>&amp;Remember my selection</value>
+  </data>
+  <data name="ReplQuerySwitchEvaluator" xml:space="preserve">
+    <value>Changing to {0} will reset your current state.</value>
+    <comment>{0} is the user-provided description of the Python interpreter</comment>
+  </data>
+  <data name="ReplQuerySwitchEvaluatorHint" xml:space="preserve">
+    <value>This includes variables and imported modules,
+but your command history will be preserved.</value>
+  </data>
+  <data name="ReplQuerySwitchNewTab" xml:space="preserve">
+    <value>&amp;Open a new tab</value>
+  </data>
+  <data name="ReplQuerySwitchNewTabHint" xml:space="preserve">
+    <value>Your existing state will still be available in this window.</value>
+  </data>
+  <data name="ReplQuerySwitchThisTab" xml:space="preserve">
+    <value>&amp;Switch this tab</value>
+  </data>
+  <data name="ReplQuerySwitchThisTabHint" xml:space="preserve">
+    <value>Your previous work will be lost when you change environment.</value>
+  </data>
+  <data name="ReplSwitchEvaluator" xml:space="preserve">
+    <value>Switching interactive environment...</value>
+  </data>
+  <data name="MissingEnvironmentUnknownVersion" xml:space="preserve">
+    <value>The environment "{0}" appears to be incorrectly configured or missing. You may need to install it or re-create a virtual environment.</value>
+  </data>
+  <data name="DebugLaunchWorkingDirectoryMissing" xml:space="preserve">
+    <value>The project cannot be launched because the no working directory was provided. Please check the Project Properties window and correct any configuration errors.</value>
+  </data>
+  <data name="ExtractMethod" xml:space="preserve">
+    <value>Extract Method</value>
+  </data>
+  <data name="ExtractMethodInvalidTargetSelected" xml:space="preserve">
+    <value>Invalid target selected</value>
+  </data>
+  <data name="ExtractMethodInvalidExpressionSelected" xml:space="preserve">
+    <value>Invalid expression selected</value>
+  </data>
+  <data name="ExtractMethodAssignsVariablesAndReturns" xml:space="preserve">
+    <value>Cannot extract method that assigns to variables and returns</value>
+  </data>
+  <data name="ExtractMethodStatementsFromClassDefinition" xml:space="preserve">
+    <value>Cannot extract statements from a class definition</value>
+  </data>
+  <data name="ExtractMethodSelectionContainsBreakButNotEnclosingLoop" xml:space="preserve">
+    <value>The selection contains a "break" statement, but not the enclosing loop</value>
+  </data>
+  <data name="ExtractMethodSelectionContainsContinueButNotEnclosingLoop" xml:space="preserve">
+    <value>The selection contains a "continue" statement, but not the enclosing loop</value>
+  </data>
+  <data name="ExtractMethodContainsYieldExpression" xml:space="preserve">
+    <value>Cannot extract code containing "yield" expression</value>
+  </data>
+  <data name="ExtractMethodContainsFromImportStar" xml:space="preserve">
+    <value>Cannot extract method containing "from ... import *" statement</value>
+  </data>
+  <data name="ExtractMethodSelectionContainsReturn" xml:space="preserve">
+    <value>When the selection contains a return statement, all code paths must return.</value>
+  </data>
+  <data name="ExtractMethodCannotExtract" xml:space="preserve">
+    <value>Cannot extract code containing "{0}"</value>
+    <comment>{0} is the name of a code element</comment>
+  </data>
+  <data name="ReplScriptPathIPythonModeTxtContents" xml:space="preserve">
+    <value>#
+# This file specifies the REPL backend, which is an callable that
+# can be imported by the interpreter.
+#
+# Currently, supported options are:
+#   standard
+#   ptvsd.repl.ipython.IPythonBackend
+#   ptvsd.repl.ipython.IPythonBackendWithoutPyLab
+#
+
+ptvsd.repl.ipython.IPythonBackend</value>
+    <comment>Do not localize</comment>
+  </data>
+  <data name="ReplScriptPathReadmeContents" xml:space="preserve">
+    <value>This directory can contain a set of initialization scripts (Python files) for the Python interactive window in 
+Visual Studio. Feel free to add your own files to import modules, define functions, or whatever you like.
+
+Whenever the interactive window for this environment is reset, each .py file in this directory will be 
+executed in alphabetical order.
+
+Visit http://aka.ms/ptvsdocs for more information about what interactive window functionality can be 
+modified from these scripts.</value>
+  </data>
+  <data name="UpgradedInterpreterReference" xml:space="preserve">
+    <value>One or more environment references has been updated and will no longer be recognized by previous versions.</value>
+  </data>
+  <data name="UpgradedInterpreterReferenceFailed" xml:space="preserve">
+    <value>Updating an environment reference failed because some information was missing. Please remove and re-add any environments that are not working.</value>
+  </data>
+  <data name="DebugAttachGettingSiteInformation" xml:space="preserve">
+    <value>Getting attach information from web site.</value>
+  </data>
+  <data name="FailedToConvertCoverageFile" xml:space="preserve">
+    <value>Failed to convert coverage file: {0}</value>
+  </data>
+  <data name="TestDiscoveryFailedMissingLaunchConfiguration" xml:space="preserve">
+    <value>Failed to get launch configuration for project stored in {0}, tests cannot be discovered.</value>
+  </data>
+  <data name="UpgradedImportsFor30" xml:space="preserve">
+    <value>Some internal properties have been modified in this project.</value>
+  </data>
+  <data name="ElevateForInstallPackage_DoNotElevate" xml:space="preserve">
+    <value>&amp;Continue without Administrator privileges</value>
+  </data>
+  <data name="ElevateForInstallPackage_DoNotElevate_Note" xml:space="preserve">
+    <value>This operation may fail if you do not have sufficient permissions</value>
+  </data>
+  <data name="ElevateForInstallPackage_Elevate" xml:space="preserve">
+    <value>&amp;Elevate now</value>
+  </data>
+  <data name="ElevateForInstallPackage_ElevateAlways" xml:space="preserve">
+    <value>&amp;Always elevate when installing or removing packages</value>
+  </data>
+  <data name="ElevateForInstallPackage_ElevateAlways_Note" xml:space="preserve">
+    <value>This dialog will not be shown again</value>
+  </data>
+  <data name="ElevateForInstallPackage_Elevate_Note" xml:space="preserve">
+    <value>You may be prompted for credentials</value>
+  </data>
+  <data name="ElevateForInstallPackage_MainInstruction" xml:space="preserve">
+    <value>Administrator privileges may be required to install, update or remove packages for this environment.</value>
+  </data>
+  <data name="UpgradedWebBrowserUrlProperty" xml:space="preserve">
+    <value>The web browser URL property has been set to a default value. It may be modified through Project Properties.</value>
+  </data>
+  <data name="Test_ErrorConnecting" xml:space="preserve">
+    <value>Error occurred connecting to debuggee.</value>
+  </data>
+  <data name="Test_FailedToStartExited" xml:space="preserve">
+    <value>Failed to execute tests because the process has already exited.</value>
+  </data>
+  <data name="Test_InterpreterDoesNotExist" xml:space="preserve">
+    <value>Interpreter path does not exist: {0}</value>
+  </data>
+  <data name="Test_NoCoverageProduced" xml:space="preserve">
+    <value>Code coverage file not produced. Please install 'coverage' from https://go.microsoft.com/fwlink/?LinkId=808238</value>
+  </data>
+  <data name="Test_NoTestFinishedNotification" xml:space="preserve">
+    <value>Failed to receive test finish notification - some test results may be missing.</value>
+  </data>
+  <data name="Test_UnableToDetermineInterpreter" xml:space="preserve">
+    <value>Unable to determine interpreter to use for {0}</value>
+  </data>
+  <data name="Test_UnexpectedResult" xml:space="preserve">
+    <value>Unexpected test result: {0}.{1}</value>
+    <comment>{0} is a class name from user code, {1} is a method name from user code</comment>
+  </data>
+  <data name="NoInterpretersDescription" xml:space="preserve">
+    <value>No interpreters</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>Installation failed</value>
+    <comment>Used as exception text</comment>
+  </data>
+  <data name="InstallingPackageFailed" xml:space="preserve">
+    <value>----- Failed to install '{0}' -----
+
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="InstallingPackageStarted" xml:space="preserve">
+    <value>----- Installing '{0}' -----
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="InstallingPackageSuccess" xml:space="preserve">
+    <value>----- Successfully installed '{0}' -----
+
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="InstallingPipFailed" xml:space="preserve">
+    <value>----- Failed to install pip -----
+
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="InstallingPipStarted" xml:space="preserve">
+    <value>----- Installing pip -----
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="InstallingPipSuccess" xml:space="preserve">
+    <value>----- Successfully installed pip -----
+
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="MisconfiguredEnvironment" xml:space="preserve">
+    <value>Operation cannot be started because the environment is not configured.</value>
+    <comment>Used as exception text</comment>
+  </data>
+  <data name="MisconfiguredPip" xml:space="preserve">
+    <value>Operation cannot be started because pip is not installed in the environment at '{0}'.</value>
+    <comment>Used as exception text</comment>
+  </data>
+  <data name="ExecutingCommandFailed" xml:space="preserve">
+    <value>----- Failed to run '{0}' -----
+
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="ExecutingCommandStarted" xml:space="preserve">
+    <value>----- Running '{0}' -----
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="ExecutingCommandSucceeded" xml:space="preserve">
+    <value>----- Successfully ran '{0}' -----
+
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="UninstallingPackageFailed" xml:space="preserve">
+    <value>----- Error while uninstalling '{0}' -----
+'{0}' may not have been uninstalled completely.
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="UninstallingPackageStarted" xml:space="preserve">
+    <value>----- Uninstalling '{0}' -----</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="UninstallingPackageSuccess" xml:space="preserve">
+    <value>----- Successfully uninstalled '{0}' -----
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="PackageManagementNotSupported_Package" xml:space="preserve">
+    <value>Unable to install {0} because the selected environment does not support package management.
+</value>
+    <comment>{0} is a package name</comment>
+  </data>
+  <data name="PackageManagementNotSupported" xml:space="preserve">
+    <value>The selected environment does not support package management.</value>
+  </data>
+  <data name="UnableToElevate" xml:space="preserve">
+    <value>Visual Studio was unable to launch the elevated process.</value>
+  </data>
+  <data name="InvalidSearchPath" xml:space="preserve">
+    <value>Search path '{0}' is not a valid directory or file.</value>
+  </data>
+  <data name="IssueTrackerUrl" xml:space="preserve">
+    <value>https://go.microsoft.com/fwlink/?LinkId=402428</value>
+    <comment>Should not be localized</comment>
+  </data>
+  <data name="PydReferenceDeprecated" xml:space="preserve">
+    <value>Direct references to .pyd files have been deprecated. We recommend replacing the reference with a Search Path.</value>
+  </data>
+  <data name="RefDeprecatedMessage" xml:space="preserve">
+    <value>[Deprecated]</value>
+  </data>
+  <data name="RefDeprecatedMessageDescription" xml:space="preserve">
+    <value>The reason this item type has been deprecated.</value>
+  </data>
+  <data name="WebPIReferenceDeprecated" xml:space="preserve">
+    <value>WebPI references have been deprecated. We recommend replacing the reference with a custom installation script.</value>
+  </data>
+  <data name="ReplProjectConfigurationChanged" xml:space="preserve">
+    <value>The associated project "{0}" has changed its configuration. These changes will not be reflected until you reset this interactive window.</value>
+  </data>
+  <data name="ReplWorkspaceConfigurationChanged" xml:space="preserve">
+    <value>The associated workspace "{0}" has changed its configuration. These changes will not be reflected until you reset this interactive window.</value>
+  </data>
+  <data name="DebugLaunchScriptNameMissing" xml:space="preserve">
+    <value>The project cannot be launched because the startup file is not specified.</value>
+  </data>
+  <data name="DebugLaunchScriptNameDoesntExist" xml:space="preserve">
+    <value>The project cannot be launched because the startup file '{0}' was not found.</value>
+  </data>
+  <data name="PublishToAzure30" xml:space="preserve">
+    <value>Publishing Python projects has recently changed.</value>
+  </data>
+  <data name="PublishToAzure30Message" xml:space="preserve">
+    <value>These changes will allow you to deploy more reliably and quickly, but first you may need to configure your project or deployment target.
+
+When you publish, we will no longer automatically generate a web.config file. You can add one using Add New Item and customize as necessary for your site.
+
+There are no restrictions on the version of Python you may be using when you deploy, however, we will no longer include virtual environments or the Python runtime when you deploy. Only libraries that are directly included in your project will be published.
+
+Please refer to &lt;a href="https://aka.ms/pythononappservice"&gt;aka.ms/PythonOnAppService&lt;/a&gt; for information about configuring and publishing to Azure App Service.</value>
+  </data>
+  <data name="UninstallMessage" xml:space="preserve">
+    <value>Remove this package</value>
+  </data>
+  <data name="UninstallMessage_Package" xml:space="preserve">
+    <value>Remove {0}</value>
+    <comment>{0} is a package name</comment>
+  </data>
+  <data name="UpgradeMessage" xml:space="preserve">
+    <value>Upgrade to the latest version of this package</value>
+  </data>
+  <data name="UpgradeMessage_Package" xml:space="preserve">
+    <value>Upgrade to {0} version {1}</value>
+    <comment>{0} is a package name, {1} is the latest available version number</comment>
+  </data>
+  <data name="AdditionalInformation" xml:space="preserve">
+    <value>Additional information:</value>
+  </data>
+  <data name="CannotGoToDefn" xml:space="preserve">
+    <value>Cannot go to definition. The cursor is not on a recognized symbol.</value>
+  </data>
+  <data name="CannotGoToDefn_Name" xml:space="preserve">
+    <value>Cannot go to definition of "{0}".</value>
+  </data>
+  <data name="FromImportCompletionImportAllMembersFromModuleTooltip" xml:space="preserve">
+    <value>Import all members from the module</value>
+  </data>
+  <data name="IntellisenseControllerAlreadyDetachedException" xml:space="preserve">
+    <value>Already detached from text view</value>
+  </data>
+  <data name="IntellisenseControllerNotAttachedToSpecifiedTextViewException" xml:space="preserve">
+    <value>Not attached to specified text view</value>
+  </data>
+  <data name="ReverseExpressionParserFailedToGetClassifierFromBufferException" xml:space="preserve">
+    <value>Failed to get classifier from buffer</value>
+  </data>
+  <data name="ErrorTaskItemZipArchiveNotSupportedMessage" xml:space="preserve">
+    <value>Opening source files contained in .zip archives is not supported</value>
+  </data>
+  <data name="ErrorTaskItemZipArchiveNotSupportedCaption" xml:space="preserve">
+    <value>Cannot open file</value>
+  </data>
+  <data name="CompletionControl_NeedsRefresh" xml:space="preserve">
+    <value>The completion DB needs to be refreshed.</value>
+  </data>
+  <data name="CompletionControl_OpenEnvironmentsWindowForDetails" xml:space="preserve">
+    <value>Open Python Environments for more details.</value>
+  </data>
+  <data name="ConnErrorMessages_CannotInjectThread" xml:space="preserve">
+    <value>Cannot create thread in debuggee process</value>
+  </data>
+  <data name="ConnErrorMessages_CannotOpenProcess" xml:space="preserve">
+    <value>Cannot open process for debugging</value>
+  </data>
+  <data name="ConnErrorMessages_InterpreterNotInitialized" xml:space="preserve">
+    <value>Python interpreter has not been initialized in this process</value>
+  </data>
+  <data name="ConnErrorMessages_LoadDebuggerBadDebugger" xml:space="preserve">
+    <value>Debugger script was incorrectly initialized</value>
+  </data>
+  <data name="ConnErrorMessages_LoadDebuggerFailed" xml:space="preserve">
+    <value>Failed to initialize debugger script</value>
+  </data>
+  <data name="ConnErrorMessages_OutOfMemory" xml:space="preserve">
+    <value>Out of memory</value>
+  </data>
+  <data name="ConnErrorMessages_PyDebugAttachNotFound" xml:space="preserve">
+    <value>Cannot find PyDebugAttach.dll</value>
+  </data>
+  <data name="ConnErrorMessages_PythonNotFound" xml:space="preserve">
+    <value>Python interpreter not found</value>
+  </data>
+  <data name="ConnErrorMessages_RemoteAttachRejected" xml:space="preserve">
+    <value>Remote debugging server rejected request to attach</value>
+  </data>
+  <data name="ConnErrorMessages_RemoteInvalidUri" xml:space="preserve">
+    <value>Invalid remote debugging endpoint URI</value>
+  </data>
+  <data name="ConnErrorMessages_RemoteNetworkError" xml:space="preserve">
+    <value>Network error while connecting to remote debugging server</value>
+  </data>
+  <data name="ConnErrorMessages_RemoteSecretMismatch" xml:space="preserve">
+    <value>Secret specified in the Qualifier string did not match the remote secret</value>
+  </data>
+  <data name="ConnErrorMessages_RemoteSslError" xml:space="preserve">
+    <value>Could not establish a secure SSL connection to remote debugging server</value>
+  </data>
+  <data name="ConnErrorMessages_RemoteUnsupportedServer" xml:space="preserve">
+    <value>Remote server is not a supported Python debugging server</value>
+  </data>
+  <data name="ConnErrorMessages_RemoteUnsupportedTransport" xml:space="preserve">
+    <value>This remote debugging transport is not supported by this version of Windows.</value>
+  </data>
+  <data name="ConnErrorMessages_SysGetTraceNotFound" xml:space="preserve">
+    <value>gettrace not found in sys module</value>
+  </data>
+  <data name="ConnErrorMessages_SysNotFound" xml:space="preserve">
+    <value>sys module not found</value>
+  </data>
+  <data name="ConnErrorMessages_SysSetTraceNotFound" xml:space="preserve">
+    <value>settrace not found in sys module</value>
+  </data>
+  <data name="ConnErrorMessages_TimeOut" xml:space="preserve">
+    <value>Timeout while attaching</value>
+  </data>
+  <data name="ConnErrorMessages_UnknownError" xml:space="preserve">
+    <value>Unknown error</value>
+  </data>
+  <data name="ConnErrorMessages_UnknownVersion" xml:space="preserve">
+    <value>Unknown Python version loaded in process</value>
+  </data>
+  <data name="ConnErrorMessages_UnsupportedVersion" xml:space="preserve">
+    <value>Unsupported Python version loaded in process</value>
+  </data>
+  <data name="RemoteUnrecognizedDebuggingTransport" xml:space="preserve">
+    <value>Unrecognized remote debugging transport '{0}'.</value>
+    <comment>{0} is the uri scheme</comment>
+  </data>
+  <data name="RemoteDebugPortSupplierNamePtvsd" xml:space="preserve">
+    <value>Python remote (ptvsd)</value>
+  </data>
+  <data name="RemoteDebugPortSupplierNameDebugPy" xml:space="preserve">
+    <value>Python remote (debugpy)</value>
+  </data>
+  <data name="RemoteDebugPortSupplierDescriptionPtvsd" xml:space="preserve">
+    <value>Allows debugging a Python process on a remote machine running any OS, if it can be connected to via TCP, and remote debugging has been enabled by using the 'ptvsd' module. Specify the secret, hostname and port to connect to in the 'Qualifier' textbox, e.g. 'tcp://secret@localhost:5678'.</value>
+  </data>
+  <data name="RemoteDebugPortSupplierDescriptionDebugPy" xml:space="preserve">
+    <value>Allows debugging a Python process on a remote machine running any OS, if it can be connected to via TCP, and remote debugging has been enabled by using the 'debugpy' module. Specify the hostname and port to connect to in the 'Qualifier' textbox, e.g. 'tcp://localhost:5678'.</value>
+  </data>
+  <data name="RemoteProcessAuthenticationErrorWarning" xml:space="preserve">
+    <value>{0}
+Connect anyway?</value>
+    <comment>{0} is error details</comment>
+  </data>
+  <data name="FailedToAttachDebugger" xml:space="preserve">
+    <value>Failed to attach debugger:
+{0}</value>
+    <comment>{0} is error details</comment>
+  </data>
+  <data name="DebugStackFrameParseTextError" xml:space="preserve">
+    <value>Error: {0}</value>
+    <comment>{0} is error message</comment>
+  </data>
+  <data name="DebugThreadUnknownLocation" xml:space="preserve">
+    <value>&lt;unknown location, not in Python code&gt;</value>
+  </data>
+  <data name="DebugTcpsTransportConnectionError" xml:space="preserve">
+    <value>Could not establish secure connection to {0} because of the following SSL issues:
+{1}
+</value>
+    <comment>{0} is a URI
+{1} is a multi-line list of issues</comment>
+  </data>
+  <data name="DebugTcpsTransportConnectionErrorRemoteCertificateNotAvailable" xml:space="preserve">
+    <value>- no remote certificate provided</value>
+  </data>
+  <data name="DebugTcpsTransportConnectionErrorRemoteCertificateNameMismatch" xml:space="preserve">
+    <value>- remote certificate name does not match hostname</value>
+  </data>
+  <data name="DebugTcpsTransportConnectionErrorRemoteCertificateChainErrors" xml:space="preserve">
+    <value>- remote certificate is not trusted</value>
+  </data>
+  <data name="DebugTcpTransportUriCannotContainPath" xml:space="preserve">
+    <value>tcp:// URI cannot contain a path</value>
+  </data>
+  <data name="DebugConnectionFailedToConnectToProcessWithModule" xml:space="preserve">
+    <value>Failed to connect to process {0} ({1}): {2}</value>
+    <comment>{0} is process id
+{1} is module name
+{2} is error details</comment>
+  </data>
+  <data name="DebugConnectionFailedToConnectToProcessWithoutModule" xml:space="preserve">
+    <value>Failed to connect to process {0}: {1}</value>
+    <comment>{0} is process id
+{1} is error details</comment>
+  </data>
+  <data name="InvalidHexValue" xml:space="preserve">
+    <value>bad char for integer value: {0}</value>
+    <comment>{0} is a character</comment>
+  </data>
+  <data name="DebugUnknownFunctionName" xml:space="preserve">
+    <value>&lt;unknown&gt;</value>
+  </data>
+  <data name="DebugUnknownModuleName" xml:space="preserve">
+    <value>&lt;unknown&gt;</value>
+  </data>
+  <data name="UnrecognizedEnumValue" xml:space="preserve">
+    <value>Unrecognized value for enum type '{0}'.</value>
+    <comment>{0} is the enum type</comment>
+  </data>
+  <data name="DebugCallStackNativeToPythonTransition" xml:space="preserve">
+    <value>[Native to Python Transition]</value>
+  </data>
+  <data name="DebugCallStackPythonToNativeTransition" xml:space="preserve">
+    <value>[Python to Native Transition]</value>
+  </data>
+  <data name="DebugArbitraryExpressionOnStoppedThreadOnly" xml:space="preserve">
+    <value>Arbitrary Python expressions can only be evaluated on a thread which is stopped in Python code at a breakpoint or after a step-in or a step-over operation. Only expressions involving global and local variables, object field access, and indexing of built-in collection types with literals can be evaluated in the current context.</value>
+  </data>
+  <data name="DebugNoPythonFrameForCurrentFrame" xml:space="preserve">
+    <value>Could not obtain a Python frame object for the current frame.</value>
+  </data>
+  <data name="DebugTooLongExpression" xml:space="preserve">
+    <value>Expression is too long.</value>
+  </data>
+  <data name="DebugCouldNotAbortFailedExpressionEvaluation" xml:space="preserve">
+    <value>Couldn't abort a failed expression evaluation.</value>
+  </data>
+  <data name="DebugEvaluationTimedOut" xml:space="preserve">
+    <value>Evaluation timed out.</value>
+  </data>
+  <data name="DebugOnlyBoolNumericStringAndNoneSupported" xml:space="preserve">
+    <value>Only boolean, numeric or string literals and None are supported.</value>
+  </data>
+  <data name="DebugUnknownErrorWhileEvaluatingExpression" xml:space="preserve">
+    <value>Unknown error occurred while evaluating expression.</value>
+  </data>
+  <data name="DebugErrorWhileEvaluatingExpression" xml:space="preserve">
+    <value>{0} raised while evaluating expression: {1}</value>
+    <comment>{0} is a type name
+{1} is the error details</comment>
+  </data>
+  <data name="DebugUnknownExceptionType" xml:space="preserve">
+    <value>&lt;unknown exception type&gt;</value>
+  </data>
+  <data name="DebugStructuredExceptionWhileEvaluatingExpression" xml:space="preserve">
+    <value>Native exception {0:x08} ({1}) raised while evaluating expression</value>
+    <comment>{0} is the error integer value
+{1} is the error integer value cast as a enum value</comment>
+  </data>
+  <data name="DebugStructuredExceptionWhileEvaluatingExpressionNotAnEnumValue" xml:space="preserve">
+    <value>Native exception {0:x08} raised while evaluating expression</value>
+    <comment>{0} is the error integer value</comment>
+  </data>
+  <data name="DebugPythonView" xml:space="preserve">
+    <value>[Python view]</value>
+  </data>
+  <data name="DebugPythonViewNotAvailableForObject" xml:space="preserve">
+    <value>Python view is unavailable for this object</value>
+  </data>
+  <data name="DebugReprMaxLengthAtLeast3" xml:space="preserve">
+    <value>MaxLength must be at least 3 (to accomodate '...')</value>
+  </data>
+  <data name="DebugThreadNormalPriority" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="DebugModuleNoSymbolsRequired" xml:space="preserve">
+    <value>No symbols required</value>
+  </data>
+  <data name="DebugStackFrameInfoFunctionNameInFileName" xml:space="preserve">
+    <value>{0} in {1}</value>
+    <comment>{0} is function name
+{1} is filename</comment>
+  </data>
+  <data name="DebugReplCannotRetrieveFrameError" xml:space="preserve">
+    <value>Could not retrieve the current frame.</value>
+  </data>
+  <data name="DebugReplCurrentFrameScope" xml:space="preserve">
+    <value>&lt;Current Frame&gt;</value>
+    <comment>&lt; and &gt; are significant, to differentiate from the other regular module names in the list.</comment>
+  </data>
+  <data name="DebugReplModuleName" xml:space="preserve">
+    <value>&lt;REPL&gt;</value>
+  </data>
+  <data name="DebugExecEvalModuleName" xml:space="preserve">
+    <value>&lt;exec/eval&gt;</value>
+  </data>
+  <data name="DebugExecEvalFunctionName" xml:space="preserve">
+    <value>&lt;exec or eval&gt;</value>
+  </data>
+  <data name="DebugReplInputFunctionName" xml:space="preserve">
+    <value>&lt;REPL input&gt;</value>
+  </data>
+  <data name="DebugStackFrameNameInName" xml:space="preserve">
+    <value>{0} in {1}</value>
+    <comment>{0} is a function name
+{1} is a function name</comment>
+  </data>
+  <data name="DebugFileModule" xml:space="preserve">
+    <value>{0} module</value>
+    <comment>{0} is a filename</comment>
+  </data>
+  <data name="DebugFileUnknownCode" xml:space="preserve">
+    <value>{0} unknown code</value>
+    <comment>{0} is filename</comment>
+  </data>
+  <data name="DebugStackFrameFunctionWithLine" xml:space="preserve">
+    <value>{0} line {1}</value>
+    <comment>{0} is a function name
+{1} is a line number</comment>
+  </data>
+  <data name="DebugPythonExceptionStackTraceFileOnly" xml:space="preserve">
+    <value>{0} in {1}</value>
+    <comment>{0} is filename
+{1} is function name</comment>
+  </data>
+  <data name="DebugPythonExceptionStackTraceFileAndLineNumber" xml:space="preserve">
+    <value>{0}:{1} in {2}</value>
+    <comment>{0} is filename
+{1} is line number
+{2} is function name</comment>
+  </data>
+  <data name="RemoteAzureServiceUnavailable_Host" xml:space="preserve">
+    <value>Could not connect to remote Python process at {0}. Make sure that web sockets are enabled for the corresponding web site in Azure portal.</value>
+  </data>
+  <data name="RemoteSecretMismatch_Host" xml:space="preserve">
+    <value>Secret did not match the server secret at {0}. Make sure that the secret is specified correctly in the Qualifier textbox, e.g. tcp://secret@localhost.</value>
+  </data>
+  <data name="RemoteServiceUnavailable_Host" xml:space="preserve">
+    <value>Could not connect to remote Python process at {0}. Make sure the process has called ptvsd.enable_attach() and is still running.</value>
+  </data>
+  <data name="RemoteUnsupportedServer_Host" xml:space="preserve">
+    <value>The remote server at {0} is not running a remote debugging server, or may be running an unsupported version.</value>
+  </data>
+  <data name="CustomEnvironmentLabel" xml:space="preserve">
+    <value>Custom environment</value>
+  </data>
+  <data name="EnvironmentDeleteConfirmation_NoPath" xml:space="preserve">
+    <value>'{0}' will be removed from the project and all its contents will be deleted from disk.</value>
+  </data>
+  <data name="MissingSuffix" xml:space="preserve">
+    <value> (missing)</value>
+    <comment>Leading space is important</comment>
+  </data>
+  <data name="DiagnosticsWindow_TextFileFilter" xml:space="preserve">
+    <value>Text Files (*.txt)|*.txt|All Files (*.*)|*.*</value>
+  </data>
+  <data name="DiagnosticsWindow_DefaultFileName" xml:space="preserve">
+    <value>Diagnostic Info {0:yyyy-MM-dd'T'HHmmss}.txt</value>
+  </data>
+  <data name="ExecuteInReplCommand_ExecuteProject" xml:space="preserve">
+    <value>Execute Project in P&amp;ython Interactive</value>
+    <comment>Use ampersand for accelerator key</comment>
+  </data>
+  <data name="ExecuteInReplCommand_ExecuteFile" xml:space="preserve">
+    <value>Execute File in P&amp;ython Interactive</value>
+    <comment>Use ampersand for accelerator key</comment>
+  </data>
+  <data name="ExecuteInReplCommand_RunningMessage" xml:space="preserve">
+    <value>Running {0}</value>
+    <comment>{0} is the name of the script that is being run</comment>
+  </data>
+  <data name="ImportCoverageCommandFileFilter" xml:space="preserve">
+    <value>coverage.py XML (*.xml)|*.xml|All Files (*.*)|*.*</value>
+    <comment>Do not translate coverage.py, it's the name of a library.</comment>
+  </data>
+  <data name="RenameVariable_NewName" xml:space="preserve">
+    <value>_New name:</value>
+  </data>
+  <data name="RenameVariable_PreviewReferenceChanges" xml:space="preserve">
+    <value>Pre_view reference changes</value>
+  </data>
+  <data name="RenameVariable_SearchComments" xml:space="preserve">
+    <value>Search in _comments</value>
+  </data>
+  <data name="RenameVariable_SearchStrings" xml:space="preserve">
+    <value>Search in _strings</value>
+  </data>
+  <data name="RenameVariable_OK" xml:space="preserve">
+    <value>_OK</value>
+  </data>
+  <data name="RenameVariable_Cancel" xml:space="preserve">
+    <value>_Cancel</value>
+  </data>
+  <data name="RenameVariable_Title" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="RenameVariable_CannotRenameTitle" xml:space="preserve">
+    <value>Cannot rename</value>
+  </data>
+  <data name="RenameVariable_CannotRenameModuleName" xml:space="preserve">
+    <value>Cannot rename modules</value>
+  </data>
+  <data name="RenameVariable_UnableGetAnalysisCurrentTextView" xml:space="preserve">
+    <value>Unable to get analysis for current text view.</value>
+  </data>
+  <data name="RenameVariable_SelectSymbol" xml:space="preserve">
+    <value>Please select a symbol to be renamed.</value>
+  </data>
+  <data name="RenameVariable_NoInformationAvailableForVariable" xml:space="preserve">
+    <value>No information is available for the variable '{0}'.</value>
+  </data>
+  <data name="ExtractMethod_Title" xml:space="preserve">
+    <value>Extract Method</value>
+  </data>
+  <data name="ExtractMethod_NewMethodName" xml:space="preserve">
+    <value>New method _name:</value>
+  </data>
+  <data name="ExtractMethod_ExtractTo" xml:space="preserve">
+    <value>Extract _to:</value>
+  </data>
+  <data name="ExtractMethod_Preview" xml:space="preserve">
+    <value>_Preview:</value>
+  </data>
+  <data name="ExtractMethod_OK" xml:space="preserve">
+    <value>_OK</value>
+  </data>
+  <data name="ExtractMethod_Cancel" xml:space="preserve">
+    <value>_Cancel</value>
+  </data>
+  <data name="ExtractMethod_ClosureVariables" xml:space="preserve">
+    <value>Closure _Variables:</value>
+  </data>
+  <data name="ExtractMethod_InvalidMethodName" xml:space="preserve">
+    <value>The method name is not valid.</value>
+  </data>
+  <data name="ExtractMethod_FailedToGetPreview" xml:space="preserve">
+    <value>&lt;failed to get preview&gt;</value>
+  </data>
+  <data name="ExtractMethod_ShouldExpandSelection" xml:space="preserve">
+    <value>The selected text does not cover an entire expression.
+
+Expand selection to the full expression?</value>
+  </data>
+  <data name="ExtractMethod_ShouldExpandSelectionTitle" xml:space="preserve">
+    <value>Expand extract method selection?</value>
+  </data>
+  <data name="ExtractMethod_CannotExtractMethod" xml:space="preserve">
+    <value>Cannot extract method</value>
+  </data>
+  <data name="RefactorPaneName" xml:space="preserve">
+    <value>Refactor</value>
+  </data>
+  <data name="RefactorRenameVariableUndoDescription" xml:space="preserve">
+    <value>Rename Variable</value>
+  </data>
+  <data name="RefactorPreviewChangesRenaming" xml:space="preserve">
+    <value>Renaming '{0}' to '{1}'</value>
+    <comment>{0} and {1} are Python variable names</comment>
+  </data>
+  <data name="RefactorPreviewChangesRenamingConfirmationButton" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="RefactorPreviewChangesRenamingDescription" xml:space="preserve">
+    <value>&amp;Rename '{0}' to '{1}'</value>
+    <comment>{0} and {1} are Python variable names</comment>
+  </data>
+  <data name="RefactorPreviewChangesTextViewDescription" xml:space="preserve">
+    <value>&amp;Preview Code Changes:</value>
+    <comment>This is a heading for a text control - Alt+P will activate the control.</comment>
+  </data>
+  <data name="RefactorPreviewChangesRenameVariableTitle" xml:space="preserve">
+    <value>Rename variable</value>
+  </data>
+  <data name="RefactorPreviewUpdatedLogEntry" xml:space="preserve">
+    <value>{0}({1},{2}): updated {3}</value>
+    <comment>{0} is a file name
+{1} is the line number
+{2} is the column number
+{3} is either 'definition' or 'reference' </comment>
+  </data>
+  <data name="RefactorPreviewUpdatedLogEntryDefinition" xml:space="preserve">
+    <value>definition</value>
+  </data>
+  <data name="RefactorPreviewUpdatedLogEntryReference" xml:space="preserve">
+    <value>reference</value>
+  </data>
+  <data name="DebugReplFrameCommandInvalidArguments" xml:space="preserve">
+    <value>Invalid arguments '{0}'. Expected frame id.</value>
+    <comment>{0} is the full argument string that was passed by the user.</comment>
+  </data>
+  <data name="DebugReplFrameCommandDescription" xml:space="preserve">
+    <value>Switches the current frame to the specified frame id.</value>
+  </data>
+  <data name="DebugReplFrameDownCommandDescription" xml:space="preserve">
+    <value>Move the current frame one level down in the call stack.</value>
+  </data>
+  <data name="DebugReplFramesCommandDescription" xml:space="preserve">
+    <value>Lists the frames for the current thread.</value>
+  </data>
+  <data name="DebugReplFrameUpCommandDescription" xml:space="preserve">
+    <value>Move the current frame one level up in the call stack.</value>
+  </data>
+  <data name="DebugReplGoCommandDescription" xml:space="preserve">
+    <value>Starts executing the program from the current statement.</value>
+  </data>
+  <data name="DebugReplProcessCommandDescription" xml:space="preserve">
+    <value>Changes the current process to the process with the specified id.</value>
+  </data>
+  <data name="DebugReplProcessCommandInvalidArguments" xml:space="preserve">
+    <value>Invalid arguments '{0}'. Expected process id.</value>
+    <comment>{0} is the full argument string that was passed by the user.</comment>
+  </data>
+  <data name="DebugReplProcessesCommandDescription" xml:space="preserve">
+    <value>Lists the processes currently being debugged.</value>
+  </data>
+  <data name="DebugReplStepIntoCommandDescription" xml:space="preserve">
+    <value>Steps into the next function call, if possible.</value>
+  </data>
+  <data name="DebugReplStepOutCommandDescription" xml:space="preserve">
+    <value>Steps out of the current function.</value>
+  </data>
+  <data name="DebugReplStepOverCommandDescription" xml:space="preserve">
+    <value>Steps over the next function call.</value>
+  </data>
+  <data name="DebugReplThreadCommandDescription" xml:space="preserve">
+    <value>Changes the current thread to the thread with the specified id.</value>
+  </data>
+  <data name="DebugReplThreadCommandInvalidArguments" xml:space="preserve">
+    <value>Invalid arguments '{0}'. Expected thread id.</value>
+    <comment>{0} is the full argument string that was passed by the user.</comment>
+  </data>
+  <data name="DebugReplThreadsCommandDescription" xml:space="preserve">
+    <value>Lists the threads currently being debugged.</value>
+  </data>
+  <data name="DebugReplInvalidProcessId" xml:space="preserve">
+    <value>Invalid process id '{0}'.</value>
+    <comment>{0} is the invalid id passed by the user.</comment>
+  </data>
+  <data name="DebugReplInvalidThreadId" xml:space="preserve">
+    <value>Invalid thread id '{0}'.</value>
+    <comment>{0} is the invalid id passed by the user.</comment>
+  </data>
+  <data name="DebugReplInvalidFrameId" xml:space="preserve">
+    <value>Invalid frame id '{0}'.</value>
+    <comment>{0} is the invalid id passed by the user.</comment>
+  </data>
+  <data name="DebugReplProcessesOutput" xml:space="preserve">
+    <value>{2}Process id={0}, Language version={1}</value>
+    <comment>{0} is the process id.
+{1} is the language version.
+{2} is string value of DebugReplCurrentIndicator or DebugNotReplCurrentIndicator.</comment>
+  </data>
+  <data name="DebugReplAbortNotSupported" xml:space="preserve">
+    <value>Abort is not supported.</value>
+  </data>
+  <data name="DebugReplResetNotSupported" xml:space="preserve">
+    <value>Reset is not supported.</value>
+  </data>
+  <data name="DebugReplThreadsOutput" xml:space="preserve">
+    <value>{2}Thread id={0}, name={1}</value>
+    <comment>{0} is the thread id.
+{1} is the name of the thread.
+{2} is string value of DebugReplCurrentIndicator or DebugNotReplCurrentIndicator.</comment>
+  </data>
+  <data name="DebugReplFramesOutput" xml:space="preserve">
+    <value>{2}Frame id={0}, function={1}</value>
+    <comment>{0} is the frame  id.
+{1} is the name of the function..
+{2} is string value of DebugReplCurrentIndicator or DebugNotReplCurrentIndicator.</comment>
+  </data>
+  <data name="DebugReplCurrentIndicator" xml:space="preserve">
+    <value>=&gt; </value>
+    <comment>Do not translate. This is a prefix that indicates that the following value is 'current'. Should be same length as DebugReplNotCurrentIndicator.</comment>
+  </data>
+  <data name="DebugReplNotCurrentIndicator" xml:space="preserve">
+    <value>   </value>
+    <comment>Do not translate. This is a prefix that indicates that the following value is not 'current'. Should be same length as DebugReplCurrentIndicator.</comment>
+  </data>
+  <data name="DebugReplSwitchProcessOutput" xml:space="preserve">
+    <value>Current process changed to {0}</value>
+    <comment>{0} is the process id.</comment>
+  </data>
+  <data name="DebugReplNoProcessError" xml:space="preserve">
+    <value>Command only available when a process is being debugged.</value>
+  </data>
+  <data name="DebugReplNoExecutionIfNotStoppedInDebuggerError" xml:space="preserve">
+    <value>Code can only be executed while stopped in debugger.</value>
+  </data>
+  <data name="DebugReplHelpMessage" xml:space="preserve">
+    <value>Python debug interactive window. Type $help for a list of commands.</value>
+  </data>
+  <data name="DebugReplCannotChangeCurrentThreadNoFrame" xml:space="preserve">
+    <value>Cannot change current thread to {0}, because it does not have any visible frames.</value>
+    <comment>{0} is a thread id.</comment>
+  </data>
+  <data name="DebugReplThreadChanged" xml:space="preserve">
+    <value>Current thread changed to {0}, frame {1}</value>
+    <comment>{0} is a thread id, {1} is a frame id.</comment>
+  </data>
+  <data name="DebugReplFrameChanged" xml:space="preserve">
+    <value>Current frame changed to {0}</value>
+    <comment>{0} is a frame id.</comment>
+  </data>
+  <data name="ReplCommentCommandDescription" xml:space="preserve">
+    <value>A comment marker</value>
+  </data>
+  <data name="ReplWaitCommandDescription" xml:space="preserve">
+    <value>Wait for at least the specified number of milliseconds</value>
+  </data>
+  <data name="ReplWaitCommandTimeoutParameterDescription" xml:space="preserve">
+    <value>Milliseconds to wait before continuing</value>
+  </data>
+  <data name="ReplWindowOutOfIds" xml:space="preserve">
+    <value>Congratulations, you opened over 2 billion interactive windows this session! Now you need to restart Visual Studio to open any more.</value>
+  </data>
+  <data name="ReplLoadCommandDescription" xml:space="preserve">
+    <value>Executes code and commands from the specified file without resetting the current state</value>
+  </data>
+  <data name="ReplLoadCommandFileNotFoundException" xml:space="preserve">
+    <value>Cannot find file.</value>
+  </data>
+  <data name="ReplDisconnectedFromRemoteProcessError" xml:space="preserve">
+    <value>The interactive window has become disconnected from the Python process. Please reset the window.</value>
+  </data>
+  <data name="ReplProjectProjectCaption" xml:space="preserve">
+    <value>Project: {0}</value>
+    <comment>{0} is the name of the project</comment>
+  </data>
+  <data name="ReplWorkspaceCaption" xml:space="preserve">
+    <value>Workspace: {0}</value>
+    <comment>{0} is the name of the workspace</comment>
+  </data>
+  <data name="ReplSwitchModuleCommandDescription" xml:space="preserve">
+    <value>Switches the current scope to the specified module name.</value>
+  </data>
+  <data name="RunPyLintLabel" xml:space="preserve">
+    <value>Run PyLint</value>
+    <comment>PyLint is a product name and should not be localized</comment>
+  </data>
+  <data name="DebuggerInProgress" xml:space="preserve">
+    <value>Debugger operation is in progress...</value>
+  </data>
+  <data name="DebuggerPythonVersionNotSupported" xml:space="preserve">
+    <value>Debugging is not supported for Python 2.5 and earlier.</value>
+  </data>
+  <data name="Analyzer_Analyzing" xml:space="preserve">
+    <value>Analyzing {0}</value>
+    <comment>{0} is a file system path from the user's machine</comment>
+  </data>
+  <data name="Analyzer_CleaningFiles" xml:space="preserve">
+    <value>Cleaning old files</value>
+  </data>
+  <data name="Analyzer_CollectingFiles" xml:space="preserve">
+    <value>Collecting files</value>
+  </data>
+  <data name="Analyzer_Initializing" xml:space="preserve">
+    <value>Initializing</value>
+  </data>
+  <data name="Analyzer_Parsing" xml:space="preserve">
+    <value>Parsing {0}</value>
+    <comment>{0} is a file system path from the user's machine</comment>
+  </data>
+  <data name="Analyzer_Saving" xml:space="preserve">
+    <value>Saving {0}</value>
+    <comment>{0} is a file system path from the user's machine</comment>
+  </data>
+  <data name="Analyzer_Scraping" xml:space="preserve">
+    <value>Scraping {0}</value>
+    <comment>{0} is a file system path from the user's machine</comment>
+  </data>
+  <data name="Analyzer_ScrapingStdLib" xml:space="preserve">
+    <value>Scraping standard library</value>
+  </data>
+  <data name="Analyzer_Starting" xml:space="preserve">
+    <value>Starting analysis</value>
+  </data>
+  <data name="Analyzer_WaitingForRefresh" xml:space="preserve">
+    <value>Waiting for another refresh</value>
+  </data>
+  <data name="Analyzer_WaitingForRefresh_Message" xml:space="preserve">
+    <value>Waiting for another refresh: {0}</value>
+    <comment>{0} is a previously formatted UI string</comment>
+  </data>
+  <data name="Analyzer_WaitingForStart" xml:space="preserve">
+    <value>Waiting for another refresh to start.</value>
+  </data>
+  <data name="HideDetails" xml:space="preserve">
+    <value>Hide &amp;details</value>
+  </data>
+  <data name="ShowDetails" xml:space="preserve">
+    <value>Show &amp;details</value>
+  </data>
+  <data name="UnexpectedError_Instruction" xml:space="preserve">
+    <value>Please press Ctrl+C to copy the contents of this dialog and report this error.</value>
+  </data>
+  <data name="UnexpectedError_InstructionWithLink" xml:space="preserve">
+    <value>Please press Ctrl+C to copy the contents of this dialog and report this error to our &lt;a href="issuetracker"&gt;issue tracker&lt;/a&gt;.</value>
+    <comment>'a href="issuetracker"' should not be localized.</comment>
+  </data>
+  <data name="UnexpectedError_Title" xml:space="preserve">
+    <value>An unexpected error occurred</value>
+  </data>
+  <data name="UpgradedInterpreterReferenceRemoved" xml:space="preserve">
+    <value>An environment reference could not be upgraded. Please review the Python Environments item in Solution Explorer to select an environment for your project.</value>
+  </data>
+  <data name="DiagnosticsLogCopiedToClipboard" xml:space="preserve">
+    <value>Diagnostics log was copied to the clipboard.</value>
+  </data>
+  <data name="PythonInteractive_Black" xml:space="preserve">
+    <value>Python Interactive - black</value>
+  </data>
+  <data name="PythonInteractive_Blue" xml:space="preserve">
+    <value>Python Interactive - blue</value>
+  </data>
+  <data name="PythonInteractive_Cyan" xml:space="preserve">
+    <value>Python Interactive - cyan</value>
+  </data>
+  <data name="PythonInteractive_DarkBlue" xml:space="preserve">
+    <value>Python Interactive - dark blue</value>
+  </data>
+  <data name="PythonInteractive_DarkCyan" xml:space="preserve">
+    <value>Python Interactive - dark cyan</value>
+  </data>
+  <data name="PythonInteractive_DarkGray" xml:space="preserve">
+    <value>Python Interactive - dark gray</value>
+  </data>
+  <data name="PythonInteractive_DarkGreen" xml:space="preserve">
+    <value>Python Interactive - dark green</value>
+  </data>
+  <data name="PythonInteractive_DarkMagenta" xml:space="preserve">
+    <value>Python Interactive - dark magenta</value>
+  </data>
+  <data name="PythonInteractive_DarkRed" xml:space="preserve">
+    <value>Python Interactive - dark red</value>
+  </data>
+  <data name="PythonInteractive_DarkYellow" xml:space="preserve">
+    <value>Python Interactive - dark yellow</value>
+  </data>
+  <data name="PythonInteractive_Gray" xml:space="preserve">
+    <value>Python Interactive - gray</value>
+  </data>
+  <data name="PythonInteractive_Green" xml:space="preserve">
+    <value>Python Interactive - green</value>
+  </data>
+  <data name="PythonInteractive_Magenta" xml:space="preserve">
+    <value>Python Interactive - magenta</value>
+  </data>
+  <data name="PythonInteractive_Red" xml:space="preserve">
+    <value>Python Interactive - red</value>
+  </data>
+  <data name="PythonInteractive_White" xml:space="preserve">
+    <value>Python Interactive - white</value>
+  </data>
+  <data name="PythonInteractive_Yellow" xml:space="preserve">
+    <value>Python Interactive - yellow</value>
+  </data>
+  <data name="RemoveReplPrompts" xml:space="preserve">
+    <value>Remove Interactive Prompts</value>
+  </data>
+  <data name="Test_NotRun" xml:space="preserve">
+    <value>Test could not be run. Check the Tests Output Pane for details.</value>
+  </data>
+  <data name="FailedToLaunchDebugger" xml:space="preserve">
+    <value>Failed to launch debugger</value>
+  </data>
+  <data name="DocumentationClassificationType" xml:space="preserve">
+    <value>Python Documentation</value>
+  </data>
+  <data name="RegularExpressionClassificationType" xml:space="preserve">
+    <value>Python Regular Expression</value>
+  </data>
+  <data name="PipDefaultIndexName" xml:space="preserve">
+    <value>PyPI</value>
+    <comment>Do not translate</comment>
+  </data>
+  <data name="PipExtensionDisplayName" xml:space="preserve">
+    <value>Packages (PyPI)</value>
+    <comment>Do not translate 'PyPI'</comment>
+  </data>
+  <data name="WorkspaceEnvironmentDescription" xml:space="preserve">
+    <value>Workspace Environment</value>
+  </data>
+  <data name="CondaEnvironmentDescription" xml:space="preserve">
+    <value>Conda Environment</value>
+    <comment>Do not translate 'Conda'</comment>
+  </data>
+  <data name="CondaDefaultIndexName" xml:space="preserve">
+    <value>Conda</value>
+    <comment>Do not translate</comment>
+  </data>
+  <data name="CondaExtensionDisplayName" xml:space="preserve">
+    <value>Packages (Conda)</value>
+    <comment>Do not translate 'Conda'</comment>
+  </data>
+  <data name="PipExtensionPipInstallFrom" xml:space="preserve">
+    <value>Run command: pip install {0}</value>
+    <comment>'pip install {0}' is a command-line that SHOULD NOT be translated. 'Run command:' is a description and SHOULD be translated.</comment>
+  </data>
+  <data name="PipExtensionSearchPyPILabel" xml:space="preserve">
+    <value>Search PyPI and installed packages</value>
+    <comment>Do not translate 'PyPI'</comment>
+  </data>
+  <data name="CondaExtensionCondaInstallFrom" xml:space="preserve">
+    <value>Run command: conda install {0}</value>
+    <comment>'conda install {0}' is a command-line that SHOULD NOT be translated. 'Run command:' is a description and SHOULD be translated.</comment>
+  </data>
+  <data name="CondaExtensionSearchCondaLabel" xml:space="preserve">
+    <value>Search Conda and installed packages</value>
+    <comment>Do not translate 'Conda'</comment>
+  </data>
+  <data name="CondaCreateStarted" xml:space="preserve">
+    <value>----- Creating '{0}' -----
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="CondaCreateSuccess" xml:space="preserve">
+    <value>----- Successfully created '{0}' -----
+
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="CondaCreateInvalidNameOrPath" xml:space="preserve">
+    <value>Invalid name or path '{0}'
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="CondaFileNotFoundError" xml:space="preserve">
+    <value>File not found '{0}'
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="CondaFolderNotFoundError" xml:space="preserve">
+    <value>Folder not found '{0}'
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="CondaCreateFailed" xml:space="preserve">
+    <value>----- Failed to create '{0}' -----
+
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="CondaDeleteStarted" xml:space="preserve">
+    <value>----- Deleting '{0}' -----
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="CondaDeleteSuccess" xml:space="preserve">
+    <value>----- Successfully deleted '{0}' -----
+
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="CondaDeleteFailed" xml:space="preserve">
+    <value>----- Failed to delete '{0}' -----
+
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="CondaExportStarted" xml:space="preserve">
+    <value>----- Exporting '{0}' -----
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="CondaExportSuccess" xml:space="preserve">
+    <value>----- Successfully exported '{0}' -----
+
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="CondaExportFailed" xml:space="preserve">
+    <value>----- Failed to export '{0}' -----
+
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="CondaStatusBarCreateStarted" xml:space="preserve">
+    <value>Creating Conda environment "{0}"</value>
+  </data>
+  <data name="CondaStatusBarCreateFailed" xml:space="preserve">
+    <value>Failed to create Conda environment "{0}"</value>
+  </data>
+  <data name="CondaStatusBarCreateSucceeded" xml:space="preserve">
+    <value>Successfully created Conda environment "{0}"</value>
+  </data>
+  <data name="CondaStatusCenterCreateTitle" xml:space="preserve">
+    <value>Create Conda environment "{0}"</value>
+  </data>
+  <data name="CondaStatusCenterCreateProgressPreparing" xml:space="preserve">
+    <value>Preparing</value>
+  </data>
+  <data name="CondaStatusCenterCreateProgressCreating" xml:space="preserve">
+    <value>Creating environment</value>
+  </data>
+  <data name="CondaStatusCenterCreateProgressDetecting" xml:space="preserve">
+    <value>Detecting environments</value>
+  </data>
+  <data name="CondaStatusCenterCreateProgressCompleted" xml:space="preserve">
+    <value>Environment created successfully</value>
+  </data>
+  <data name="CondaStatusCenterCreateFailure" xml:space="preserve">
+    <value>Failed to create environment.</value>
+  </data>
+  <data name="CondaStatusCenterInstallFailure" xml:space="preserve">
+    <value>Failed to install additional packages.</value>
+  </data>
+  <data name="VirtualEnvStatusCenterCreateTitle" xml:space="preserve">
+    <value>Create virtual environment '{0}'</value>
+  </data>
+  <data name="VirtualEnvStatusCenterCreateProgressPreparing" xml:space="preserve">
+    <value>Preparing</value>
+  </data>
+  <data name="VirtualEnvStatusCenterCreateProgressCreating" xml:space="preserve">
+    <value>Creating environment</value>
+  </data>
+  <data name="VirtualEnvStatusCenterCreateProgressInstallingPackages" xml:space="preserve">
+    <value>Installing additional packages</value>
+  </data>
+  <data name="VirtualEnvStatusCenterCreateProgressCompleted" xml:space="preserve">
+    <value>Environment created successfully</value>
+  </data>
+  <data name="VirtualEnvStatusCenterCreateFailure" xml:space="preserve">
+    <value>Failed to create environment.</value>
+  </data>
+  <data name="VirtualEnvStatusCenterInstallFailure" xml:space="preserve">
+    <value>Failed to install additional packages.</value>
+  </data>
+  <data name="InstallPackagesStatusCenterTitle" xml:space="preserve">
+    <value>Install packages into {0}</value>
+  </data>
+  <data name="InstallPackagesStatusCenterProgressPreparing" xml:space="preserve">
+    <value>Preparing</value>
+  </data>
+  <data name="InstallPackagesStatusCenterProgressCompleted" xml:space="preserve">
+    <value>Packages installed successfully</value>
+  </data>
+  <data name="CondaInfoBarCreateNewMessage" xml:space="preserve">
+    <value>The project "{0}" has a Conda environment.yml file, but no Conda environments.</value>
+  </data>
+  <data name="CondaInfoBarRecreateMessage" xml:space="preserve">
+    <value>The project "{0}" has a reference to a missing Conda environment "{1}".</value>
+  </data>
+  <data name="CondaInfoBarCreateAction" xml:space="preserve">
+    <value>Create environment</value>
+  </data>
+  <data name="CondaInfoBarProjectIgnoreAction" xml:space="preserve">
+    <value>Don't show this message again</value>
+  </data>
+  <data name="RequirementsTxtCreateVirtualEnvInfoBarMessage" xml:space="preserve">
+    <value>Python package specification file "{0}" was detected in project "{1}".</value>
+  </data>
+  <data name="RequirementsTxtInstallPackagesInfoBarMessage" xml:space="preserve">
+    <value>One or more packages listed in "{0}" of project "{1}" are missing from the "{2}" environment.</value>
+  </data>
+  <data name="RequirementsTxtInfoBarCreateVirtualEnvAction" xml:space="preserve">
+    <value>Create virtual environment</value>
+  </data>
+  <data name="RequirementsTxtInfoBarInstallPackagesAction" xml:space="preserve">
+    <value>Install packages</value>
+  </data>
+  <data name="RequirementsTxtInfoBarProjectIgnoreAction" xml:space="preserve">
+    <value>Don't show this message again</value>
+  </data>
+  <data name="CondaNotFoundError" xml:space="preserve">
+    <value>Conda is required for this functionality. Please install either Anaconda or Miniconda and try again.</value>
+  </data>
+  <data name="AddEnvironmentComboListEntry" xml:space="preserve">
+    <value>Add Environment...</value>
+  </data>
+  <data name="ModernDialogHeaderCloseButtonAutomationName" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="AddEnvironmentOKButtonAutomationName" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="AddEnvironmentCancelButtonAutomationName" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="AddEnvironmentAddButtonAutomationName" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddEnvironmentCreateButtonAutomationName" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="AddEnvironmentPagesListBoxAutomationName" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="AddEnvironmentTitle" xml:space="preserve">
+    <value>Add environment</value>
+  </data>
+  <data name="AddEnvironmentAddButton" xml:space="preserve">
+    <value>_Add</value>
+  </data>
+  <data name="AddEnvironmentCreateButton" xml:space="preserve">
+    <value>C_reate</value>
+  </data>
+  <data name="AddEnvironmentCancelButton" xml:space="preserve">
+    <value>_Cancel</value>
+  </data>
+  <data name="AddEnvironmentValidationErrors" xml:space="preserve">
+    <value>Some fields have invalid values.
+
+{0}</value>
+  </data>
+  <data name="AddEnvironmentMoreInfoButton" xml:space="preserve">
+    <value>How do I manage Python environments?</value>
+  </data>
+  <data name="AddInstalledEnvironmentTabHeader" xml:space="preserve">
+    <value>Python installation</value>
+  </data>
+  <data name="AddInstalledEnvironmentInstallationLabel" xml:space="preserve">
+    <value>Python</value>
+  </data>
+  <data name="AddInstalledEnvironmentDescription" xml:space="preserve">
+    <value>The Visual Studio Installer supports the following versions of Python. Select one or more to install:</value>
+  </data>
+  <data name="AddInstalledEnvironmentVersions" xml:space="preserve">
+    <value>The following versions of Python are installed:</value>
+  </data>
+  <data name="AddInstalledEnvironmentLabel" xml:space="preserve">
+    <value>Python installation</value>
+  </data>
+  <data name="AddInstalledEnvironmentInstallButton" xml:space="preserve">
+    <value>_Install</value>
+  </data>
+  <data name="AddInstalledEnvironmentInstallButtonAutomationName" xml:space="preserve">
+    <value>Install</value>
+  </data>
+  <data name="AddInstalledEnvironmentInstalledLabel" xml:space="preserve">
+    <value>Already installed</value>
+  </data>
+  <data name="AddInstalledEnvironmentNone" xml:space="preserve">
+    <value>(none)</value>
+  </data>
+  <data name="AddInstalledEnvironmentNoneAvailable" xml:space="preserve">
+    <value>(none available)</value>
+  </data>
+  <data name="AddCondaEnvironmentTabHeader" xml:space="preserve">
+    <value>Conda environment</value>
+  </data>
+  <data name="AddCondaSuggestedPackagesButton" xml:space="preserve">
+    <value>Suggested Packages</value>
+  </data>
+  <data name="AddCondaSuggestedPackagesButtonHelpText" xml:space="preserve">
+    <value>Browse a list of suggested packages.</value>
+  </data>
+  <data name="CondaPackageDataScienceCoreLibs" xml:space="preserve">
+    <value>Data Science Core Libraries</value>
+  </data>
+  <data name="CondaPackageVisualization" xml:space="preserve">
+    <value>Visualization</value>
+  </data>
+  <data name="CondaPackageMachineLearning" xml:space="preserve">
+    <value>Machine Learning</value>
+  </data>
+  <data name="CondaPackageWeb" xml:space="preserve">
+    <value>Web</value>
+  </data>
+  <data name="CondaPackagePythonLatest" xml:space="preserve">
+    <value>Python (latest)</value>
+  </data>
+  <data name="AddExistingEnvironmentTabHeader" xml:space="preserve">
+    <value>Existing environment</value>
+  </data>
+  <data name="AddExistingEnvironmentSelectEnvironment" xml:space="preserve">
+    <value>Select environment</value>
+  </data>
+  <data name="AddCustomEnvironmentTabDescription" xml:space="preserve">
+    <value>Specify settings for environment</value>
+  </data>
+  <data name="AddVirtualEnvironmentTabHeader" xml:space="preserve">
+    <value>Virtual environment</value>
+  </data>
+  <data name="AddVirtualEnvironmentNameLabel" xml:space="preserve">
+    <value>_Name</value>
+  </data>
+  <data name="AddVirtualEnvironmentLocationLabel" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="AddVirtualEnvironmentChangeLocationLink" xml:space="preserve">
+    <value>Change virtual environment _location</value>
+  </data>
+  <data name="AddVirtualEnvironmentBaseInterpreterLabel" xml:space="preserve">
+    <value>Ba_se interpreter</value>
+  </data>
+  <data name="AddVirtualEnvironmentRequirementsPathLabel" xml:space="preserve">
+    <value>Install packages fr_om file (optional)</value>
+  </data>
+  <data name="AddVirtualEnvironmentPreviewLabel" xml:space="preserve">
+    <value>Actions we will perform</value>
+  </data>
+  <data name="AddVirtualEnvironmentFileWatermark" xml:space="preserve">
+    <value>requirements.txt</value>
+  </data>
+  <data name="AddVirtualEnvironmentFileHelp" xml:space="preserve">
+    <value>The requirements file is typically named requirements.txt and specifies the pip packages to install when creating the virtual environment.</value>
+  </data>
+  <data name="AddVirtualEnvironmentFileBrowseButton" xml:space="preserve">
+    <value>Browse for requirements file</value>
+  </data>
+  <data name="AddVirtualEnvironmentFileBrowseFilter" xml:space="preserve">
+    <value>Requirements Files (*.txt)|*.txt|All Files (*.*)|*.*</value>
+  </data>
+  <data name="AddVirtualEnvironmentDescriptionWatermark" xml:space="preserve">
+    <value>Description for this environment</value>
+  </data>
+  <data name="AddVirtualEnvironmentDescriptionName" xml:space="preserve">
+    <value>Environment description</value>
+  </data>
+  <data name="AddVirtualEnvironmentPreviewInProgress" xml:space="preserve">
+    <value>Building preview...</value>
+  </data>
+  <data name="AddCondaEnvironmentPreviewLabel" xml:space="preserve">
+    <value>Packages preview</value>
+  </data>
+  <data name="AddExistingEnvironmentCustomName" xml:space="preserve">
+    <value>&lt;Custom&gt;</value>
+  </data>
+  <data name="AddExistingEnvironmentCustomPath" xml:space="preserve">
+    <value>&lt;Path to an existing environment&gt;</value>
+  </data>
+  <data name="AddExistingEnvironmentExistingLabel" xml:space="preserve">
+    <value>_Environment</value>
+  </data>
+  <data name="AddExistingEnvironmentRegisterGloballyCheckBox" xml:space="preserve">
+    <value>Ma_ke this environment available globally</value>
+  </data>
+  <data name="AddExistingEnvironmentDescriptionLabel" xml:space="preserve">
+    <value>_Description</value>
+  </data>
+  <data name="AddExistingEnvironmentInterpreterPathLabel" xml:space="preserve">
+    <value>In_terpreter path</value>
+  </data>
+  <data name="AddExistingEnvironmentWindowsInterpreterPathLabel" xml:space="preserve">
+    <value>Windo_wed interpreter (optional)</value>
+  </data>
+  <data name="AddExistingEnvironmentLanguageVersionLabel" xml:space="preserve">
+    <value>Language _version</value>
+  </data>
+  <data name="AddExistingEnvironmentArchitectureLabel" xml:space="preserve">
+    <value>Arc_hitecture</value>
+  </data>
+  <data name="AddExistingEnvironmentPathEnvVarLabel" xml:space="preserve">
+    <value>Path environment varia_ble</value>
+  </data>
+  <data name="AddEnvironmentSetAsCurrentLabel" xml:space="preserve">
+    <value>Set as c_urrent environment</value>
+  </data>
+  <data name="AddEnvironmentProjectLabel" xml:space="preserve">
+    <value>_Project</value>
+  </data>
+  <data name="AddCondaEnvironmentNameLabel" xml:space="preserve">
+    <value>_Name</value>
+  </data>
+  <data name="AddCondaEnvironmentAddPackagesLabel" xml:space="preserve">
+    <value>Add packages from</value>
+  </data>
+  <data name="AddCondaEnvironmentFileRadioButton" xml:space="preserve">
+    <value>Environment _file</value>
+  </data>
+  <data name="AddCondaEnvironmentFileWatermark" xml:space="preserve">
+    <value>environment.yml</value>
+  </data>
+  <data name="AddCondaEnvironmentFileHelp" xml:space="preserve">
+    <value>Path to environment.yml file, which specifies the Conda and pip packages to install when creating the Conda environment.</value>
+  </data>
+  <data name="AddCondaEnvironmentFileName" xml:space="preserve">
+    <value>Environment file path</value>
+  </data>
+  <data name="AddCondaEnvironmentFileBrowseButton" xml:space="preserve">
+    <value>Browse for environment file</value>
+  </data>
+  <data name="AddCondaEnvironmentFileBrowseFilter" xml:space="preserve">
+    <value>Environment Files (*.yml)|*.yml|All Files (*.*)|*.*</value>
+  </data>
+  <data name="AddCondaPackagesRadioButton" xml:space="preserve">
+    <value>On_e or more Anaconda package names</value>
+  </data>
+  <data name="AddCondaPackagesWatermark" xml:space="preserve">
+    <value>Example: "numpy pandas". If no packages are listed, Python will be installed</value>
+  </data>
+  <data name="AddCondaPackagesName" xml:space="preserve">
+    <value>Package names</value>
+  </data>
+  <data name="AddCondaPackagesBrowseButton" xml:space="preserve">
+    <value>Add packages</value>
+  </data>
+  <data name="AddCondaPackagesHelpText" xml:space="preserve">
+    <value>List of Conda packages to install when creating the Conda environment.
+Entries should be separated by spaces. Example: numpy pandas</value>
+  </data>
+  <data name="AddEnvironmentSetAsDefaultLabel" xml:space="preserve">
+    <value>Set as _default environment for new projects</value>
+  </data>
+  <data name="AddEnvironmentViewInEnvWindowLabel" xml:space="preserve">
+    <value>_View in Python environments window</value>
+  </data>
+  <data name="AddEnvironmentDescriptionEmpty" xml:space="preserve">
+    <value>Description is empty.</value>
+  </data>
+  <data name="AddEnvironmentDescriptionInvalid" xml:space="preserve">
+    <value>Description has invalid characters. It must only use valid path characters.</value>
+  </data>
+  <data name="AddCondaEnvironmentPreviewInProgress" xml:space="preserve">
+    <value>Building preview...</value>
+  </data>
+  <data name="AddCondaEnvironmentPreviewNoPackages" xml:space="preserve">
+    <value>No packages will be installed.
+Please specify at least one package.</value>
+  </data>
+  <data name="AddCondaEnvironmentPreviewNoEnvFile" xml:space="preserve">
+    <value>Environment file not found.</value>
+  </data>
+  <data name="AddCondaEnvironmentPreviewFailed" xml:space="preserve">
+    <value>Preview failed.</value>
+  </data>
+  <data name="AddCondaEnvironmentNameEmpty" xml:space="preserve">
+    <value>Conda environment name is empty.</value>
+  </data>
+  <data name="AddCondaEnvironmentNameInvalid" xml:space="preserve">
+    <value>Conda environment name '{0}' is invalid or conflicts with an existing environment.</value>
+  </data>
+  <data name="AddCondaEnvironmentFileInvalid" xml:space="preserve">
+    <value>Conda environment file '{0}' does not exist.</value>
+  </data>
+  <data name="AddVirtualEnvironmentFileInvalid" xml:space="preserve">
+    <value>Requirements file '{0}' does not exist.</value>
+  </data>
+  <data name="AddVirtualEnvironmentNameEmpty" xml:space="preserve">
+    <value>Virtual environment name is empty.</value>
+  </data>
+  <data name="AddVirtualEnvironmentLocationInvalid" xml:space="preserve">
+    <value>Virtual environment target folder '{0}' is invalid.</value>
+  </data>
+  <data name="AddVirtualEnvironmentLocationNotEmpty" xml:space="preserve">
+    <value>Virtual environment target folder '{0}' is not empty.</value>
+  </data>
+  <data name="AddExistingEnvironmentPrefixPathFolderNotFound" xml:space="preserve">
+    <value>Prefix path folder '{0}' does not exist.</value>
+  </data>
+  <data name="AddExistingEnvironmentInterpreterPathNotFound" xml:space="preserve">
+    <value>Interpreter path executable '{0}' does not exist.</value>
+  </data>
+  <data name="AddExistingEnvironmentWindowsInterpreterPathNotFound" xml:space="preserve">
+    <value>Windowed interpreter path executable '{0}' does not exist.</value>
+  </data>
+  <data name="AddExistingEnvironmentArchictureEmpty" xml:space="preserve">
+    <value>Architecture is not specified.</value>
+  </data>
+  <data name="AddExistingEnvironmentVersionEmpty" xml:space="preserve">
+    <value>Version is not specified.</value>
+  </data>
+  <data name="CondaExecutableFilter" xml:space="preserve">
+    <value>Executable Files (*.exe)|*.exe|All Files (*.*)|*.*</value>
+  </data>
+  <data name="EnvironmentSwitcherNoCurrentEnvironment" xml:space="preserve">
+    <value>(no Python environment)</value>
+  </data>
+  <data name="EnvironmentSwitcherTooltipWithKeyBinding" xml:space="preserve">
+    <value>Python Environment ({0})</value>
+    <comment>{0} is a string that contains a keyboard shortcut ie "CTRL+K, CTRL+E"</comment>
+  </data>
+  <data name="EnvironmentSwitcherTooltipWithoutKeyBinding" xml:space="preserve">
+    <value>Python Environment</value>
+  </data>
+  <data name="ConfigurationExtensionDescriptionWatermark" xml:space="preserve">
+    <value>e.g. My Custom Environment</value>
+  </data>
+  <data name="ConfigurationExtensionDescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ConfigurationExtensionDescriptionHelp" xml:space="preserve">
+    <value>The description is displayed throughout Visual Studio to help you identify the environment.</value>
+  </data>
+  <data name="ConfigurationExtensionPrefixPathLabel" xml:space="preserve">
+    <value>Prefi_x path</value>
+  </data>
+  <data name="ConfigurationExtensionPrefixPathBrowseButton" xml:space="preserve">
+    <value>Browse for prefix path</value>
+  </data>
+  <data name="ConfigurationExtensionPrefixPathWatermark" xml:space="preserve">
+    <value>e.g. C:\PythonXY</value>
+  </data>
+  <data name="ConfigurationExtensionPrefixPathHelp" xml:space="preserve">
+    <value>The prefix path specifies the directory containing all files needed for this environment. It may be used for searching installed libraries or deploying an environment to another machine.</value>
+  </data>
+  <data name="ConfigurationExtensionInterpreterPathLabel" xml:space="preserve">
+    <value>Interpreter path</value>
+  </data>
+  <data name="ConfigurationExtensionInterpreterPathBrowseButton" xml:space="preserve">
+    <value>Browse for interpreter path</value>
+  </data>
+  <data name="ConfigurationExtensionInterpreterPathWatermark" xml:space="preserve">
+    <value>e.g. C:\PythonXY\python.exe</value>
+  </data>
+  <data name="ConfigurationExtensionInterpreterPathHelp" xml:space="preserve">
+    <value>The interpreter path is the executable file used to run Python. Normally this is called "python.exe", but it may be different for some interpreters.</value>
+  </data>
+  <data name="ConfigurationExtensionWindowedInterpreterPathLabel" xml:space="preserve">
+    <value>Windowed interpreter</value>
+  </data>
+  <data name="ConfigurationExtensionWindowedInterpreterPathBrowseButton" xml:space="preserve">
+    <value>Browse for windowed interpreter path</value>
+  </data>
+  <data name="ConfigurationExtensionWindowedInterpreterPathWatermark" xml:space="preserve">
+    <value>e.g. C:\PythonXY\pythonw.exe</value>
+  </data>
+  <data name="ConfigurationExtensionWindowedInterpreterPathHelp" xml:space="preserve">
+    <value>The windowed interpreter path is the executable file used to start Python without displaying a console window. Normally this is called "pythonw.exe", but it may be different for some interpreters.</value>
+  </data>
+  <data name="ConfigurationExtensionWindowedInterpreterPathBrowseFilter" xml:space="preserve">
+    <value>Executable Files (*.exe)|*.exe|All Files (*.*)|*.*</value>
+  </data>
+  <data name="ConfigurationExtensionInterpreterPathBrowseFilter" xml:space="preserve">
+    <value>Executable Files (*.exe)|*.exe|All Files (*.*)|*.*</value>
+  </data>
+  <data name="ConfigurationExtensionLanguageVersionLabel" xml:space="preserve">
+    <value>Language version</value>
+  </data>
+  <data name="ConfigurationExtensionLanguageVersionWatermark" xml:space="preserve">
+    <value>Language version</value>
+  </data>
+  <data name="ConfigurationExtensionLanguageVersionHelp" xml:space="preserve">
+    <value>The language version determines whether certain syntax features are allowed or reported as errors. This should be set to match the interpreter version.</value>
+  </data>
+  <data name="ConfigurationExtensionArchitectureLabel" xml:space="preserve">
+    <value>Architecture</value>
+  </data>
+  <data name="ConfigurationExtensionArchitectureWatermark" xml:space="preserve">
+    <value>Architecture</value>
+  </data>
+  <data name="ConfigurationExtensionArchitectureHelp" xml:space="preserve">
+    <value>The architecture helps distinguish similar interpreters. This should be set to match the target architecture of the interpreter, rather than the architecture of your operating system.</value>
+  </data>
+  <data name="ConfigurationExtensionPathEnvVarLabel" xml:space="preserve">
+    <value>Path environment variable</value>
+  </data>
+  <data name="ConfigurationExtensionPathEnvVarWatermark" xml:space="preserve">
+    <value>e.g. PYTHONPATH</value>
+  </data>
+  <data name="ConfigurationExtensionPathEnvVarHelp" xml:space="preserve">
+    <value>This environment variable is set to specify search paths that should be added to sys.path. Normally this should be set to "PYTHONPATH", but it may be different for some interpreters.</value>
+  </data>
+  <data name="ConfigurationExtensionApplyLabel" xml:space="preserve">
+    <value>_Apply</value>
+  </data>
+  <data name="ConfigurationExtensionApplyTooltip" xml:space="preserve">
+    <value>Saves the changes that have been made.</value>
+  </data>
+  <data name="ConfigurationExtensionResetLabel" xml:space="preserve">
+    <value>_Reset</value>
+  </data>
+  <data name="ConfigurationExtensionResetTooltip" xml:space="preserve">
+    <value>Clears any changes that have been made.</value>
+  </data>
+  <data name="ConfigurationExtensionAutoDetectLabel" xml:space="preserve">
+    <value>A_uto Detect</value>
+  </data>
+  <data name="ConfigurationExtensionAutoDetectTooltip" xml:space="preserve">
+    <value>Attempts to fill in blank settings based on those that are already filled in.</value>
+  </data>
+  <data name="ConfigurationExtensionRemoveLabel" xml:space="preserve">
+    <value>Re_move</value>
+  </data>
+  <data name="ConfigurationExtensionRemoveTooltip" xml:space="preserve">
+    <value>Removes the environment. This operation cannot be undone.</value>
+  </data>
+  <data name="RenameVariable_UnableGetExpressionAnalysis" xml:space="preserve">
+    <value>Unable to get analysis for the selected expression.</value>
+  </data>
+  <data name="WarningEncodingMismatch" xml:space="preserve">
+    <value>File is saved in encoding '{0}' which does not match encoding '{1}' specified in the coding comment</value>
+  </data>
+  <data name="WarningInvalidEncoding" xml:space="preserve">
+    <value>Encoding name is not recognized: '{0}'</value>
+  </data>
+  <data name="WarningEncodingDifferentFromDefault" xml:space="preserve">
+    <value>File is saved in encoding '{0}' which does not match default UTF-8 encoding</value>
+  </data>
+  <data name="DebugReplFeatureNotSupported" xml:space="preserve">
+    <value>Debugging REPL feature is not yet supported.</value>
+  </data>
+  <data name="RunMypyLabel" xml:space="preserve">
+    <value>Run Mypy</value>
+    <comment>Mypy is a product name and should not be localized</comment>
+  </data>
+  <data name="InstalledDebugPyOutdatedTitle" xml:space="preserve">
+    <value>Debugger package is outdated</value>
+  </data>
+  <data name="InstalledDebugPyOutdatedMessage" xml:space="preserve">
+    <value>You have an old version of DebugPy installed in the current environment (version {0}), but version {1} is included with Visual Studio. Please upgrade or uninstall DebugPy to get the latest functionality.</value>
+  </data>
+  <data name="UpgradedMscorlibReference" xml:space="preserve">
+    <value>A reference to 'mscorlib' was added to this project.</value>
+  </data>
+  <data name="GeneralPaneName" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="SpaceBeforeClassDeclarationParenShort" xml:space="preserve">
+    <value>Insert space between a class name and bases list</value>
+  </data>
+  <data name="SpaceBeforeClassDeclarationParenLong" xml:space="preserve">
+    <value>If checked, a space is added between the name and opening parenthesis of the bases list. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceWithinClassDeclarationParensShort" xml:space="preserve">
+    <value>Insert space within bases list parentheses</value>
+  </data>
+  <data name="SpaceWithinClassDeclarationParensLong" xml:space="preserve">
+    <value>If checked, a space is added after the open parenthesis and before the close parenthesis of a bases list. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceWithinEmptyBaseClassListShort" xml:space="preserve">
+    <value>Insert space within empty bases list parentheses</value>
+  </data>
+  <data name="SpaceWithinEmptyBaseClassListLong" xml:space="preserve">
+    <value>If checked, a space is added after the open parenthesis and before the close parenthesis of an empty bases list. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceBeforeFunctionDeclarationParenShort" xml:space="preserve">
+    <value>Insert space between a function name and parameter list in declarations</value>
+  </data>
+  <data name="SpaceBeforeFunctionDeclarationParenLong" xml:space="preserve">
+    <value>If checked, a space is added between the name and opening parenthesis of the parameter list. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceWithinFunctionDeclarationParensShort" xml:space="preserve">
+    <value>Insert space within parameter list parentheses</value>
+  </data>
+  <data name="SpaceWithinFunctionDeclarationParensLong" xml:space="preserve">
+    <value>If checked, a space is added after the open parenthesis and before the close parenthesis of a parameter list. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceWithinEmptyParameterListShort" xml:space="preserve">
+    <value>Insert space within empty parameter list parentheses</value>
+  </data>
+  <data name="SpaceWithinEmptyParameterListLong" xml:space="preserve">
+    <value>If checked, a space is added after the open parenthesis and before the close parenthesis of an empty parameter list. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceAroundDefaultValueEqualsShort" xml:space="preserve">
+    <value>Insert spaces around '=' in default parameter values</value>
+  </data>
+  <data name="SpaceAroundDefaultValueEqualsLong" xml:space="preserve">
+    <value>If checked, a space is added before and after '=' operators in function definitions. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceAroundAnnotationArrowShort" xml:space="preserve">
+    <value>Insert space before and after return annotation operators</value>
+  </data>
+  <data name="SpaceAroundAnnotationArrowLong" xml:space="preserve">
+    <value>If checked, a space is added before and after '-&gt;' operators in function definitions. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceBeforeCallParenShort" xml:space="preserve">
+    <value>Insert space between the function name and argument list in calls</value>
+  </data>
+  <data name="SpaceBeforeCallParenLong" xml:space="preserve">
+    <value>If checked, a space is added between the name and opening parenthesis of the argument list. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceWithinEmptyCallArgumentListShort" xml:space="preserve">
+    <value>Insert space within empty argument list parentheses</value>
+  </data>
+  <data name="SpaceWithinEmptyCallArgumentListLong" xml:space="preserve">
+    <value>If checked, a space is added after the open parenthesis and before the close parenthesis of an empty argument list. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceWithinCallParensShort" xml:space="preserve">
+    <value>Insert space within argument list parentheses</value>
+  </data>
+  <data name="SpaceWithinCallParensLong" xml:space="preserve">
+    <value>If checked, a space is added after the open parenthesis and before the close parenthesis of an argument list. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpacesWithinParenthesisExpressionShort" xml:space="preserve">
+    <value>Insert space within parentheses of expression</value>
+  </data>
+  <data name="SpacesWithinParenthesisExpressionLong" xml:space="preserve">
+    <value>If checked, a space is added after the open parenthesis and before the close parenthesis of an expression. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceWithinEmptyTupleExpressionShort" xml:space="preserve">
+    <value>Insert space within empty tuple parentheses</value>
+  </data>
+  <data name="SpaceWithinEmptyTupleExpressionLong" xml:space="preserve">
+    <value>If checked, a space is added after the open parenthesis and before the close parenthesis of an empty tuple. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpacesWithinParenthesisedTupleExpressionShort" xml:space="preserve">
+    <value>Insert space within tuple parentheses</value>
+  </data>
+  <data name="SpacesWithinParenthesisedTupleExpressionLong" xml:space="preserve">
+    <value>If checked, a space is added after the open parenthesis and before the close parenthesis of the tuple. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpacesWithinEmptyListExpressionShort" xml:space="preserve">
+    <value>Insert space within empty square brackets</value>
+  </data>
+  <data name="SpacesWithinEmptyListExpressionLong" xml:space="preserve">
+    <value>If checked, a space is added between the open square bracket and the close square bracket. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpacesWithinListExpressionShort" xml:space="preserve">
+    <value>Insert spaces within square brackets of lists</value>
+  </data>
+  <data name="SpacesWithinListExpressionLong" xml:space="preserve">
+    <value>If checked, a space is added after the open square bracket and before the close square bracket of the list. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceBeforeIndexBracketShort" xml:space="preserve">
+    <value>Insert space before open square bracket</value>
+  </data>
+  <data name="SpaceBeforeIndexBracketLong" xml:space="preserve">
+    <value>If checked, a space is added before an open square bracket. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpaceWithinIndexBracketsShort" xml:space="preserve">
+    <value>Insert space within square brackets</value>
+  </data>
+  <data name="SpaceWithinIndexBracketsLong" xml:space="preserve">
+    <value>If checked, a space is added after the open square bracket and before the close square bracket. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpacesAroundBinaryOperatorsShort" xml:space="preserve">
+    <value>Insert spaces around binary operators</value>
+  </data>
+  <data name="SpacesAroundBinaryOperatorsLong" xml:space="preserve">
+    <value>If checked, a space is added before and after binary operators. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="SpacesAroundAssignmentOperatorShort" xml:space="preserve">
+    <value>Insert spaces around assignments</value>
+  </data>
+  <data name="SpacesAroundAssignmentOperatorLong" xml:space="preserve">
+    <value>If checked, a space is added before and after '=' operators in assignments. If unchecked, spaces are removed. Otherwise, spaces are not modified.</value>
+  </data>
+  <data name="ReplaceMultipleImportsWithMultipleStatementsShort" xml:space="preserve">
+    <value>Place imported modules on new line</value>
+  </data>
+  <data name="ReplaceMultipleImportsWithMultipleStatementsLong" xml:space="preserve">
+    <value>If checked, import statements with multiple modules are separated onto individual lines. If unchecked, import statements with multiple modules are not modified.</value>
+  </data>
+  <data name="RemoveTrailingSemicolonsShort" xml:space="preserve">
+    <value>Remove unnecessary semicolons</value>
+  </data>
+  <data name="RemoveTrailingSemicolonsLong" xml:space="preserve">
+    <value>If checked, semicolons at the end of lines will be removed. If unchecked, unnecessary semicolons are not modified.</value>
+  </data>
+  <data name="BreakMultipleStatementsPerLineShort" xml:space="preserve">
+    <value>Place statements on separate lines</value>
+  </data>
+  <data name="BreakMultipleStatementsPerLineLong" xml:space="preserve">
+    <value>If checked, statements separated by semicolons are moved onto individual lines. If unchecked, lines with multiple statements are not modified.</value>
+  </data>
+  <data name="LinesBetweenLevelDeclarationsShort" xml:space="preserve">
+    <value>Lines between top-level declarations</value>
+  </data>
+  <data name="LinesBetweenLevelDeclarationsLong" xml:space="preserve">
+    <value>The number of empty lines to include between class or function declarations at the top level of a module.</value>
+  </data>
+  <data name="LinesBetweenMethodsInClassShort" xml:space="preserve">
+    <value>Lines between class member declarations</value>
+  </data>
+  <data name="LinesBetweenMethodsInClassLong" xml:space="preserve">
+    <value>The number of empty lines to insert between method or class declarations within a class.</value>
+  </data>
+  <data name="RemoveExtraLinesBetweenMethodsShort" xml:space="preserve">
+    <value>Remove blank lines between methods</value>
+  </data>
+  <data name="RemoveExtraLinesBetweenMethodsLong" xml:space="preserve">
+    <value>If checked, removes blank lines between methods and inserts the number specified below. Otherwise, lines between methods are not modified.</value>
+  </data>
+  <data name="WrapCommentsShort" xml:space="preserve">
+    <value>Wrap comments that are too wide</value>
+  </data>
+  <data name="WrapCommentsLong" xml:space="preserve">
+    <value>If checked, comments are wrapped to the specified width. If unchecked, comments are not modified.</value>
+  </data>
+  <data name="WrappingWidthShort" xml:space="preserve">
+    <value>Maximum comment width</value>
+  </data>
+  <data name="WrappingWidthLong" xml:space="preserve">
+    <value>The number of the last column that should include comment text. Words after this column are moved to the following line.</value>
+  </data>
+  <data name="WrapCommentsExample_On" xml:space="preserve">
+    <value># Wrapped to 40 columns:
+# There should be one-- and preferably
+# only one --obvious way to do it.</value>
+    <comment>Line breaks and # symbols must be preserved. There must be no more than 40 characters on each line of the localized text (except for the first line)</comment>
+  </data>
+  <data name="WrapCommentsExample_Off" xml:space="preserve">
+    <value># Not wrapped:
+# There should be one-- and preferably only one --obvious way to do it.</value>
+    <comment>Line breaks and # symbols must be preserved. No new line breaks should be added.</comment>
+  </data>
+  <data name="WrappingWidthExample" xml:space="preserve">
+    <value># Sets the width for wrapping comments
+# and documentation strings.</value>
+  </data>
+  <data name="CondaEnvCreatedWithoutPython" xml:space="preserve">
+    <value>Conda environment '{0}' was created, but it will not be detected by Visual Studio because it does not contain Python.</value>
+    <comment>Display in the output window</comment>
+  </data>
+  <data name="CondaEnvNotDetected" xml:space="preserve">
+    <value>Conda environment not detected</value>
+  </data>
+  <data name="PythonTestFrameworkIgnoreInfoBarAction" xml:space="preserve">
+    <value>Don't show this message again</value>
+  </data>
+  <data name="PyTestEnableInfoBarAction" xml:space="preserve">
+    <value>Enable pytest</value>
+  </data>
+  <data name="PyTestInstalledConfigurationFileFound" xml:space="preserve">
+    <value>A pytest configuration file was detected in the {0} {1}, but pytest is not enabled.</value>
+    <comment>{0} is the project or workspace name
+{1} is "project" or "workspace"</comment>
+  </data>
+  <data name="PyTestInstallAndEnableInfoBarAction" xml:space="preserve">
+    <value>Install and enable pytest</value>
+  </data>
+  <data name="PyTestNotInstalled" xml:space="preserve">
+    <value>Pytest is enabled in the {0} {1}, but it is not installed in the active environment.</value>
+    <comment>{0} is the project or workspace name
+{1} is "project" or "workspace"</comment>
+  </data>
+  <data name="PyTestInstallInfoBarAction" xml:space="preserve">
+    <value>Install pytest</value>
+  </data>
+  <data name="PyTestNotInstalledConfigurationFileFound" xml:space="preserve">
+    <value>A pytest configuration file was detected in the {0} {1}, but pytest is not installed or enabled.</value>
+    <comment>{0} is the project or workspace name
+{1} is "project" or "workspace"</comment>
+  </data>
+  <data name="ProjectText" xml:space="preserve">
+    <value>project</value>
+  </data>
+  <data name="WorkspaceText" xml:space="preserve">
+    <value>workspace</value>
+  </data>
+  <data name="PythonTestDiscovererStartedMessage" xml:space="preserve">
+    <value>Starting {0} discovery for the {1} {2}. This can take up to {3} seconds.</value>
+    <comment>{0} is the testframe name "pytest" or "unittest"
+{1} is the project or workspace name
+{2} is "project" or "workspace"
+{3} is an integer wait time in seconds</comment>
+  </data>
+  <data name="PythonTestDiscovererTimeoutErrorMessage" xml:space="preserve">
+    <value>Python test discovery timeout, possibly due to blocking call. Go to https://aka.ms/VSTestExplorerPython for more details on test discovery.</value>
+  </data>
+  <data name="UnitTestEnableInfoBarAction" xml:space="preserve">
+    <value>Enable unittest</value>
+  </data>
+  <data name="PythonTestFileDetected" xml:space="preserve">
+    <value>A file which may contain Python tests was detected in the {0} {1}, but the test framework is disabled.</value>
+    <comment>{0} is project or workspace name. {1} is "project" or "workspace"</comment>
+  </data>
+  <data name="PythonDiscoveryResultsNotFound" xml:space="preserve">
+    <value>Discovery results file '{0}' was not found.</value>
+  </data>
+  <data name="ErrorTestCaseNotFound" xml:space="preserve">
+    <value>Testcase not found for test result: {0}</value>
+    <comment>{0} is the result xml data found</comment>
+  </data>
+  <data name="PytestInvalidTestSource" xml:space="preserve">
+    <value>Invalid source in test: {0}</value>
+    <comment>{0} is the test info</comment>
+  </data>
+  <data name="PytestResultsXmlNotFound" xml:space="preserve">
+    <value>Results for pytest not found {0}</value>
+    <comment>{0} is the expected file path</comment>
+  </data>
+  <data name="LanguageClientNodejsNotFound" xml:space="preserve">
+    <value>Node.js was not found. It is required to run Pylance language server.</value>
+  </data>
+  <data name="LanguageClientPylanceNotFound" xml:space="preserve">
+    <value>Pylance language server was not found. Please reinstall Python Tools.</value>
+  </data>
+  <data name="LanguageClientInitializeFailed" xml:space="preserve">
+    <value>Language server initialization failed.\n\n{0}</value>
+    <comment>{0} is the error details</comment>
+  </data>
+  <data name="PythonVersionNotSupportedDontShowMessageAgain" xml:space="preserve">
+    <value>Don't show this message again</value>
+  </data>
+  <data name="PythonVersionNotSupportedInfoBarText" xml:space="preserve">
+    <value>You're using {0}. Some features might not work as expected since Visual Studio does not officially support this version.</value>
+    <comment>{0} is the Python description</comment>
+  </data>
+  <data name="PythonVersionNotSupportMoreInfo" xml:space="preserve">
+    <value>More info</value>
+  </data>
+  <data name="UnableToParseInterpreterArgs" xml:space="preserve">
+    <value>Unable to parse interpreter arguments "{0}". Script will launch without them.</value>
+    <comment>{0} Interpreter arguments which are set by VS and the user</comment>
+  </data>
+  <data name="UnableToParseScriptArgs" xml:space="preserve">
+    <value>Unable to parse script arguments "{0}". Script will launch without them. </value>
+    <comment>{0} Script arguments which are set by VS and the user</comment>
+  </data>
+  <data name="PythonInterpreterPathNullOrEmpty" xml:space="preserve">
+    <value>Unable to start debugging because the Python interpreter path is null or empty</value>
+  </data>
+  <data name="ErrorUnableToInstallFormatter" xml:space="preserve">
+    <value>Unable to install code formatter. Error {0}.</value>
+  </data>
+  <data name="InstallFormatterPrompt" xml:space="preserve">
+    <value>Install '{0}' in environment '{1}' now?</value>
+  </data>
+  <data name="DiagnosticModeOpenFiles" xml:space="preserve">
+    <value>Open files only</value>
+  </data>
+  <data name="DiagnosticModeWorkspace" xml:space="preserve">
+    <value>Workspace</value>
+  </data>
+  <data name="LogLevelError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="LogLevelInformation" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="LogLevelTrace" xml:space="preserve">
+    <value>Trace</value>
+  </data>
+  <data name="LogLevelWarning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="TypeCheckingModeBasic" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="TypeCheckingModeStrict" xml:space="preserve">
+    <value>Strict</value>
+  </data>
+  <data name="DiagnosticModeToolTip" xml:space="preserve">
+    <value>Analyzes and reports errors on only open files or the entire workspace.</value>
+  </data>
+  <data name="LogLevelToolTip" xml:space="preserve">
+    <value>Specifies the level of logging for the Output panel.</value>
+  </data>
+  <data name="SearchPathsToolTip" xml:space="preserve">
+    <value>Additional import search resolution paths. You can use line breaks or semicolons to separate multiple paths.</value>
+  </data>
+  <data name="StubPathToolTip" xml:space="preserve">
+    <value>Path to directory containing custom type stub files.</value>
+  </data>
+  <data name="TypeCheckingModeToolTip" xml:space="preserve">
+    <value>Defines the default rule set for type checking.</value>
+  </data>
+  <data name="TypeshedPathsToolTip" xml:space="preserve">
+    <value>Paths to look for typeshed modules. You can use line breaks or semicolons to separate multiple paths.</value>
+  </data>
+  <data name="TypeCheckingModeOff" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="WarningPython2NotSupported" xml:space="preserve">
+    <value>Pylance language server does not support Python 2.x. Type checking will be performed as in Python 3.x.</value>
+  </data>
+  <data name="ConfigFileAlreadyExists" xml:space="preserve">
+    <value>Type checker configuration file already exists in this folder.</value>
+  </data>
+  <data name="UntrustedWorkspaceInfoBarText" xml:space="preserve">
+    <value>Workspace contains binaries that appear to be Python interpreters, but could be malware. Visual Studio needs to execute them to retrieve interpreter information. Do you trust the binaries in this workspace?</value>
+  </data>
+  <data name="AlwaysTrustWorkspaceInfoBarAction" xml:space="preserve">
+    <value>Always trust</value>
+  </data>
+  <data name="TrustOnceWorkspaceInfoBarAction" xml:space="preserve">
+    <value>Trust this time</value>
+  </data>
+  <data name="DontTrustWorkspaceInfoBarAction" xml:space="preserve">
+    <value>Do not trust</value>
+  </data>
+  <data name="CompletionFilterClass" xml:space="preserve">
+    <value>Classes</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterColor" xml:space="preserve">
+    <value>Colors</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterConstant" xml:space="preserve">
+    <value>Constants</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterConstructor" xml:space="preserve">
+    <value>Constructors</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterEnum" xml:space="preserve">
+    <value>Enums</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterEnumMember" xml:space="preserve">
+    <value>Enum members</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterEvent" xml:space="preserve">
+    <value>Events</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterField" xml:space="preserve">
+    <value>Fields</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterFile" xml:space="preserve">
+    <value>Files</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterFolder" xml:space="preserve">
+    <value>Folders</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterFunction" xml:space="preserve">
+    <value>Functions</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterInterface" xml:space="preserve">
+    <value>Interfaces</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterKeyword" xml:space="preserve">
+    <value>Keywords</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterMethod" xml:space="preserve">
+    <value>Methods</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterModule" xml:space="preserve">
+    <value>Modules</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterOperator" xml:space="preserve">
+    <value>Operators</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterProperty" xml:space="preserve">
+    <value>Properties</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterReference" xml:space="preserve">
+    <value>References</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterSnippet" xml:space="preserve">
+    <value>Snippets</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterStruct" xml:space="preserve">
+    <value>Structs</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterText" xml:space="preserve">
+    <value>Names</value>
+    <comment>Describes items of specific kind.  Use plural and capitalized noun. Note that "text" is very generic and "name" feels like an appropriate choice for the UI</comment>
+  </data>
+  <data name="CompletionFilterTypeParameter" xml:space="preserve">
+    <value>Type parameters</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterUnit" xml:space="preserve">
+    <value>Units</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterValue" xml:space="preserve">
+    <value>Values</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="CompletionFilterVariable" xml:space="preserve">
+    <value>Variables</value>
+    <comment>Describes items of specific kind. Use plural and capitalized noun.</comment>
+  </data>
+  <data name="AsRequiresPython2dot6OrlaterErrorMsg" xml:space="preserve">
+    <value>'as' requires Python 2.6 or later</value>
+  </data>
+  <data name="BackslashFStringExpressionErrorMsg" xml:space="preserve">
+    <value>f-string expression part cannot include a backslash</value>
+  </data>
+  <data name="BreakOustideLoopErrorMsg" xml:space="preserve">
+    <value>'break' outside loop</value>
+  </data>
+  <data name="CantUseStarredExpErrorMsg" xml:space="preserve">
+    <value>can't use starred expression here</value>
+  </data>
+  <data name="ClassDecoratorsRequireTwodotSixErrorMsg" xml:space="preserve">
+    <value>invalid syntax, class decorators require 2.6 or later.</value>
+  </data>
+  <data name="ClosingParensNotMatchFStringErrorMsg" xml:space="preserve">
+    <value>f-string: closing parenthesis '{0}' does not match opening parenthesis '{1}'</value>
+  </data>
+  <data name="ContinueNotInLoopErrorMsg" xml:space="preserve">
+    <value>'continue' not properly in loop</value>
+  </data>
+  <data name="ContinueNotSupportedInsideFinallyErrorMsg" xml:space="preserve">
+    <value>'continue' not supported inside 'finally' clause</value>
+  </data>
+  <data name="DefaultExceptMustBeLastErrorMsg" xml:space="preserve">
+    <value>default 'except' must be last</value>
+  </data>
+  <data name="DefaultValueMustBeSpecifiedErrorMsg" xml:space="preserve">
+    <value>default value must be specified here</value>
+  </data>
+  <data name="DuplicateArgsDoubleArgumentErrorMsg" xml:space="preserve">
+    <value>duplicate ** args arguments</value>
+  </data>
+  <data name="DuplicateArgsSingleArgumentErrorMsg" xml:space="preserve">
+    <value>duplicate * args arguments</value>
+  </data>
+  <data name="DuplicateArgumentInFunctionDefinitionErrorMsg" xml:space="preserve">
+    <value>duplicate argument '{0}' in function definition</value>
+  </data>
+  <data name="DuplicateArgumentInFunctionErrorMsg" xml:space="preserve">
+    <value>duplicate argument '{0}' in function definition</value>
+  </data>
+  <data name="DuplicateKeywordArgumentErrorMsg" xml:space="preserve">
+    <value>duplicate keyword argument</value>
+  </data>
+  <data name="EmptyExpressionFStringErrorMsg" xml:space="preserve">
+    <value>f-string: empty expression not allowed</value>
+  </data>
+  <data name="ExpectedColonErrorMsg" xml:space="preserve">
+    <value>expected ':'</value>
+  </data>
+  <data name="ExpectedExpressionAfterDelErrorMsg" xml:space="preserve">
+    <value>expected expression after del</value>
+  </data>
+  <data name="ExpectedExpressionToBePrintedErrorMsg" xml:space="preserve">
+    <value>print statement expected expression to be printed</value>
+  </data>
+  <data name="ExpectedIndentedBlockErrorMsg" xml:space="preserve">
+    <value>expected an indented block</value>
+  </data>
+  <data name="ExpectedNameErrorMsg" xml:space="preserve">
+    <value>expected name</value>
+  </data>
+  <data name="ExpectingCharButFoundFStringErrorMsg" xml:space="preserve">
+    <value>f-string: expecting '{0}' but found '{1}'</value>
+  </data>
+  <data name="ExpectingCharFStringErrorMsg" xml:space="preserve">
+    <value>f-string: expecting '{0}'</value>
+  </data>
+  <data name="FromCauseNotAllowedIn2XErrorMsg" xml:space="preserve">
+    <value>invalid syntax, from cause not allowed in 2.x.</value>
+  </data>
+  <data name="FutureFeatureNotDefinedErrorMsg" xml:space="preserve">
+    <value>future feature is not defined: </value>
+  </data>
+  <data name="FutureImportsMustOccorAtBeginningOfFileErrorMsg" xml:space="preserve">
+    <value>from __future__ imports must occur at the beginning of the file</value>
+  </data>
+  <data name="FutureStatementDoesNotSupportImportErrorMsg" xml:space="preserve">
+    <value>future statement does not support import *</value>
+  </data>
+  <data name="IllegalTargetAnnotationErrorMsg" xml:space="preserve">
+    <value>illegal target for annotation</value>
+  </data>
+  <data name="ImportOnlyAllowedAtModuleErrorMsg" xml:space="preserve">
+    <value>import * only allowed at module level</value>
+  </data>
+  <data name="IncorrectStartLocationErrorMsg" xml:space="preserve">
+    <value>Start location was not set correctly</value>
+  </data>
+  <data name="InvalidConversionCharacterExpectedFStringErrorMsg" xml:space="preserve">
+    <value>f-string: invalid conversion character: {0} expected 's', 'r', or 'a'</value>
+  </data>
+  <data name="InvalidConversionCharacterFStringErrorMsg" xml:space="preserve">
+    <value>f-string: invalid conversion character: expected 's', 'r', or 'a'</value>
+  </data>
+  <data name="InvalidExpressionFStringErrorMsg" xml:space="preserve">
+    <value>f-string: invalid expression</value>
+  </data>
+  <data name="InvalidParameterErrorMsg" xml:space="preserve">
+    <value>invalid parameter</value>
+  </data>
+  <data name="InvalidSublistParameterErrorMsg" xml:space="preserve">
+    <value>invalid sublist parameter</value>
+  </data>
+  <data name="InvalidSyntaxAllowedInVersion3XErrorMsg" xml:space="preserve">
+    <value>invalid syntax, only exception value is allowed in 3.x.</value>
+  </data>
+  <data name="InvalidSyntaxErrorMsg" xml:space="preserve">
+    <value>invalid syntax</value>
+  </data>
+  <data name="IterableArgumentFollowsKeywordArgumentErrorMsg" xml:space="preserve">
+    <value>iterable argument unpacking follows keyword argument unpacking</value>
+  </data>
+  <data name="IterableUnpackingErrorMsg" xml:space="preserve">
+    <value>iterable unpacking cannot be used in comprehension</value>
+  </data>
+  <data name="KeywordsMustComeBeforeArgsErrorMsg" xml:space="preserve">
+    <value>keywords must come before ** args</value>
+  </data>
+  <data name="LambdaParenthesesFstringErrorMsg" xml:space="preserve">
+    <value>f-string: lambda must be inside parentheses</value>
+  </data>
+  <data name="MisplacedYieldErrorMsg" xml:space="preserve">
+    <value>misplaced yield</value>
+  </data>
+  <data name="MissingModuleNameErrorMsg" xml:space="preserve">
+    <value>missing module name</value>
+  </data>
+  <data name="MixingBytesAndNonBytesErrorMsg" xml:space="preserve">
+    <value>cannot mix bytes and nonbytes literals</value>
+  </data>
+  <data name="NamedArgumentsMustFollowBareErrorMsg" xml:space="preserve">
+    <value>named arguments must follow bare *</value>
+  </data>
+  <data name="NamedAssignmentWithErrorMsg" xml:space="preserve">
+    <value>cannot use named assignment with {0}</value>
+  </data>
+  <data name="NamedExpressionCtxtErrorMsg" xml:space="preserve">
+    <value>named expression must be parenthesized in this context</value>
+  </data>
+  <data name="NamedExpressionInClassBodyErrorMsg" xml:space="preserve">
+    <value>assignment expression within a comprehension cannot be used in a class body</value>
+  </data>
+  <data name="NamedExpressionInComprehensionIteratorErrorMsg" xml:space="preserve">
+    <value>assignment expression cannot be used in a comprehension iterable expression</value>
+  </data>
+  <data name="NamedExpressionIteratorRebindsNamedErrorMsg" xml:space="preserve">
+    <value>comprehension inner loop cannot rebind assignment expression target '{0}'</value>
+  </data>
+  <data name="NamedExpressionRebindIteratorErrorMsg" xml:space="preserve">
+    <value>assignment expression cannot rebind comprehension iteration variable '{0}'</value>
+  </data>
+  <data name="NonKeywordArgAfterKeywordArgErrorMsg" xml:space="preserve">
+    <value>non-keyword arg after keyword arg</value>
+  </data>
+  <data name="NonLocalDeclarationAtModuleErrorMsg" xml:space="preserve">
+    <value>nonlocal declaration not allowed at module level</value>
+  </data>
+  <data name="NotAChanceErrorMsg" xml:space="preserve">
+    <value>not a chance</value>
+  </data>
+  <data name="NumberSignFStringExpressionErrorMsg" xml:space="preserve">
+    <value>f-string expression part cannot include '#'</value>
+  </data>
+  <data name="OnlyOneAllowedDoubleErrorMsg" xml:space="preserve">
+    <value>only one ** allowed</value>
+  </data>
+  <data name="OnlyOneAllowedSingleErrorMsg" xml:space="preserve">
+    <value>only one * allowed</value>
+  </data>
+  <data name="ParameterAnnotationsRequire3dotXErrorMsg" xml:space="preserve">
+    <value>invalid syntax, parameter annotations require 3.x</value>
+  </data>
+  <data name="ParsingAlreadyStartedErrorMsg" xml:space="preserve">
+    <value>Parsing already started. Use Restart to start again.</value>
+  </data>
+  <data name="PositionalArgumentKeywardArgumentErrorMsg" xml:space="preserve">
+    <value>positional argument follows keyword argument</value>
+  </data>
+  <data name="PositionalArgumentKeywardArgumentUnpackingErrorMsg" xml:space="preserve">
+    <value>positional argument follows keyword argument unpacking</value>
+  </data>
+  <data name="PositionalOnlyMarkerAfterDictArgsErrorMsg" xml:space="preserve">
+    <value>positional only marker after ** args not allowed</value>
+  </data>
+  <data name="PositionalOnlyMarkerAfterListArgsErrorMsg" xml:space="preserve">
+    <value>positional only marker after * args not allowed</value>
+  </data>
+  <data name="PositionalOnlyMarkerAnnotationErrorMsg" xml:space="preserve">
+    <value>positional only marker may not have annotation</value>
+  </data>
+  <data name="PositionalOnlyMarkerDefaultErrorMsg" xml:space="preserve">
+    <value>positional only marker may not have default</value>
+  </data>
+  <data name="PositionalOnlyMarkerDuplicateErrorMsg" xml:space="preserve">
+    <value>duplicate positional only marker</value>
+  </data>
+  <data name="PositionalOnlyMarkerFirstParamErrorMessage" xml:space="preserve">
+    <value>positional only marker may not be first parameter</value>
+  </data>
+  <data name="PositionalParameterNotAllowedErrorMsg" xml:space="preserve">
+    <value>positional parameter after * args not allowed</value>
+  </data>
+  <data name="ReturnAnnotationsRequire3dotXErrorMsg" xml:space="preserve">
+    <value>invalid syntax, return annotations require 3.x</value>
+  </data>
+  <data name="ReturnOutsideFunctionErrorMsg" xml:space="preserve">
+    <value>'return' outside function</value>
+  </data>
+  <data name="ReturnWithArgumentInGeneratorErrorMsg" xml:space="preserve">
+    <value>'return' with argument inside generator</value>
+  </data>
+  <data name="SetLiteralsRequirePython2dot7ErrorMsg" xml:space="preserve">
+    <value>invalid syntax, set literals require Python 2.7 or later.</value>
+  </data>
+  <data name="SingleClosedBraceFStringErrorMsg" xml:space="preserve">
+    <value>f-string: single '}' is not allowed</value>
+  </data>
+  <data name="SingleTargetCanBeAnnotatedErrorMsg" xml:space="preserve">
+    <value>only single target (not tuple) can be annotated</value>
+  </data>
+  <data name="SublistParametersNotSupported3dotXErrorMsg" xml:space="preserve">
+    <value>sublist parameters are not supported in 3.x</value>
+  </data>
+  <data name="SyntaxErrorMsg" xml:space="preserve">
+    <value>syntax error</value>
+  </data>
+  <data name="TwoStarredExpressionErrorMsg" xml:space="preserve">
+    <value>two starred expressions in assignment</value>
+  </data>
+  <data name="UnexpectedEndOfFileErrorMsg" xml:space="preserve">
+    <value>unexpected end of file</value>
+  </data>
+  <data name="UnexpectedEndOfFileWhileParsingErrorMsg" xml:space="preserve">
+    <value>unexpected EOF while parsing</value>
+  </data>
+  <data name="UnexpectedIndentErrorMsg" xml:space="preserve">
+    <value>unexpected indent</value>
+  </data>
+  <data name="UnexpectedTokenErrorMsg" xml:space="preserve">
+    <value>unexpected token '{0}'</value>
+  </data>
+  <data name="UnhandledStringTokenErrorMsg" xml:space="preserve">
+    <value>Unhandled string token</value>
+  </data>
+  <data name="UnknownEncodingErrorMsg" xml:space="preserve">
+    <value>encoding problem: unknown encoding (line {0})</value>
+  </data>
+  <data name="UnmatchedFStringErrorMsg" xml:space="preserve">
+    <value>f-string: unmatched '{0}'</value>
+  </data>
+  <data name="Utf8EncodingErrorMsg" xml:space="preserve">
+    <value>file has both Unicode marker and PEP-263 file encoding.  You must use \"utf-8\" as the encoding name when a BOM is present.</value>
+  </data>
+  <data name="VariableIn3dotXErrorMsg" xml:space="preserve">
+    <value>", variable" not allowed in 3.x - use "as variable" instead.</value>
+  </data>
+  <data name="YieldInsideAsyncErrorMsg" xml:space="preserve">
+    <value>'yield' inside async function</value>
+  </data>
+  <data name="PythonVersionNotSupportedTraceText" xml:space="preserve">
+    <value>Environment detected using Python version {0}. Some features might not work as expected since Visual Studio does not officially support this version.</value>
+    <comment>{0} is the Python version</comment>
+  </data>
+  <data name="VariablePresentation_Group" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="VariablePresentation_Hide" xml:space="preserve">
+    <value>Hide</value>
+  </data>
+  <data name="VariablePresentation_Inline" xml:space="preserve">
+    <value>Inline</value>
+  </data>
+  <data name="AddVirtualEnvironmentNameInvalid" xml:space="preserve">
+    <value>Virtual environment name can't contain any of the following characters: {0}</value>
+    <comment>{0} is a list of invalid path characters, space-delimited.</comment>
+  </data>
+  <data name="ImportFormatAbsolute" xml:space="preserve">
+    <value>Absolute</value>
+  </data>
+  <data name="ImportFormatRelative" xml:space="preserve">
+    <value>Relative</value>
+  </data>
+  <data name="ImportFormatToolTip" xml:space="preserve">
+    <value>Defines the default format for import module.</value>
+  </data>
+  <data name="InlayHintsFunctionReturnTypesToolTip" xml:space="preserve">
+    <value>Toggle inlay hints for function return types.</value>
+  </data>
+  <data name="InlayHintsVariableTypeToolTip" xml:space="preserve">
+    <value>Toggle inlay hints for variable types.</value>
+  </data>
+</root>

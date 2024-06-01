@@ -1,0 +1,76 @@
+// Python Tools for Visual Studio
+// Copyright(c) Microsoft Corporation
+// All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the License); you may not use
+// this file except in compliance with the License. You may obtain a copy of the
+// License at http://www.apache.org/licenses/LICENSE-2.0
+//
+// THIS CODE IS PROVIDED ON AN  *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS
+// OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+// IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+// MERCHANTABILITY OR NON-INFRINGEMENT.
+//
+// See the Apache Version 2.0 License for specific language governing
+// permissions and limitations under the License.
+
+using System.Collections.Generic;
+using System.ComponentModel.Composition;
+using System.Diagnostics;
+using System.Threading.Tasks;
+using Microsoft.VisualStudio.InteractiveWindow;
+using Microsoft.VisualStudio.InteractiveWindow.Commands;
+using Microsoft.VisualStudio.Text;
+using Microsoft.VisualStudio.Text.Classification;
+using Microsoft.VisualStudio.Utilities;
+
+namespace Microsoft.PythonTools.Repl {
+    [Export(typeof(IInteractiveWindowCommand))]
+    [ContentType(PythonCoreConstants.ContentType)]
+    class SwitchModuleCommand : IInteractiveWindowCommand {
+        public Task<ExecutionResult> Execute(IInteractiveWindow window, string arguments) {
+            var remoteEval = window.Evaluator as IMultipleScopeEvaluator;
+            Debug.Assert(remoteEval != null, "Evaluator does not support switching scope");
+            if (remoteEval != null) {
+                remoteEval.SetScope(arguments);
+            }
+            return ExecutionResult.Succeeded;
+        }
+
+        public string Description {
+            get { return Strings.ReplSwitchModuleCommandDescription; }
+        }
+
+        public string Command {
+            get { return "mod"; }
+        }
+
+        public IEnumerable<ClassificationSpan> ClassifyArguments(ITextSnapshot snapshot, Span argumentsSpan, Span spanToClassify) {
+            yield break;
+        }
+
+        public string CommandLine {
+            get {
+                return "";
+            }
+        }
+
+        public IEnumerable<string> DetailedDescription {
+            get {
+                yield return Description;
+            }
+        }
+
+        public IEnumerable<KeyValuePair<string, string>> ParametersDescription {
+            get {
+                yield break;
+            }
+        }
+
+        public IEnumerable<string> Names {
+            get {
+                yield return "mod";
+            }
+        }
+    }
+}

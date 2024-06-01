@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="110" xml:space="preserve">
+    <value>Python with Pylance</value>
+  </data>
+  <data name="112" xml:space="preserve">
+    <value>Provides IntelliSense, projects, templates, debugging, interactive windows, and other support for Python developers.</value>
+  </data>
+  <data name="113" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="2000" xml:space="preserve">
+    <value>IronPython</value>
+  </data>
+  <data name="3000" xml:space="preserve">
+    <value>Console Application</value>
+  </data>
+  <data name="3001" xml:space="preserve">
+    <value>WinForms Application</value>
+  </data>
+  <data name="3002" xml:space="preserve">
+    <value>Wpf Application</value>
+  </data>
+  <data name="114" xml:space="preserve">
+    <value>Intellisense</value>
+  </data>
+  <data name="115" xml:space="preserve">
+    <value>Python</value>
+  </data>
+  <data name="116" xml:space="preserve">
+    <value>Environment Options</value>
+  </data>
+  <data name="117" xml:space="preserve">
+    <value>Interactive Windows</value>
+  </data>
+  <data name="118" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="119" xml:space="preserve">
+    <value>Debug Interactive Window</value>
+  </data>
+  <data name="111" xml:space="preserve">
+    <value>Python Project</value>
+  </data>
+  <data name="3004" xml:space="preserve">
+    <value>Python Editor</value>
+  </data>
+  <data name="3005" xml:space="preserve">
+    <value>Python File (no console)</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_BUILDROOT_\Python\Product\Icons\Dev_VSVERSION_\PythonProject.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="401" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_BUILDROOT_\Python\Product\Icons\Dev_VSVERSION_\PythonEmptyApplication.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="404" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_BUILDROOT_\Python\Product\Icons\dev_VSVERSION_\PythonFile.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="406" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_BUILDROOT_\Python\Product\Icons\dev_VSVERSION_\PythonWebSite.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="407" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_BUILDROOT_\Python\Product\Icons\dev_VSVERSION_\InterpreterList.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="408" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_BUILDROOT_\Python\Product\Icons\dev_VSVERSION_\PythonWorkerProject.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="409" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_BUILDROOT_\Python\Product\Icons\dev_VSVERSION_\HTML.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="410" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_BUILDROOT_\Python\Product\Icons\dev_VSVERSION_\CSS.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="411" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_BUILDROOT_\Python\Product\Icons\dev_VSVERSION_\JS.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="412" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_BUILDROOT_\Python\Product\Icons\dev_VSVERSION_\Config.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="413" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_BUILDROOT_\Python\Product\Icons\dev_VSVERSION_\Txt.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="414" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>_BUILDROOT_\Python\Product\Icons\dev_VSVERSION_\PythonMLProject.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3006" xml:space="preserve">
+    <value>Python</value>
+  </data>
+  <data name="3007" xml:space="preserve">
+    <value>Python Class</value>
+  </data>
+  <data name="3008" xml:space="preserve">
+    <value>Python Class (.pyw)</value>
+  </data>
+  <data name="3009" xml:space="preserve">
+    <value>Empty Module</value>
+  </data>
+  <data name="3010" xml:space="preserve">
+    <value>Empty Module (.pyw)</value>
+  </data>
+  <data name="3011" xml:space="preserve">
+    <value>A Python file with a class declared</value>
+  </data>
+  <data name="3012" xml:space="preserve">
+    <value>An empty Python module</value>
+  </data>
+  <data name="3013" xml:space="preserve">
+    <value>class</value>
+  </data>
+  <data name="3014" xml:space="preserve">
+    <value>module</value>
+  </data>
+  <data name="3015" xml:space="preserve">
+    <value>Python Editor with Encoding</value>
+  </data>
+  <data name="4000" xml:space="preserve">
+    <value>Web Platform Installer</value>
+  </data>
+  <data name="120" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="121" xml:space="preserve">
+    <value>New Lines</value>
+  </data>
+  <data name="122" xml:space="preserve">
+    <value>Spacing</value>
+  </data>
+  <data name="123" xml:space="preserve">
+    <value>Statements</value>
+  </data>
+  <data name="124" xml:space="preserve">
+    <value>Wrapping</value>
+  </data>
+  <data name="125" xml:space="preserve">
+    <value>Debugging</value>
+  </data>
+  <data name="3016" xml:space="preserve">
+    <value>Python</value>
+  </data>
+  <data name="106" xml:space="preserve">
+    <value>Python</value>
+  </data>
+  <data name="3017" xml:space="preserve">
+    <value>Empty Python Module</value>
+  </data>
+  <data name="5000" xml:space="preserve">
+    <value>Python Package</value>
+  </data>
+  <data name="5001" xml:space="preserve">
+    <value>An empty Python package (folder and __init__.py file)</value>
+  </data>
+  <data name="5002" xml:space="preserve">
+    <value>Empty Python File</value>
+  </data>
+  <data name="5003" xml:space="preserve">
+    <value>An empty Python module</value>
+  </data>
+  <data name="5004" xml:space="preserve">
+    <value>Python class</value>
+  </data>
+  <data name="5005" xml:space="preserve">
+    <value>A Python module with an empty class</value>
+  </data>
+  <data name="5006" xml:space="preserve">
+    <value>Text file</value>
+  </data>
+  <data name="5007" xml:space="preserve">
+    <value>An empty text file</value>
+  </data>
+  <data name="5008" xml:space="preserve">
+    <value>Python Unit Test</value>
+  </data>
+  <data name="5009" xml:space="preserve">
+    <value>A Python module containing unit tests</value>
+  </data>
+  <data name="5010" xml:space="preserve">
+    <value>Python Application</value>
+  </data>
+  <data name="5011" xml:space="preserve">
+    <value>A project for creating a command-line application</value>
+  </data>
+  <data name="5012" xml:space="preserve">
+    <value>From Existing Python code</value>
+  </data>
+  <data name="5013" xml:space="preserve">
+    <value>Create a new project using code files that are already in a folder hierarchy</value>
+  </data>
+  <data name="5014" xml:space="preserve">
+    <value>PyGame using PyKinect</value>
+  </data>
+  <data name="5015" xml:space="preserve">
+    <value>A sample Kinect game using PyGame</value>
+  </data>
+  <data name="5016" xml:space="preserve">
+    <value>Pyvot Project</value>
+  </data>
+  <data name="5017" xml:space="preserve">
+    <value>A sample for working with the Pyvot library for Excel</value>
+  </data>
+  <data name="5018" xml:space="preserve">
+    <value>Classifier Project (cookiecutter)</value>
+  </data>
+  <data name="5019" xml:space="preserve">
+    <value>A project for testing scikit-learn classifiers.
+
+This project requires the pandas, numpy, scikit-learn, and matplotlib packages.
+
+Opens Cookiecutter window where you can create the project from a cookiecutter template available online.</value>
+  </data>
+  <data name="5020" xml:space="preserve">
+    <value>Clustering Project (cookiecutter)</value>
+  </data>
+  <data name="5021" xml:space="preserve">
+    <value>A project for testing scikit-learn clustering learners.
+
+This project requires the pandas, numpy, scikit-learn, and matplotlib packages.
+
+Opens Cookiecutter window where you can create the project from a cookiecutter template available online.</value>
+  </data>
+  <data name="5022" xml:space="preserve">
+    <value>Regression Project (cookiecutter)</value>
+  </data>
+  <data name="5023" xml:space="preserve">
+    <value>A project for testing scikit-learn regression learners.
+
+This project requires the pandas, numpy, scikit-learn, and matplotlib packages.
+
+Opens Cookiecutter window where you can create the project from a cookiecutter template available online.</value>
+  </data>
+  <data name="5024" xml:space="preserve">
+    <value>Python Extension Module</value>
+  </data>
+  <data name="5025" xml:space="preserve">
+    <value>Implements a native extension module for CPython 3.6 or later</value>
+  </data>
+  <data name="5026" xml:space="preserve">
+    <value>Bottle Web Role</value>
+  </data>
+  <data name="5027" xml:space="preserve">
+    <value>Service with a web interface using the Bottle web framework</value>
+  </data>
+  <data name="5028" xml:space="preserve">
+    <value>Web Role</value>
+  </data>
+  <data name="5029" xml:space="preserve">
+    <value>Service with a web interface using a Python application</value>
+  </data>
+  <data name="5030" xml:space="preserve">
+    <value>Flask Web Role</value>
+  </data>
+  <data name="5031" xml:space="preserve">
+    <value>Service with a web interface using the Flask web framework.</value>
+  </data>
+  <data name="5032" xml:space="preserve">
+    <value>Worker Role</value>
+  </data>
+  <data name="5033" xml:space="preserve">
+    <value>Python based background processing service</value>
+  </data>
+  <data name="5034" xml:space="preserve">
+    <value>Web Role Support Files</value>
+  </data>
+  <data name="5035" xml:space="preserve">
+    <value>Support files necessary to deploy and run a Python web project on Microsoft Azure Cloud Service.
+
+These files are always added to a folder 'bin' at the root of your project.</value>
+  </data>
+  <data name="5036" xml:space="preserve">
+    <value>Worker Role Support Files</value>
+  </data>
+  <data name="5037" xml:space="preserve">
+    <value>Support files necessary to deploy and run a Python web project on Microsoft Azure Cloud Service.
+
+These files are always added to a folder 'bin' at the root of your project.</value>
+  </data>
+  <data name="5038" xml:space="preserve">
+    <value>Azure Remote debugging web.config</value>
+  </data>
+  <data name="5039" xml:space="preserve">
+    <value>A web.debug.config transform file that enables remote debugging over WebSockets.
+
+The files in this template should be included in the root of your website, alongside the main web.config file.</value>
+  </data>
+  <data name="5040" xml:space="preserve">
+    <value>Azure web.config (FastCGI)</value>
+  </data>
+  <data name="5041" xml:space="preserve">
+    <value>A web.config file that enables FastCGI for your Python app.
+
+This file should normally be deployed at the root of your site. See https://aka.ms/PythonOnAppService for more information.</value>
+  </data>
+  <data name="5042" xml:space="preserve">
+    <value>Azure web.config (HttpPlatformHandler)</value>
+  </data>
+  <data name="5043" xml:space="preserve">
+    <value>A web.config file that enables socket forwarding for your Python app.
+
+This file should normally be deployed at the root of your site. See https://aka.ms/PythonOnAppService for more information.</value>
+  </data>
+  <data name="5044" xml:space="preserve">
+    <value>Azure Static files web.config</value>
+  </data>
+  <data name="5045" xml:space="preserve">
+    <value>A web.config file that disables Python handling for a subdirectory.
+
+This file should normally be deployed in your /static folder. See https://aka.ms/PythonOnAppService for more information.</value>
+  </data>
+  <data name="5046" xml:space="preserve">
+    <value>HTML Page</value>
+  </data>
+  <data name="5047" xml:space="preserve">
+    <value>An HTML page that can include client-side code</value>
+  </data>
+  <data name="5048" xml:space="preserve">
+    <value>JavaScript</value>
+  </data>
+  <data name="5049" xml:space="preserve">
+    <value>A script file containing JavaScript code</value>
+  </data>
+  <data name="5050" xml:space="preserve">
+    <value>Style Sheet</value>
+  </data>
+  <data name="5051" xml:space="preserve">
+    <value>A cascading style sheet used for rich HTML style definitions</value>
+  </data>
+  <data name="5052" xml:space="preserve">
+    <value>Azure Cloud Service</value>
+  </data>
+  <data name="5053" xml:space="preserve">
+    <value>A project for creating a scalable service that runs on Microsoft Azure</value>
+  </data>
+  <data name="5054" xml:space="preserve">
+    <value>Polls Bottle Web Project</value>
+  </data>
+  <data name="5055" xml:space="preserve">
+    <value>A sample polls application using the Bottle web framework. It can be configured to use Azure Table Storage or MongoDB for storage.</value>
+  </data>
+  <data name="5056" xml:space="preserve">
+    <value>Polls Flask Web Project</value>
+  </data>
+  <data name="5057" xml:space="preserve">
+    <value>A sample polls application using the Flask web framework. It can be configured to use Azure Table Storage or MongoDB for storage.</value>
+  </data>
+  <data name="5058" xml:space="preserve">
+    <value>Polls Flask/Jade Web Project</value>
+  </data>
+  <data name="5059" xml:space="preserve">
+    <value>A sample polls application using the Flask web framework with the Jade template engine. It can be configured to use Azure Table Storage or MongoDB for storage.</value>
+  </data>
+  <data name="5060" xml:space="preserve">
+    <value>Bottle Web Project</value>
+  </data>
+  <data name="5061" xml:space="preserve">
+    <value>A project for creating an application using the Bottle web framework. It features sample pages that use the Twitter Bootstrap framework for responsive web design.</value>
+  </data>
+  <data name="5062" xml:space="preserve">
+    <value>Flask/Jade Web Project</value>
+  </data>
+  <data name="5063" xml:space="preserve">
+    <value>A project for creating an application using the Flask web framework with the Jade template engine. It features sample pages that use the Twitter Bootstrap framework for responsive web design.</value>
+  </data>
+  <data name="5064" xml:space="preserve">
+    <value>Flask Web Project</value>
+  </data>
+  <data name="5065" xml:space="preserve">
+    <value>A project for creating an application using the Flask web framework with the Jinja template engine. It features sample pages that use the Twitter Bootstrap framework for responsive web design.</value>
+  </data>
+  <data name="5066" xml:space="preserve">
+    <value>Blank Bottle Web Project</value>
+  </data>
+  <data name="5067" xml:space="preserve">
+    <value>A project for creating a Bottle web project</value>
+  </data>
+  <data name="5068" xml:space="preserve">
+    <value>Web Project</value>
+  </data>
+  <data name="5069" xml:space="preserve">
+    <value>A project for creating a generic Python web project</value>
+  </data>
+  <data name="5070" xml:space="preserve">
+    <value>Blank Flask Web Project</value>
+  </data>
+  <data name="5071" xml:space="preserve">
+    <value>A project for creating a Flask web project</value>
+  </data>
+  <data name="5072" xml:space="preserve">
+    <value>Blank Bottle Web Project</value>
+  </data>
+  <data name="5073" xml:space="preserve">
+    <value>A project for creating a Bottle web project in an Azure Cloud Service</value>
+  </data>
+  <data name="5074" xml:space="preserve">
+    <value>Web Role</value>
+  </data>
+  <data name="5075" xml:space="preserve">
+    <value>A project for creating a generic Python web project in an Azure Cloud Service</value>
+  </data>
+  <data name="5076" xml:space="preserve">
+    <value>Blank Flask Web Project</value>
+  </data>
+  <data name="5077" xml:space="preserve">
+    <value>A project for creating a Flask web project in an Azure Cloud Service</value>
+  </data>
+  <data name="5078" xml:space="preserve">
+    <value>Worker Project</value>
+  </data>
+  <data name="5079" xml:space="preserve">
+    <value>A project for creating a worker role in an Azure Cloud Service</value>
+  </data>
+  <data name="126" xml:space="preserve">
+    <value>Formatting</value>
+  </data>
+  <data name="127" xml:space="preserve">
+    <value>Python Project Files;*.pyproj</value>
+  </data>
+  <data name="128" xml:space="preserve">
+    <value>Python Files;*.py,*.pyw,*.pyi</value>
+  </data>
+  <data name="129" xml:space="preserve">
+    <value>Analysis</value>
+  </data>
+  <data name="130" xml:space="preserve">
+    <value>Experimental</value>
+  </data>
+  <data name="5080" xml:space="preserve">
+    <value>Mypy configuration file</value>
+  </data>
+  <data name="5081" xml:space="preserve">
+    <value>A mypy.ini file for configuring Mypy settings</value>
+  </data>
+  <data name="131" xml:space="preserve">
+    <value>Language Server</value>
+  </data>
+  <data name="132" xml:space="preserve">
+    <value>Conda</value>
+  </data>
+  <data name="3019" xml:space="preserve">
+    <value>Python type checker configuration file</value>
+  </data>
+</root>

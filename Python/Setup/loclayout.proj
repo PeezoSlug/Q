@@ -1,0 +1,79 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IntermediateOutputPathSuffix>loclayout\</IntermediateOutputPathSuffix>
+    <LocLanguages Condition="$(LocLanguages) == ''">VS</LocLanguages>
+  </PropertyGroup>
+  
+  <Import Project="SetupProjectBefore.settings" />
+  <Import Project="$(TargetsPath)\Common.Shim.targets" />
+  
+  <PropertyGroup>
+    <OutputPath>$(BinariesOutputPath)</OutputPath>
+    <OutDir>$(BinariesOutputPath)</OutDir>
+    <LocDir>$(BuildRoot)Python\loc\</LocDir>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ManagedFiles Include="
+        Microsoft.PythonTools.Attacher.exe;
+        Microsoft.PythonTools.AttacherX86.exe;
+        Microsoft.PythonTools.BuildTasks.dll;
+        Microsoft.PythonTools.Common.dll;
+        Microsoft.PythonTools.Debugger.dll;
+        Microsoft.PythonTools.Debugger.Concord.dll;
+        Microsoft.PythonTools.dll;
+        Microsoft.PythonTools.EnvironmentsList.dll;
+        Microsoft.PythonTools.Profiling.dll;
+        Microsoft.PythonTools.ProjectWizards.dll;
+        Microsoft.PythonTools.RunElevated.exe;
+        Microsoft.PythonTools.TestAdapter.dll;
+        Microsoft.PythonTools.TestAdapter.Executor.dll;
+        Microsoft.PythonTools.VSCommon.dll;
+        Microsoft.PythonTools.VSInterpreters.dll;
+        Microsoft.PythonTools.WebRole.dll;
+        Microsoft.PythonTools.Workspace.dll;
+        Microsoft.CookiecutterTools.dll;
+        "/>
+    
+    <ManagedFiles Include="
+        Microsoft.PythonTools.Django.dll;
+        " Condition="$(IncludeDjango)" />
+    <ManagedFiles Include="
+        Microsoft.PythonTools.Debugger.VCLauncher.dll;
+        " Condition="$(IncludeVCDebugLauncher)" />
+
+    <CodeSnippets Include="
+        $(BinariesOutputPath)Snippets\SnippetsIndex.xml;
+        $(BinariesOutputPath)Snippets\**\*.snippet" />
+
+    <VCPropertyPages Include="
+        $(BinariesOutputPath)VCTargets\**\*.xaml" />
+
+    <FilesToLocalize Include="@(ManagedFiles->'$(BinariesOutputPath)%(Identity)')">
+      <TranslationFile>$(LocDir)lcl\{Lang}\%(Filename)%(Extension).lcl</TranslationFile>
+      <LciCommentFile Condition="Exists('$(LocDir)lci\%(Filename)%(Extension).lci')">$(LocDir)lci\%(Filename)%(Extension).lci</LciCommentFile>
+      <SettingsFile>$(LSBuildRoot)\MCP_excludeBaml.lss</SettingsFile>
+      <HasLceComments>false</HasLceComments>
+    </FilesToLocalize>
+    <FilesToLocalize Include="@(CodeSnippets)">
+      <TranslationFile>$(LocDir)lcl\{Lang}\Snippets\%(RecursiveDir)%(Filename)%(Extension).lcl</TranslationFile>
+      <LciCommentFile Condition="Exists('$(LocDir)lci\Snippets\%(RecursiveDir)%(Filename)%(Extension).lci')">$(LocDir)lci\Snippets\%(RecursiveDir)%(Filename)%(Extension).lci</LciCommentFile>
+      <SettingsFile>$(LSBuildRoot)\locxml_snippets.lss</SettingsFile>
+      <HasLceComments>false</HasLceComments>
+    </FilesToLocalize>
+    <FilesToLocalize Include="@(VCPropertyPages)">
+      <TranslationFile>$(LocDir)lcl\{Lang}\VCTargets\%(RecursiveDir)%(Filename)%(Extension).lcl</TranslationFile>
+      <LciCommentFile Condition="Exists('$(LocDir)lci\VCTargets\%(RecursiveDir)%(Filename)%(Extension).lci')">$(LocDir)lci\VCTargets\%(RecursiveDir)%(Filename)%(Extension).lci</LciCommentFile>
+      <SettingsFile>$(LSBuildRoot)\locxml_strpLocTg_vc.lss</SettingsFile>
+      <HasLceComments>false</HasLceComments>
+    </FilesToLocalize>
+  </ItemGroup>
+  
+  <Target Name="ListFiles">
+    <Message Text="OutputPath: $(OutputPath)" Importance="high" />
+    <Message Text="@(FilesToLocalize->'%(Identity) (%(TranslationFile), %(LciCommentFile))', '
+')" Importance="high" />
+  </Target>
+
+  <Import Project="$(TargetsPath)\MicroBuild.targets" />
+</Project>

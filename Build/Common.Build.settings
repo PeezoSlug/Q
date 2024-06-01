@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" TreatAsLocalProperty="BuildOutputRoot;BuildRoot;OutputPathSuffix;OutputPath;IntermediateOutputPath;ReleaseOutputPath">
+
+  <!-- Ensures that if this file changes it forces a rebuild -->
+  <PropertyGroup>
+    <MSBuildAllProjects>
+        $(MSBuildAllProjects);$(MSBuildThisFileFullPath)
+    </MSBuildAllProjects>
+  </PropertyGroup>
+
+  <Import Project="Common.Build.Core.settings" />
+  <PropertyGroup>
+    <!-- The default Platform value is specified in the imports below -->
+    <RunFXCop Condition="'$(RunFXCop)' == ''">false</RunFXCop>
+
+    <BuildingInsideVisualStudio Condition="'$(BuildingInsideVisualStudio)' == ''">false</BuildingInsideVisualStudio>
+    
+    <TargetFrameworkVersion Condition="'$(TargetFrameworkVersion)' == ''">v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkMoniker>.NETFramework,Version=$(TargetFrameworkVersion)</TargetFrameworkMoniker>
+
+    <!-- Default product arch (needed for vsix manifest/setup authoring)-->
+    <!-- See this note here: https://dev.azure.com/devdiv/DevDiv/_wiki/wikis/DevDiv.wiki/21383/How-to-configure-VSIX-to-use-the-productArch-property?anchor=2.-set-%60setupproductarch%60-msbuild-property -->
+    <SetupProductArch>neutral</SetupProductArch>
+    
+    <!-- Enables VS SDK build steps.
+    
+    Set CreateVsixContainer for projects that create a .vsix file.
+    Set UseVSSDKTemplateOnly for projects that build templates but no code.
+    -->
+    <UseVSSDK Condition="'$(UseVSSDK)' == ''">false</UseVSSDK>
+    <UseVSSDKTemplateOnly Condition="'$(UseVSSDKTemplateOnly)' == ''">false</UseVSSDKTemplateOnly>
+    <!-- The location to copy VSIX contents so they can be signed and zipped -->
+    <CopyVsixExtensionRoot Condition="'$(CopyVsixExtensionRoot)' == ''">$(LayoutOutputPath)</CopyVsixExtensionRoot>
+
+    <!-- These targets are invoked to find VSIX contents on all projects.
+    
+    The files found are used for deployment to the Experimental hive and
+    creation of .vsix files.
+    -->
+    <IncludeVsixItemsFromTargets Condition="'$(IncludeVsixItemsFromTargets)' == '' and '$(Configuration)' == 'Debug'">BuiltProjectOutputGroup;DebugSymbolsProjectOutputGroup</IncludeVsixItemsFromTargets>
+    <IncludeVsixItemsFromTargets Condition="'$(IncludeVsixItemsFromTargets)' == ''">BuiltProjectOutputGroup</IncludeVsixItemsFromTargets>
+    <!-- Copies entire VSIX contents to the output directory. -->
+    <CopyLocalReferenceVsixItems Condition="'$(CopyLocalReferenceVsixItems)' == ''">false</CopyLocalReferenceVsixItems>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors Condition="'$(TreatWarningsAsErrors)' == ''">true</TreatWarningsAsErrors>
+    <!-- Suppress warning about multiply defined AssemblyVersionInfo -->
+    <NoWarn>$(NoWarn);436;1998;VSSDK1319</NoWarn>
+    <RunCodeAnalysis>$(RunFXCop)</RunCodeAnalysis>
+    <SignAssembly Condition="$(SignAssembly) == ''">true</SignAssembly>
+
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+
+    <DevEnvDir Condition="$(VsInstallRoot) != ''">$(VsInstallRoot)\Common7\IDE\</DevEnvDir>
+    <DevEnvDir Condition="!Exists($(DevEnvDir))">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\$(VSTarget)', 'InstallDir', null, RegistryView.Registry32))\</DevEnvDir>
+  </PropertyGroup>
+
+  <ItemDefinitionGroup>
+    <!-- By default, references are never copied.
+    Setting Private to true will treat the reference as a critical dependency,
+    but files are only copied if CopyLocalReferenceVsixItems is also true, or if
+    a .vsix file is generated.
+    -->
+    <Reference>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference2>
+      <Visible>false</Visible>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <BuildReference>true</BuildReference>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </ProjectReference2>
+    <ProjectFile>
+      <Properties>BuildRoot=$(BuildRoot)</Properties>
+      <BuildTarget>Build</BuildTarget>
+      <CleanTarget>Clean</CleanTarget>
+    </ProjectFile>
+    <SequencedProjectFile>
+      <Properties>BuildRoot=$(BuildRoot)</Properties>
+      <BuildTarget>Build</BuildTarget>
+      <CleanTarget>Clean</CleanTarget>
+    </SequencedProjectFile>
+  </ItemDefinitionGroup>
+
+  <Import Project="$(TargetsPath)\Common.Build.CSharp.settings" Condition="'$(MSBuildProjectExtension)' == '.csproj' or '$(MSBuildProjectExtension)' == '.tmp_proj'" />
+  <Import Project="$(TargetsPath)\Common.Build.Cpp.settings" Condition="'$(MSBuildProjectExtension)' == '.vcxproj'" />
+  <Import Project="$(PackagesPath)Microsoft.VSSDK.BuildTools\build\Microsoft.VSSDK.BuildTools.props" Condition="Exists('$(PackagesPath)Microsoft.VSSDK.BuildTools')" />
+  <Import Project="$(TargetsPath)\MicroBuild.props" />
+
+  <!-- Check for the VSSDK Build Tools arbitrarily to see whether we should run the script. -->
+  <Target Name="_EnsureDependenciesInstalled" BeforeTargets="PrepareForBuild" Condition="!Exists('$(PackagesPath)Microsoft.VSSDK.BuildTools')">
+    <Exec Command='powershell.exe -ExecutionPolicy Bypass -File "$(TargetsPath)\PreBuild.ps1" -VsTarget $(VSTarget)' />
+  </Target>
+</Project>

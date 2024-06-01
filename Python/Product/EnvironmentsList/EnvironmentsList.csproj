@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Choose>
+    <When Condition=" '$(VisualStudioVersion)'=='15.0'  Or '$(TargetVisualStudioVersion)'=='VS150' ">
+      <PropertyGroup>
+        <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+        <FileUpgradeFlags>
+        </FileUpgradeFlags>
+        <UpgradeBackupLocation>
+        </UpgradeBackupLocation>
+        <OldToolsVersion>14.0</OldToolsVersion>
+      </PropertyGroup>
+    </When>
+    <When Condition=" '$(VisualStudioVersion)'=='16.0'  Or '$(TargetVisualStudioVersion)'=='VS160' ">
+      <PropertyGroup>
+        <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+        <FileUpgradeFlags>
+        </FileUpgradeFlags>
+        <UpgradeBackupLocation>
+        </UpgradeBackupLocation>
+        <OldToolsVersion>16.0</OldToolsVersion>
+      </PropertyGroup>
+    </When>
+    <When Condition=" '$(VisualStudioVersion)'=='17.0'  Or '$(TargetVisualStudioVersion)'=='VS170' ">
+      <PropertyGroup>
+        <MinimumVisualStudioVersion>17.0</MinimumVisualStudioVersion>
+        <FileUpgradeFlags>
+        </FileUpgradeFlags>
+        <UpgradeBackupLocation>
+        </UpgradeBackupLocation>
+        <OldToolsVersion>17.0</OldToolsVersion>
+      </PropertyGroup>
+    </When>
+  </Choose>
+  <Import Project="..\ProjectBefore.settings" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B20E082B-4D3C-457D-B2BD-60420B434573}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PythonTools.EnvironmentsList</RootNamespace>
+    <AssemblyName>Microsoft.PythonTools.EnvironmentsList</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.ComponentModelHost" />
+    <Reference Include="Microsoft.VisualStudio.Shell.15.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Framework" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Design" />
+    <Reference Include="Microsoft.VisualStudio.Interop">
+      <IncludeInVSIX>False</IncludeInVSIX>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Microsoft.VisualStudio.Settings.15.0" />
+    <Reference Include="Microsoft.VisualStudio.ImageCatalog" />
+    <Reference Include="Microsoft.VisualStudio.Imaging" />
+    <Reference Include="Microsoft.VisualStudio.Utilities" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="images\images.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="..\..\..\Common\Product\SharedProject\Wpf\Controls.xaml">
+      <Link>Wpf\Controls.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ConfigurationExtension.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FileNameLabel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PipExtension.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EnvironmentPathsExtension.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EnvironmentView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToolWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="..\..\..\Common\Product\SharedProject\Wpf\Commands.cs">
+      <Link>Wpf\Commands.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Common\Product\SharedProject\Wpf\ConfigurationControl.cs">
+      <Link>Wpf\ConfigurationControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Common\Product\SharedProject\Wpf\Controls.cs">
+      <Link>Wpf\Controls.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Common\Product\SharedProject\Wpf\Dialogs.cs">
+      <Link>Wpf\Dialogs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Common\Product\SharedProject\Wpf\LabelledButton.cs">
+      <Link>Wpf\LabelledButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Common\Product\SharedProject\Wpf\LabelledControl.cs">
+      <Link>Wpf\LabelledControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Common\Product\SharedProject\Wpf\LambdaConverter\ILambdaConverterProvider.cs">
+      <Link>Wpf\ILambdaConverterProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Common\Product\SharedProject\Wpf\LambdaConverter\LambdaConverter.cs">
+      <Link>Wpf\LambdaConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Common\Product\SharedProject\Wpf\LambdaConverter\LambdaExtension.cs">
+      <Link>Wpf\LambdaExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Common\Product\SharedProject\Wpf\LambdaConverter\LambdaProperties.cs">
+      <Link>Wpf\LambdaProperties.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Common\Product\SharedProject\Wpf\NativeMethods.cs">
+      <Link>Wpf\NativeMethods.cs</Link>
+    </Compile>
+    <Compile Include="..\PythonTools\PythonTools\Intellisense\FuzzyStringMatcher.cs">
+      <Link>FuzzyStringMatcher.cs</Link>
+    </Compile>
+    <Compile Include="ConfigurationExtension.xaml.cs">
+      <DependentUpon>ConfigurationExtension.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataListBox.cs" />
+    <Compile Include="FileNameEllipsisConverter.cs" />
+    <Compile Include="ICanFocus.cs" />
+    <Compile Include="IEnvironmentViewExtensionProvider.cs" />
+    <Compile Include="PipExtension.xaml.cs">
+      <DependentUpon>PipExtension.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EnvironmentPathsExtension.xaml.cs">
+      <DependentUpon>EnvironmentPathsExtension.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EnvironmentView.cs" />
+    <Compile Include="IEnvironmentViewExtension.cs" />
+    <Compile Include="PipExtensionProvider.cs" />
+    <Compile Include="PipPackageView.cs" />
+    <Compile Include="ToolWindow.xaml.cs">
+      <DependentUpon>ToolWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{b3db0521-d9e3-4f48-9e2e-e5ecae886049}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VSCommon\VSCommon.csproj">
+      <Project>{a52ac77f-6df9-4387-bb08-8ded3fd95a0f}</Project>
+      <Name>VSCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VSInterpreters\VSInterpreters.csproj">
+      <Project>{815db0cd-c0dd-4997-b43c-abee4dbeffe7}</Project>
+      <Name>VSInterpreters</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\ProjectAfter.settings" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

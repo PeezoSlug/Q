@@ -1,0 +1,25 @@
+steps:
+
+  # Compress just the test data
+  # Used in this release task to run tests: https://devdiv.visualstudio.com/DevDiv/_taskgroup/a7b18468-aab5-4be7-b718-02f85b0828c4
+  - task: ArchiveFiles@2
+    displayName: 'Compress test data dir'
+    inputs:
+      rootFolderOrFile: '$(Build.SourcesDirectory)/Python/Tests/TestData'
+      includeRootFolder: false
+      archiveType: 'zip'
+      archiveFile: '$(Build.ArtifactStagingDirectory)/TestData.zip'
+      replaceExistingArchive: true
+
+  # CredScan does not understand scanning a single file. So, it will default to scanning the whole folder that your output is pointing to.
+  # We don't want it to scan the microbuild plugins, which is installed in the agent.stagedirectory by default.
+  - task: CopyFiles@2
+    displayName: 'Copy TestData.zip to subfolder'
+    inputs:
+      SourceFolder: '$(Build.ArtifactStagingDirectory)'
+      Contents: 'TestData.zip'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)/TestDataFolder'
+
+
+# The Task 'PublishBuildArtifacts@1' has been converted to an output named 'Publish build artifact: TestData' in the templateContext section.
+# The Task 'PublishBuildArtifacts@1' has been converted to an output named 'Publish build artifact: RunSettings' in the templateContext section.

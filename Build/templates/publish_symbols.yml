@@ -1,0 +1,36 @@
+steps:
+
+  # Copy symbols that will be published
+  - task: CopyFiles@2
+    displayName: 'Prepare for symbol publishing'
+    inputs:
+      SourceFolder: '$(Build.BinariesDirectory)/raw/binaries'
+      Contents: |
+        Microsoft.PythonTools*.pdb
+        Microsoft.PythonTools*.dll
+        Microsoft.PythonTools*.exe
+        Microsoft.CookiecutterTools.pdb
+        Microsoft.CookiecutterTools.dll
+        Microsoft.IronPythonTools.Resolver.pdb
+        Microsoft.IronPythonTools.Resolver.dll
+        Microsoft.Python.Analysis.Engine.dll
+        Microsoft.Python.Analysis.Engine.pdb
+        Microsoft.Python.LanguageServer.Core.dll
+        Microsoft.Python.LanguageServer.Core.pdb
+        PyDebugAttach*.pdb
+        PyDebugAttach*.dll
+        VsPyProf*.pdb
+        VsPyProf*.dll
+      TargetFolder: '$(Build.ArtifactStagingDirectory)/symbols'
+
+  # Archive Symbols
+  # When you insert your binaries into VS or ship them to any other client you need to archive your binaries & symbols to MSDL. 
+  # This will ensure that your symbols are available even if the associated build is deleted and will also make them available 
+  # on the internet so that external clients can download them.
+  - task: MicroBuildArchiveSymbols@5
+    displayName: 'Archive Symbols'
+    inputs:
+      SymbolsFeatureName: PTVS
+      SymbolsProject: VS
+      azureSubscription: Symbols Upload (DevDiv)
+      SymbolsAgentPath: '$(Build.ArtifactStagingDirectory)/symbols'

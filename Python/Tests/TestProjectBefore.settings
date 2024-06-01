@@ -1,0 +1,17 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <BuildRoot>$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), build.root))</BuildRoot>
+    <OutputPathSuffix Condition="$(TestOutputPathSuffix) == ''">binaries\</OutputPathSuffix>
+    <OutputPathSuffix Condition="$(TestOutputPathSuffix) != ''">$(TestOutputPathSuffix)\</OutputPathSuffix>
+    <LayoutOutputPathSuffix>Tests</LayoutOutputPathSuffix>
+    <IntermediateOutputPathSuffix>test_$(MSBuildProjectName)\</IntermediateOutputPathSuffix>
+  </PropertyGroup>
+  <Import Project="$(BuildRoot)\Build\Common.Build.settings" />
+  <Import Project="$(BuildRoot)\Python\products.settings" />
+  <PropertyGroup>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <MicroBuild_FXCop>false</MicroBuild_FXCop>
+    <MicroBuild_APIScan>false</MicroBuild_APIScan>
+    <CopyVsixManifestToOutput>false</CopyVsixManifestToOutput>
+  </PropertyGroup>
+</Project>

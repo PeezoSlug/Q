@@ -1,0 +1,3 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(PackagesPath)Microsoft.VisualStudioEng.MicroBuild.Core\build\Microsoft.VisualStudioEng.MicroBuild.Core.targets" Condition="Exists('$(PackagesPath)Microsoft.VisualStudioEng.MicroBuild.Core\build\Microsoft.VisualStudioEng.MicroBuild.Core.targets')" />
+</Project>

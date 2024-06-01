@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Choose>
+    <When Condition=" '$(VisualStudioVersion)'=='15.0'  Or '$(TargetVisualStudioVersion)'=='VS150' ">
+      <PropertyGroup>
+        <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+        <FileUpgradeFlags>
+        </FileUpgradeFlags>
+        <UpgradeBackupLocation>
+        </UpgradeBackupLocation>
+        <OldToolsVersion>14.0</OldToolsVersion>
+      </PropertyGroup>
+    </When>
+    <When Condition=" '$(VisualStudioVersion)'=='16.0'  Or '$(TargetVisualStudioVersion)'=='VS160' ">
+      <PropertyGroup>
+        <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+        <FileUpgradeFlags>
+        </FileUpgradeFlags>
+        <UpgradeBackupLocation>
+        </UpgradeBackupLocation>
+        <OldToolsVersion>16.0</OldToolsVersion>
+      </PropertyGroup>
+    </When>
+    <When Condition=" '$(VisualStudioVersion)'=='17.0'  Or '$(TargetVisualStudioVersion)'=='VS170' ">
+      <PropertyGroup>
+        <MinimumVisualStudioVersion>17.0</MinimumVisualStudioVersion>
+        <FileUpgradeFlags>
+        </FileUpgradeFlags>
+        <UpgradeBackupLocation>
+        </UpgradeBackupLocation>
+        <OldToolsVersion>17.0</OldToolsVersion>
+      </PropertyGroup>
+    </When>
+  </Choose>
+  <Import Project="..\ProjectBefore.settings" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform>AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{44E8BB56-C38E-49A8-8BC1-7AF40D0AC725}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.PythonTools.TestAdapter</RootNamespace>
+    <AssemblyName>Microsoft.PythonTools.TestAdapter.Executor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="Microsoft.VisualStudio.Interop">
+      <IncludeInVSIX>False</IncludeInVSIX>
+    </Reference>
+    <!-- <Reference Include="Microsoft.VisualStudio.TestPlatform.ObjectModel">
+      <HintPath>$(DevEnvDir)\Extensions\TestPlatform\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference> -->
+    <Reference Include="Microsoft.TestPlatform.ObjectModel">
+      <HintPath>$(PackagesPath)\Microsoft.TestPlatform.ObjectModel.17.4.0-preview-20221003-03\lib\net462\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestWindow.Interfaces">
+      <HintPath>$(DevEnvDir)\CommonExtensions\Microsoft\TestWindow\Microsoft.VisualStudio.TestWindow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(PackagesPath)\Newtonsoft.Json\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+      <IncludeInVSIX>True</IncludeInVSIX>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{b3db0521-d9e3-4f48-9e2e-e5ecae886049}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ipc.Json\Ipc.Json.csproj">
+      <Project>{e1e1613d-0c96-42f9-9f2d-052c72533297}</Project>
+      <Name>Ipc.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VSInterpreters\VSInterpreters.csproj">
+      <Project>{815db0cd-c0dd-4997-b43c-abee4dbeffe7}</Project>
+      <Name>VSInterpreters</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\PythonTools\PythonConstants.cs">
+      <Link>Common\PythonConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\VSCommon\Infrastructure\VisualStudioApp.cs">
+      <Link>Common\VisualStudioApp.cs</Link>
+    </Compile>
+    <Compile Include="Common\Config\ITestConfiguration.cs" />
+    <Compile Include="Pytest\Constants.cs" />
+    <Compile Include="Pytest\PytestConfiguration.cs" />
+    <Compile Include="Pytest\PytestDiscoveryResults.cs" />
+    <Compile Include="Common\Config\PythonProjectSettings.cs" />
+    <Compile Include="Common\Config\RunSettingsUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pytest\PytestExtensions.cs" />
+    <Compile Include="Pytest\PytestTestDiscoverer.cs" />
+    <Compile Include="Pytest\PytestTestExecutor.cs" />
+    <Compile Include="Common\Services\ExecutorService.cs" />
+    <Compile Include="Pytest\JunitXmlTestResultParser.cs" />
+    <Compile Include="Common\Services\CodeCoverage.cs" />
+    <Compile Include="Common\Services\ProcessExecute.cs" />
+    <Compile Include="Common\Services\PythonDebugMode.cs" />
+    <Compile Include="Common\TestCollection.cs" />
+    <Compile Include="Common\PythonTestDiscoverer.cs" />
+    <Compile Include="Common\TestProtocol.cs" />
+    <Compile Include="Common\TestReader.cs" />
+    <Compile Include="UnitTest\UnitTestTestExecutor.cs" />
+    <Compile Include="UnitTest\UnitTestTestDiscoverer.cs" />
+    <Compile Include="UnitTest\UnitTestDiscoveryResults.cs" />
+    <Compile Include="UnitTest\UnitTestExtensions.cs" />
+    <Compile Include="Common\Utils\TestUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PythonFiles\testing_tools\adapter\discovery.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\errors.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\info.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\pytest\_cli.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\pytest\_discovery.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\pytest\_pytest_item.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\pytest\__init__.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\report.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\unittest\_cli.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\unittest\_discovery.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\unittest\__init__.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\util.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\__init__.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\adapter\__main__.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\run_adapter.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="PythonFiles\testing_tools\__init__.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="..\ProjectAfter.settings" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

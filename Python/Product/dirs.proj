@@ -1,0 +1,49 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="ProjectBefore.settings" />
+
+  <ItemGroup>
+    <ProjectFile Include="$(BuildRoot)\Common\Product\dirs.proj"/>
+
+    <ProjectFile Include="Common\Common.csproj"/>
+    <ProjectFile Include="VsCommon\VsCommon.csproj"/>
+    <ProjectFile Include="RunElevated\RunElevated.csproj"/>
+
+    <ProjectFile Include="VSInterpreters\VSInterpreters.csproj"/>
+
+    <ProjectFile Include="BuildTasks\BuildTasks.csproj"/>
+    <ProjectFile Include="BuildTasks\BuildTasks.Core.csproj"/>
+
+    <ProjectFile Include="PyDebugAttach\PyDebugAttach.vcxproj"/>
+    <ProjectFile Include="PyDebugAttach\PyDebugAttachX86.vcxproj"/>
+    <ProjectFile Include="Attacher\Attacher.csproj"/>
+    <ProjectFile Include="AttacherX86\AttacherX86.csproj"/>
+    <ProjectFile Include="Debugger\Debugger.csproj"/>
+    <ProjectFile Include="Debugger.Concord\Debugger.Concord.csproj"/>
+    
+    <ProjectFile Include="EnvironmentsList\EnvironmentsList.csproj"/>
+
+    <ProjectFile Include="Ipc.Json\Ipc.Json.csproj"/>
+    <ProjectFile Include="TestAdapter\TestAdapter.csproj"/>
+
+    <ProjectFile Include="ProjectWizards\ProjectWizards.csproj"/>
+
+    <ProjectFile Include="PythonTools\PythonTools.csproj"/>
+
+    <ProjectFile Include="VsPyProf\VsPyProf.vcxproj"/>
+    <ProjectFile Include="VsPyProf\VsPyProfX86.vcxproj"/>
+    <ProjectFile Include="Profiling\Profiling.csproj"/>
+
+    <ProjectFile Include="WebRole\WebRole.csproj"/>
+    <ProjectFile Include="Django\Django.csproj" Condition="'$(IncludeDjango)' == 'True'"/>
+    <ProjectFile Include="Cookiecutter\Cookiecutter.csproj"/>
+
+    <ProjectFile Include="VCDebugLauncher\VCDebugLauncher.csproj" Condition="'$(IncludeVCDebugLauncher)' == 'True'"/>
+
+    <ProjectFile Include="Core\Core.csproj" />
+    <ProjectFile Include="..\Templates\Templates.csproj" />
+  </ItemGroup>
+
+  <Import Project="$(TargetsPath)\Common.Build.Traversal.targets" />
+
+</Project>

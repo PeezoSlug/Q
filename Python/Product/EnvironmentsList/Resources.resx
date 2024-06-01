@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfigurationExtensionDisplayName" xml:space="preserve">
+    <value>Configure</value>
+  </data>
+  <data name="ConfigurationExtensionHelpContent" xml:space="preserve">
+    <value>These environment settings may be configured. The tooltips on each field include more information and examples.</value>
+  </data>
+  <data name="DBExtensionDisplayName" xml:space="preserve">
+    <value>IntelliSense</value>
+  </data>
+  <data name="DBExtensionHelpContent" xml:space="preserve">
+    <value>This list shows the modules as detected by IntelliSense. If you do not see your library here, it may not be installed correctly.</value>
+  </data>
+  <data name="DBExtensionRefreshDBLabel" xml:space="preserve">
+    <value>_Refresh DB</value>
+  </data>
+  <data name="DBExtensionRefreshDBAutomationName" xml:space="preserve">
+    <value>Refresh completion DB</value>
+  </data>
+  <data name="DBExtensionModuleCountLabel" xml:space="preserve">
+    <value>({0} modules)</value>
+  </data>
+  <data name="DBExtensionModuleAutomationName" xml:space="preserve">
+    <value>{0} ({1} modules)</value>
+    <comment>{0} is the package name, {1} is the module count.</comment>
+  </data>
+  <data name="DBExtensionIsUpToDateToolTip" xml:space="preserve">
+    <value>This package is up to date in the completion DB.</value>
+  </data>
+  <data name="DBExtensionIsNotUpToDateToolTip" xml:space="preserve">
+    <value>The completion DB does not have analysis results for all modules in this package.</value>
+  </data>
+  <data name="EnvironmentPathsExtensionDisplayName" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="EnvironmentPathsExtensionHelpContent" xml:space="preserve">
+    <value>This is a quick overview of the environment. Use the links to open the paths, or right-click to copy them to the clipboard.</value>
+  </data>
+  <data name="InstallationFailed" xml:space="preserve">
+    <value>Installation failed</value>
+    <comment>Used as exception text</comment>
+  </data>
+  <data name="InstallingPackageFailed" xml:space="preserve">
+    <value>----- Failed to install '{0}' -----
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="InstallingPackageStarted" xml:space="preserve">
+    <value>----- Installing '{0}' -----</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="InstallingPackageSuccess" xml:space="preserve">
+    <value>----- Successfully installed '{0}' -----
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="InstallingPipFailed" xml:space="preserve">
+    <value>----- Failed to install pip -----
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="InstallingPipStarted" xml:space="preserve">
+    <value>----- Installing pip -----</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="InstallingPipSuccess" xml:space="preserve">
+    <value>----- Successfully installed pip -----
+</value>
+    <comment>Displayed in the output window</comment>
+  </data>
+  <data name="ListFailed" xml:space="preserve">
+    <value>Enumerating packages failed</value>
+  </data>
+  <data name="LoadingDescription" xml:space="preserve">
+    <value>(Loading description...)</value>
+  </data>
+  <data name="MisconfiguredEnvironment" xml:space="preserve">
+    <value>Operation cannot be started because the environment is not configured.</value>
+    <comment>Used as exception text</comment>
+  </data>
+  <data name="NoDescription" xml:space="preserve">
+    <value>(No description)</value>
+  </data>
+  <data name="PipExtensionHelpContent" xml:space="preserve">
+    <value>These packages can be managed using your environment's package manager. Type in the search box to install new packages, or use the buttons on existing packages to update or remove them.</value>
+  </data>
+  <data name="ProductTitle" xml:space="preserve">
+    <value>Visual Studio</value>
+  </data>
+  <data name="UninstallationFailed" xml:space="preserve">
+    <value>Uninstallation failed</value>
+    <comment>Used as exception text</comment>
+  </data>
+  <data name="ConfigurationExtensionDescriptionWatermark" xml:space="preserve">
+    <value>e.g. My Custom Environment</value>
+  </data>
+  <data name="ConfigurationExtensionDescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ConfigurationExtensionDescriptionHelp" xml:space="preserve">
+    <value>The description is displayed throughout Visual Studio to help you identify the environment.</value>
+  </data>
+  <data name="ConfigurationExtensionPrefixPathLabel" xml:space="preserve">
+    <value>Prefix path</value>
+  </data>
+  <data name="ConfigurationExtensionPrefixPathBrowseButton" xml:space="preserve">
+    <value>Browse for prefix path</value>
+  </data>
+  <data name="ConfigurationExtensionPrefixPathWatermark" xml:space="preserve">
+    <value>e.g. C:\PythonXY</value>
+  </data>
+  <data name="ConfigurationExtensionPrefixPathHelp" xml:space="preserve">
+    <value>The prefix path specifies the directory containing all files needed for this environment. It may be used for searching installed libraries or deploying an environment to another machine.</value>
+  </data>
+  <data name="ConfigurationExtensionInterpreterPathLabel" xml:space="preserve">
+    <value>Interpreter path</value>
+  </data>
+  <data name="ConfigurationExtensionInterpreterPathBrowseButton" xml:space="preserve">
+    <value>Browse for interpreter path</value>
+  </data>
+  <data name="ConfigurationExtensionInterpreterPathWatermark" xml:space="preserve">
+    <value>e.g. C:\PythonXY\python.exe</value>
+  </data>
+  <data name="ConfigurationExtensionInterpreterPathHelp" xml:space="preserve">
+    <value>The interpreter path is the executable file used to run Python. Normally this is called "python.exe", but it may be different for some interpreters.</value>
+  </data>
+  <data name="ConfigurationExtensionWindowedInterpreterPathLabel" xml:space="preserve">
+    <value>Windowed interpreter</value>
+  </data>
+  <data name="ConfigurationExtensionWindowedInterpreterPathBrowseButton" xml:space="preserve">
+    <value>Browse for windowed interpreter path</value>
+  </data>
+  <data name="ConfigurationExtensionWindowedInterpreterPathWatermark" xml:space="preserve">
+    <value>e.g. C:\PythonXY\pythonw.exe</value>
+  </data>
+  <data name="ConfigurationExtensionWindowedInterpreterPathHelp" xml:space="preserve">
+    <value>The windowed interpreter path is the executable file used to start Python without displaying a console window. Normally this is called "pythonw.exe", but it may be different for some interpreters.</value>
+  </data>
+  <data name="ConfigurationExtensionWindowedInterpreterPathBrowseFilter" xml:space="preserve">
+    <value>Executable Files (*.exe)|*.exe|All Files (*.*)|*.*</value>
+  </data>
+  <data name="ConfigurationExtensionInterpreterPathBrowseFilter" xml:space="preserve">
+    <value>Executable Files (*.exe)|*.exe|All Files (*.*)|*.*</value>
+  </data>
+  <data name="ConfigurationExtensionLanguageVersionLabel" xml:space="preserve">
+    <value>Language version</value>
+  </data>
+  <data name="ConfigurationExtensionLanguageVersionWatermark" xml:space="preserve">
+    <value>Language version</value>
+  </data>
+  <data name="ConfigurationExtensionLanguageVersionHelp" xml:space="preserve">
+    <value>The language version determines whether certain syntax features are allowed or reported as errors. This should be set to match the interpreter version.</value>
+  </data>
+  <data name="ConfigurationExtensionArchitectureLabel" xml:space="preserve">
+    <value>Architecture</value>
+  </data>
+  <data name="ConfigurationExtensionArchitectureWatermark" xml:space="preserve">
+    <value>Architecture</value>
+  </data>
+  <data name="ConfigurationExtensionArchitectureHelp" xml:space="preserve">
+    <value>The architecture helps distinguish similar interpreters. This should be set to match the target architecture of the interpreter, rather than the architecture of your operating system.</value>
+  </data>
+  <data name="ConfigurationExtensionPathEnvVarLabel" xml:space="preserve">
+    <value>Path environment variable</value>
+  </data>
+  <data name="ConfigurationExtensionPathEnvVarWatermark" xml:space="preserve">
+    <value>e.g. PYTHONPATH</value>
+  </data>
+  <data name="ConfigurationExtensionPathEnvVarHelp" xml:space="preserve">
+    <value>This environment variable is set to specify search paths that should be added to sys.path. Normally this should be set to "PYTHONPATH", but it may be different for some interpreters.</value>
+  </data>
+  <data name="ConfigurationExtensionApplyLabel" xml:space="preserve">
+    <value>_Apply</value>
+  </data>
+  <data name="ConfigurationExtensionApplyTooltip" xml:space="preserve">
+    <value>Saves the changes that have been made.</value>
+  </data>
+  <data name="ConfigurationExtensionResetLabel" xml:space="preserve">
+    <value>_Reset</value>
+  </data>
+  <data name="ConfigurationExtensionResetTooltip" xml:space="preserve">
+    <value>Clears any changes that have been made.</value>
+  </data>
+  <data name="ConfigurationExtensionAutoDetectLabel" xml:space="preserve">
+    <value>A_uto Detect</value>
+  </data>
+  <data name="ConfigurationExtensionAutoDetectTooltip" xml:space="preserve">
+    <value>Attempts to fill in blank settings based on those that are already filled in.</value>
+  </data>
+  <data name="ConfigurationExtensionRemoveLabel" xml:space="preserve">
+    <value>Re_move</value>
+  </data>
+  <data name="ConfigurationExtensionRemoveTooltip" xml:space="preserve">
+    <value>Removes the environment. This operation cannot be undone.</value>
+  </data>
+  <data name="EnvironmentViewRefreshDBProgressTooltip" xml:space="preserve">
+    <value>Refreshing completion DB</value>
+  </data>
+  <data name="EnvironmentViewNeedRefreshToolTip" xml:space="preserve">
+    <value>Completion DB is not up to date. Click to start refreshing.</value>
+  </data>
+  <data name="EnvironmentViewInteractiveWindowTooltip" xml:space="preserve">
+    <value>Open Interactive Window</value>
+  </data>
+  <data name="EnvironmentViewCustomLabel" xml:space="preserve">
+    <value>Custom...</value>
+  </data>
+  <data name="EnvironmentViewCondaLabel" xml:space="preserve">
+    <value>Create conda environment...</value>
+  </data>
+  <data name="EnvironmentViewOnlineHelpLabel" xml:space="preserve">
+    <value>Go online and help me find other environments</value>
+  </data>
+  <data name="EnvironmentViewNeedRefreshAutomationName" xml:space="preserve">
+    <value>Refresh completion DB</value>
+  </data>
+  <data name="EnvironmentViewNeedRefreshAutomationHelp" xml:space="preserve">
+    <value>Completion DB is not up to date. Click to start refreshing</value>
+  </data>
+  <data name="EnvironmentViewInteractiveWindowAutomationName" xml:space="preserve">
+    <value>Open Interactive Window</value>
+  </data>
+  <data name="EnvironmentViewCustomAutomationName" xml:space="preserve">
+    <value>Add new environment</value>
+  </data>
+  <data name="EnvironmentViewCreateNewCondaEnvironmentAutomationName" xml:space="preserve">
+    <value>Create new conda environment</value>
+  </data>
+  <data name="EnvironmentPathsExtensionDeleteEnvironment" xml:space="preserve">
+    <value>Delete this environment from disk</value>
+  </data>
+  <data name="EnvironmentPathsExtensionDeleteConfirmation" xml:space="preserve">
+    <value>Are you sure you want to delete '{0}'?
+
+The folder will be deleted from disk. This operation cannot be undone.</value>
+  </data>
+  <data name="EnvironmentPathsExtensionMakeDefaultLabel" xml:space="preserve">
+    <value>Make this the default environment for new projects</value>
+  </data>
+  <data name="EnvironmentPathsExtensionIsDefaultLabel" xml:space="preserve">
+    <value>This is the default environment for new projects</value>
+  </data>
+  <data name="EnvironmentPathsExtensionCannotBeDefaultLabel" xml:space="preserve">
+    <value>This environment cannot be made the default.</value>
+  </data>
+  <data name="EnvironmentPathsExtensionOpenInteractiveWindowLabel" xml:space="preserve">
+    <value>Open interactive window</value>
+  </data>
+  <data name="EnvironmentPathsExtensionOpenInteractiveScriptsLabel" xml:space="preserve">
+    <value>Explore interactive scripts</value>
+  </data>
+  <data name="EnvironmentPathsExtensionEnableIPythonLabel" xml:space="preserve">
+    <value>Use IPython interactive mode</value>
+  </data>
+  <data name="EnvironmentPathsExtensionOpenInPowerShell" xml:space="preserve">
+    <value>Open in PowerShell</value>
+  </data>
+  <data name="EnvironmentPathsExtensionOpenInCommandPromptMenuItem" xml:space="preserve">
+    <value>Open in _Command Prompt</value>
+  </data>
+  <data name="EnvironmentPathsExtensionConfigureEnvironmentLabel" xml:space="preserve">
+    <value>Configure or remove environment</value>
+  </data>
+  <data name="EnvironmentPathsExtensionSupportInformationLabel" xml:space="preserve">
+    <value>Visit the distributor's website</value>
+  </data>
+  <data name="EnvironmentPathsExtensionBrokenEnvironmentLabel" xml:space="preserve">
+    <value>Help me fix this broken environment</value>
+  </data>
+  <data name="PipExtensionClearSearchToolTip" xml:space="preserve">
+    <value>Clear search filter</value>
+  </data>
+  <data name="PipExtensionSecurityWarning" xml:space="preserve">
+    <value>Due to new security restrictions, installing from the internet may not work on this version of Python.</value>
+  </data>
+  <data name="PipExtensionSecurityLearnMore" xml:space="preserve">
+    <value>Learn more</value>
+  </data>
+  <data name="PipExtensionInstallPipToolTip" xml:space="preserve">
+    <value>Install the setuptools and pip packages from PyPI. These packages are required to use this panel.</value>
+  </data>
+  <data name="PipExtensionInstallPipLabel" xml:space="preserve">
+    <value>Download and install pip package manager</value>
+  </data>
+  <data name="PipExtensionInstallLabel" xml:space="preserve">
+    <value>Install {0}</value>
+    <comment>{0} is package display name</comment>
+  </data>
+  <data name="PipPackageUnknownPackageSpec" xml:space="preserve">
+    <value>(unknown)</value>
+  </data>
+  <data name="StandardLibraryModuleListItem" xml:space="preserve">
+    <value>(Standard Library)</value>
+  </data>
+  <data name="EnvironmentPathsExtensionEnableIPythonAutomationName" xml:space="preserve">
+    <value>Use IPython interactive mode</value>
+  </data>
+  <data name="EnvironmentPathsInterpreterPath" xml:space="preserve">
+    <value>Interpreter path</value>
+  </data>
+  <data name="EnvironmentPathsPrefixPath" xml:space="preserve">
+    <value>Interpreter directory</value>
+  </data>
+  <data name="EnvironmentPathsWindowsInterpreterPath" xml:space="preserve">
+    <value>Windows interpreter path</value>
+  </data>
+  <data name="ToolWindow_ExtensionsName" xml:space="preserve">
+    <value>Environment pages</value>
+  </data>
+  <data name="ToolWindow_HelpContentName" xml:space="preserve">
+    <value>Environment page help</value>
+  </data>
+  <data name="ToolWindow_HelpVisibilityName" xml:space="preserve">
+    <value>Toggle page help</value>
+  </data>
+  <data name="ToolWindow_ListOfEnvironmentsName" xml:space="preserve">
+    <value>Python environments</value>
+  </data>
+  <data name="NoDBExtensionDisplayName" xml:space="preserve">
+    <value>IntelliSense [database disabled]</value>
+  </data>
+  <data name="NoDBExtensionHelpContent" xml:space="preserve">
+    <value>IntelliSense databases will be removed in a future update and have been disabled to help with testing. See the link below to reactivate the database.</value>
+  </data>
+  <data name="NoDBExtensionMessage" xml:space="preserve">
+    <value>In a future update to Visual Studio, IntelliSense databases for Python code will be removed. We are currently testing our replacement, which does not use databases.
+
+If you are having trouble, you can click the link below and restart Visual Studio to restore the old functionality. It can be enabled again through Tools, Options, Python.</value>
+  </data>
+  <data name="NoDBExtensionReactivate" xml:space="preserve">
+    <value>Reactivate IntelliSense databases in my next session</value>
+  </data>
+  <data name="BrokenEnvironmentAutomationNameFormat" xml:space="preserve">
+    <value>{0} - broken</value>
+    <comment>Used for accessibility to indicate an environment is not usable</comment>
+  </data>
+</root>

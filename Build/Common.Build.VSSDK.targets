@@ -1,0 +1,228 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+  Projects that only include templates do not need to include or deploy
+  certain files in the VSIX.
+  
+  By default, we don't even create a VSIX, since the project may contain
+  exactly one template that is referenced by a single project that creates
+  the VSIX. This last project explicitly sets CreateVsixContainer to true.
+  -->
+  <PropertyGroup Condition="$(UseVSSDKTemplateOnly)">
+    <CreateVsixContainer Condition="'$(CreateVsixContainer)' == ''">false</CreateVsixContainer>
+    <CopyVsixManifestToOutput>$(CreateVsixContainer)</CopyVsixManifestToOutput>
+    <GeneratePkgDefFile Condition="'$(GeneratePkgDefFile)' == ''">false</GeneratePkgDefFile>
+    <DeployExtension Condition="'$(DeployExtension)' == ''">false</DeployExtension>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+    <IncludeVSIXItemsFromTargets></IncludeVSIXItemsFromTargets>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="!$(UseVSSDK) and !$(UseVSSDKTemplateOnly)">
+    <DeployVSTemplates>false</DeployVSTemplates>
+    <DeployExtension>false</DeployExtension>
+    <CopyVsixExtensionFiles>false</CopyVsixExtensionFiles>
+    <CreateVsixContainer>false</CreateVsixContainer>
+    <CopyVsixManifestToOutput>false</CopyVsixManifestToOutput>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+    <IncludePkgdefInVSIXContainer>false</IncludePkgdefInVSIXContainer>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!--
+    To specify a different registry root to register your package, uncomment the TargetRegistryRoot
+    tag and specify a registry root in it.
+    <TargetRegistryRoot></TargetRegistryRoot>
+    -->
+    <RegisterWithCodebase Condition="'$(RegisterWithCodebase)' == ''">true</RegisterWithCodebase>
+  </PropertyGroup>
+
+  <!--
+  Inside Visual Studio, we want to deploy to the experimental hive when
+  building for ease of debugging.
+  -->
+  <PropertyGroup Condition="'$(BuildingInsideVisualStudio)' == 'true'">
+    <DeployExtension Condition="'$(DeployExtension)' == ''">true</DeployExtension>
+    <DeployVSTemplates Condition="'$(DeployVSTemplates)' == ''">false</DeployVSTemplates>
+    <CreateVsixContainer Condition="'$(CreateVsixContainer)' == ''">false</CreateVsixContainer>
+    <CopyVsixManifestToOutput Condition="'$(CopyVsixManifestToOutput)' == ''">true</CopyVsixManifestToOutput>
+    <RegisterOutputPackage Condition="'$(RegisterOutputPackage)' == ''">true</RegisterOutputPackage>
+  </PropertyGroup>
+  
+  <!--
+  Outside of Visual Studio, we want to create VSIX containers rather than
+  deploying to the experimental hive.
+  -->
+  <PropertyGroup Condition="'$(BuildingInsideVisualStudio)' != 'true'">
+    <DeployExtension Condition="'$(DeployExtension)' == ''">false</DeployExtension>
+    <DeployVSTemplates Condition="'$(DeployVSTemplates)' == ''">false</DeployVSTemplates>
+    <CreateVsixContainer Condition="'$(CreateVsixContainer)' == ''">false</CreateVsixContainer>
+    <CopyVsixManifestToOutput Condition="'$(CopyVsixManifestToOutput)' == ''">true</CopyVsixManifestToOutput>
+    <RegisterOutputPackage Condition="'$(RegisterOutputPackage)' == ''">false</RegisterOutputPackage>
+  </PropertyGroup>
+
+  <!--
+  If a VSIX is being created, we want to copy its contents to a location
+  where it can be signed and zipped.
+  -->
+  <PropertyGroup Condition="$(CreateVsixContainer)">
+    <CopyVsixExtensionFiles Condition="'$(CopyVsixExtensionFiles)' == ''">true</CopyVsixExtensionFiles>
+    <CopyVsixExtensionLocation>$(CopyVsixExtensionRoot)$(TargetName)\</CopyVsixExtensionLocation>
+    <TargetVsixContainerName Condition="'$(TargetVsixContainerName)'==''">$(TargetName).vsix</TargetVsixContainerName>
+    <TargetVsixContainer Condition="'$(TargetVsixContainer)'==''">$(SetupOutputPath)$(TargetVsixContainerName)</TargetVsixContainer>
+  </PropertyGroup>
+
+  <Target Name="_CreateVsixContainerPath" Condition="$(CreateVsixContainer) and !Exists('$(SetupOutputPath)')" BeforeTargets="PrepareForBuild">
+    <MakeDir Directories="$(SetupOutputPath)" ContinueOnError="true" />
+  </Target>
+
+  <!-- Import the VS SDK headers -->
+  <Import Project="$(PackagesPath)Microsoft.VSSDK.BuildTools\build\Microsoft.VSSDK.BuildTools.targets" />
+  <Import Project="$(PackagesPath)Microsoft.VSSDK.BuildTools\tools\vssdk\Microsoft.VsSDK.targets" />
+
+  <!-- For non-debug builds, don't copy debug symbols -->
+  <Target Name="_ClearVSIXSourceItemLocalOnly"
+          BeforeTargets="CopyVsixExtensionFiles"
+          Condition="$(CreateVsixContainer) and $(Configuration) != 'Debug'">
+    <ItemGroup>
+      <_VSIXSourceItemLocalOnly Include="@(VSIXSourceItemLocalOnly)" />
+      <VSIXSourceItemLocalOnly Remove="@(VSIXSourceItemLocalOnly)" />
+    </ItemGroup>
+  </Target>
+
+  <Target Name="_RestoreVSIXSourceItemLocalOnly"
+          AfterTargets="CopyVsixExtensionFiles"
+          Condition="$(CreateVsixContainer) and $(Configuration) != 'Debug'">
+    <ItemGroup>
+      <VSIXSourceItemLocalOnly Include="@(_VSIXSourceItemLocalOnly)" />
+      <_VSIXSourceItemLocalOnly Remove="@(_VSIXSourceItemLocalOnly)" />
+    </ItemGroup>
+  </Target>
+  
+  <!--
+  Our GetVSIXSourceItems does not trigger vsixmanifest generation, so update
+  the target dependencies to bypass it.
+  -->
+  <PropertyGroup>
+    <ValidateVsixPartsDependsOn>DetokenizeVsixManifestFile;$(ValidateVsixPartsDependsOn)</ValidateVsixPartsDependsOn>
+  </PropertyGroup>
+
+  <!-- Copy extension files to the project's output directory -->
+  <Target Name="CopyVSSDKFilesToOutput"
+          DependsOnTargets="CopyVsixManifestFile;CopyPkgDef"
+          BeforeTargets="AfterBuild" />
+  
+  <!--
+  Copies the VS-specific theme file to the output directory.
+  
+  Themes should be stored in a Theme directory of the project and be named
+  matching the output assembly and the target VS version, for example:
+      Microsoft.PythonTools.theme.v12.0.pkgdef
+  -->
+  <ItemGroup>
+    <_ThemePkgDef Include="Theme\**\*.theme.v$(VSTarget).pkgdef">
+      <IntermediateFile>$(IntermediateOutputPath)$([System.String]::New(`%(Identity)`).Replace(`.v$(VSTarget)`, ``))</IntermediateFile>
+    </_ThemePkgDef>
+  </ItemGroup>
+
+  <Target Name="_IncludeThemePkgdef" BeforeTargets="PrepareForBuild" Inputs="@(_ThemePkgDef)" Outputs="@(_ThemePkgDef->'%(IntermediateFile)')">
+    <Copy SourceFiles="@(_ThemePkgDef)"
+          DestinationFiles="@(_ThemePkgDef->'%(IntermediateFile)')">
+        <Output TaskParameter="CopiedFiles" ItemName="_CopiedThemePkgDef" />
+    </Copy>
+    <ItemGroup>
+      <Content Include="@(_ThemePkgDef->'%(IntermediateFile)')">
+        <IncludeInVsix>true</IncludeInVsix>
+        <VSIXSubPath>.</VSIXSubPath>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+  </Target>
+
+
+  <!--
+  Zip folders containing VSIX files. These folders must have been created
+  by previously having built the project.
+  -->
+  <Target Name="_GetRezipVSIXContainers" Condition="$([msbuild]::ValueOrDefault($(RezipVSIXFiles), `false`))">
+    <ItemGroup>
+      <VSIX Include="$(CopyVsixExtensionRoot)*\extension.vsixmanifest" />
+      <VSIX>
+        <SourceDir>%(VSIX.RootDir)%(VSIX.Directory)</SourceDir>
+        <Container>$(SetupOutputPath)$([System.IO.Path]::GetFileName($([System.String]::new(%(VSIX.Directory)).TrimEnd(`\`)))).vsix</Container>
+      </VSIX>
+    </ItemGroup>
+  </Target>
+  
+  <Target Name="_GetRezipVSIXFiles" DependsOnTargets="_GetRezipVSIXContainers" Condition="$([msbuild]::ValueOrDefault($(RezipVSIXFiles), `false`))">
+    <ItemGroup>
+      <_VSIXSourceItems Include="%(VSIX.SourceDir)**\*">
+        <Container>%(VSIX.Container)</Container>
+      </_VSIXSourceItems>
+      <_VSIXSourceItems>
+        <TargetPath>%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+      </_VSIXSourceItems>
+    </ItemGroup>
+  </Target>
+  
+  <Target Name="_RezipSingleVSIX" DependsOnTargets="_GetRezipVSIXFiles" BeforeTargets="Build" Inputs="@(_VSIXSourceItems)" Outputs="%(_VSIXSourceItems.Container)">
+    <Message Text="Rezipping %(_VSIXSourceItems.Container)" Importance="high" />
+    
+    <CreateZipPackage Files="@(_VSIXSourceItems)" ZipPackage="%(_VSIXSourceItems.Container)" CompressionLevel="$(ZipPackageCompressionLevel)">
+      <Output TaskParameter="ZipPackage" ItemName="FileWrites" />
+      <Output TaskParameter="ZipPackage" ItemName="_VsixToSign" />
+    </CreateZipPackage>
+
+    <ItemGroup>
+      <FilesToSign Include="@(_VsixToSign)">
+        <Authenticode>VsixSHA2</Authenticode>
+      </FilesToSign>
+    </ItemGroup>
+  </Target>
+
+  <!--
+  If this package is building a VSIX and InstalledByMsi property is set to
+  False, edit the intermediate manifest to reflect that.
+  -->
+  <Target Name="EditIntermediateVsixManifest"
+          AfterTargets="DetokenizeVsixManifestFile"
+          Condition="!$([msbuild]::ValueOrDefault($(InstalledByMsi), `true`))">
+    <PropertyGroup>
+      <_VsixManifestSchemaNamespaces>
+        <![CDATA[
+          <Namespace Prefix="vsx10" Uri="http://schemas.microsoft.com/developer/vsx-schema/2010"/>
+          <Namespace Prefix="vsx11" Uri="http://schemas.microsoft.com/developer/vsx-schema/2011"/>
+      ]]>
+      </_VsixManifestSchemaNamespaces>
+    </PropertyGroup>
+    
+    <XmlPoke XmlInputPath="$(IntermediateVsixManifest)"
+             Namespaces="$(_VsixManifestSchemaNamespaces)"
+             Query="/vsx10:Vsix/vsx10:Identifier/vsx10:InstalledByMsi"
+             Value="false" />
+    <XmlPoke XmlInputPath="$(IntermediateVsixManifest)"
+             Namespaces="$(_VsixManifestSchemaNamespaces)"
+             Query="/vsx11:PackageManifest/vsx11:Installation/@InstalledByMsi"
+             Value="false" />
+  </Target>
+
+  <!--
+  Invoke build with /t:CreateVsixContainer and /p:RebuildVsixOnly to use
+  existing build outputs (likely signed by this stage) to regenerate the VSIX.
+  -->
+  <PropertyGroup>
+    <RebuildVsixOnly Condition="$(RebuildVsixOnly) == ''">false</RebuildVsixOnly>
+    <BuildProjectReferences Condition="$(RebuildVsixOnly)">false</BuildProjectReferences>
+  </PropertyGroup>
+  
+  <Target Name="_UpdateBinariesForVsix" AfterTargets="GetVSIXSourceItems" Condition="$(RebuildVsixOnly)">
+    <ItemGroup>
+      <_VSIWithBinary Include="@(VSIXSourceItem)" Condition="Exists('$(BinariesOutputPath)\%(Filename)%(Extension)') and ('%(Extension)' == '.dll' or '%(Extension)' == '.exe')">
+        <PreferredPath>$(BinariesOutputPath)\%(Filename)%(Extension)</PreferredPath>
+      </_VSIWithBinary>
+      <VSIXSourceItem Remove="@(_VSIWithBinary)" />
+      <VSIXSourceItem Include="%(_VSIWithBinary.PreferredPath)" />
+    </ItemGroup>
+    <Message Text="Updated VSIX source items" Importance="high" />
+    <Message Text="  @(VSIXSourceItem->'%(FullPath)', '%0D%0A  ')" Importance="high" />
+  </Target>
+</Project>

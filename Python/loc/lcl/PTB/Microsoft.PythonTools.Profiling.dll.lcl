@@ -1,0 +1,858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LCX SchemaVersion="6.0" Name="E:\A\_work\9\b\raw\binaries\Microsoft.PythonTools.Profiling.dll" PsrId="211" FileType="1" SrcCul="en-US" TgtCul="pt-BR" xmlns="http://schemas.microsoft.com/locstudio/2006/6/lcx">
+  <OwnedComments>
+    <Cmt Name="Dev" />
+    <Cmt Name="LcxAdmin" />
+    <Cmt Name="Rccx" />
+  </OwnedComments>
+  <Settings Name="@SettingsPath@\default.lss" Type="Lss" />
+  <Item ItemId=";Managed Resources" ItemType="0" PsrId="211" Leaf="true">
+    <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
+  </Item>
+  <Item ItemId=";Microsoft.PythonTools.Profiling.g.resources" ItemType="0" PsrId="211" Leaf="false">
+    <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" Path=" \ ;Managed Resources \ 0 \ 0" />
+    <Item ItemId=";profiling/comparereportswindow.baml" ItemType="0" PsrId="211" Leaf="true">
+      <Bin BinId="3">
+        <Val><![CDATA[AAEAAAD/////AQAAAAAAAAAEAQAAAAxTeXN0ZW0uSW50MzIBAAAAB21fdmFsdWUACAMAAAALAAEAAAD/////AQAAAAAAAAAGAQAAACNwcm9maWxpbmcvY29tcGFyZXJlcG9ydHN3aW5kb3cuYmFtbAsAAQAAAP////8BAAAAAAAAAAQBAAAAH1N5c3RlbS5Vbml0eVNlcmlhbGl6YXRpb25Ib2xkZXIDAAAABERhdGEJVW5pdHlUeXBlDEFzc2VtYmx5TmFtZQEAAQgGAgAAAB9TeXN0ZW0uSU8uVW5tYW5hZ2VkTWVtb3J5U3RyZWFtBAAAAAYDAAAAS21zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQsAAQAAAP////8BAAAAAAAAAA8BAAAAcwwAAAIMAAAATQBTAEIAQQBNAEwAAABgAAAAYAAAAGAAAQD/////ABxnAABjTWljcm9zb2Z0LlB5dGhvblRvb2xzLlByb2ZpbGluZywgVmVyc2lvbj0xNy4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhG1EtY2xyLW5hbWVzcGFjZTpNaWNyb3NvZnQuUHl0aG9uVG9vbHMuUHJvZmlsaW5nH01pY3Jvc29mdC5QeXRob25Ub29scy5Qcm9maWxpbmcAABxdAQBZTWljcm9zb2Z0LlB5dGhvblRvb2xzLCBWZXJzaW9uPTE3LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EbcExjbHItbmFtZXNwYWNlOk1pY3Jvc29mdC5WaXN1YWxTdHVkaW9Ub29scy5XcGY7YXNzZW1ibHk9TWljcm9zb2Z0LlB5dGhvblRvb2xzH01pY3Jvc29mdC5WaXN1YWxTdHVkaW9Ub29scy5XcGYBAB06AAAAADRNaWNyb3NvZnQuUHl0aG9uVG9vbHMuUHJvZmlsaW5nLkNvbXBhcmVSZXBvcnRzV2luZG93AwAAABxSAgBOV2luZG93c0Jhc2UsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0zMWJmMzg1NmFkMzY0ZTM1HFwDAFhQcmVzZW50YXRpb25GcmFtZXdvcmssIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0zMWJmMzg1NmFkMzY0ZTM1HFcEAFNQcmVzZW50YXRpb25Db3JlLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49MzFiZjM4NTZhZDM2NGUzNRREADlodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24DAAIAAwAEABxSBQBOU3lzdGVtLlhhbWwsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5FDoBeCxodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbAQAAgADAAQABQAUPAJ1aS1jbHItbmFtZXNwYWNlOk1pY3Jvc29mdC5QeXRob25Ub29scy5Qcm9maWxpbmcEAAIAAwAEAAUAFFwDd3BmTGNsci1uYW1lc3BhY2U6TWljcm9zb2Z0LlZpc3VhbFN0dWRpb1Rvb2xzLldwZjthc3NlbWJseT1NaWNyb3NvZnQuUHl0aG9uVG9vbHMEAAIAAwAEAAUAHS0BAAAAJ01pY3Jvc29mdC5QeXRob25Ub29scy5Qcm9maWxpbmcuU3RyaW5ncx8hAAABAAAaQ29tcGFyZVJlcG9ydHNfV2luZG93VGl0bGUfDAEAHf0ABVRpdGxlIwEAWgIAACQJy/8DMzAwpP4kCcz/AzIyMKT+JAnH/wM1MDCk/iQK0f8EYXV0b6T+HxQCAB39AA1TaXplVG9Db250ZW50JAwCAAZIZWlnaHQ9/x8cAwAd/QAVV2luZG93U3RhcnR1cExvY2F0aW9uJBEDAAtDZW50ZXJPd25lcj3/HxQEAB39AA1TaG93SW5UYXNrYmFyBgYEAC4AAB0uAgABAChNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvVG9vbHMuV3BmLkNvbnRyb2xzHxQFAAIAAA1CYWNrZ3JvdW5kS2V5I+j/vSAFAB8UBgACAAANRm9yZWdyb3VuZEtleSOH/70gBgAdJgMAAwAgU3lzdGVtLldpbmRvd3MuTWVkaWEuVGV4dE9wdGlvbnMfGQcAAwAAElRleHRGb3JtYXR0aW5nTW9kZSQNBwAHRGlzcGxheT3/HxEIAB39AApSZXNpemVNb2RlJBcIABFDYW5SZXNpemVXaXRoR3JpcD3/HxAJAB7/AAlSZXNvdXJjZXMNCQAfDQoA9P0ABlNvdXJjZQP0/QAkXAoAVnBhY2s6Ly9hcHBsaWNhdGlvbjosLCwvTWljcm9zb2Z0LlB5dGhvblRvb2xzO2NvbXBvbmVudC9TaGFyZWRQcm9qZWN0L1dwZi9Db250cm9scy54YW1sP/0lAAAAAAQOHxYLAEr9AA9Db21tYW5kQmluZGluZ3MLCwAdKQQABAAjU3lzdGVtLldpbmRvd3MuSW5wdXQuQ29tbWFuZEJpbmRpbmcDBAAALQEAAAAdLgUAAQAoTWljcm9zb2Z0LlZpc3VhbFN0dWRpb1Rvb2xzLldwZi5Db21tYW5kcx8VDAAFAAAOQnJvd3NlT3BlbkZpbGUfDg0ABAAAB0NvbW1hbmQjDQBaAgwABAwu8v8DAv8AJBDP/woxMiA0IDEyIDEycf0fFQ4AAv8ADlJvd0RlZmluaXRpb25zCw4AA+P9ACQKov8EYXV0bwD/BAPj/QAkCqL/BGF1dG8A/wQD4/0AJAqi/wRhdXRvAP8EA+P9ACQKov8EYXV0bwD/BAPj/QAkCqL/BGF1dG8A/wQMLiv/A6b+ACQHwf8BMMX+HyIPAAEAABtDb21wYXJlUmVwb3J0c19CYXNlbGluZUZpbGUj8v9aAg8ABAMC/wAkB8H/ATHF/iQNz/8HMCAwIDAgNnH9HxgQAAL/ABFDb2x1bW5EZWZpbml0aW9ucwsQAAOm/wAkB/P/ASoA/wQDpv8AJArz/wRhdXRvAP8EDC4r/wOB/QAtAgAAACQSyv8MQmFzZWxpbmVGaWxlmf0kB8P/ATDF/iQM2v8GQ2VudGVyPf8dNAYABAAuU3lzdGVtLldpbmRvd3MuQXV0b21hdGlvbi5BdXRvbWF0aW9uUHJvcGVydGllcx8TEQAGAAAMQXV0b21hdGlvbklkJBIRAAxCYXNlbGluZUZpbGWZ/QeO/wPs/wAqEA4MQmFzZWxpbmVGaWxlKx8aEgDs/wATVXBkYXRlU291cmNlVHJpZ2dlciQVEgAPUHJvcGVydHlDaGFuZ2VkPf8ECAQDyf8AJAfD/wExxf4gGAAAFEJyb3dzZU9wZW5GaWxlQnV0dG9uI8n/WwIAAAf3/wPs/wAfEhMA7P8AC0VsZW1lbnROYW1lJBITAAxCYXNlbGluZUZpbGWZ/QQIB/j/A+z/ACoQFxVQZXJmb3JtYW5jZUZpbGVGaWx0ZXIrBAgEBAOm/gAkB8H/ATLF/h8kFAABAAAdQ29tcGFyZVJlcG9ydHNfQ29tcGFyaXNvbkZpbGUj8v9aAhQABAMC/wAkB8H/ATPF/iQNz/8HMCAwIDAgNnH9CxAAA6b/ACQH8/8BKgD/BAOm/wAkCvP/BGF1dG8A/wQMLiv/A4H9AC0DAAAAJBTK/w5Db21wYXJpc29uRmlsZZn9JAfD/wEwxf4kDNr/BkNlbnRlcj3/JBQRAA5Db21wYXJpc29uRmlsZZn9B47/A+z/ACoQEA5Db21wYXJpc29uRmlsZSskFRIAD1Byb3BlcnR5Q2hhbmdlZD3/BAgEA8n/ACQHw/8BMcX+I8n/WwIAAAf3/wPs/wAkFBMADkNvbXBhcmlzb25GaWxlmf0ECAf4/wPs/wAqEBcVUGVyZm9ybWFuY2VGaWxlRmlsdGVyKwQIBAQDp/0AJAfB/wE0xf4fEhUAp/0AC09yaWVudGF0aW9uJBAVAApIb3Jpem9udGFsPf8kC9D/BVJpZ2h0Pf8kDMj/BkJvdHRvbT3/JA7P/wgwIDEyIDAgMHH9Liv/A8n/AC0EAAAAHxAWAMn/AAlJc0RlZmF1bHQGBhYALgABJAjL/wI4NqT+JAjM/wIyNKT+JA3P/wczIDMgOSAzcf0fGBcAAQAAEUNvbXBhcmVSZXBvcnRzX09LI/L/WgIXACQIEQACT2uZ/Qd7/wPs/wAqEAkHSXNWYWxpZCsECAQDyf8ALQUAAAAfDxgAyf8ACElzQ2FuY2VsBgYYAC4AASQIy/8CODak/iQIzP8CMjSk/iQNz/8HOSAzIDMgM3H9HxwZAAEAABVDb21wYXJlUmVwb3J0c19DYW5jZWwj8v9aAhkAJAwRAAZDYW5jZWyZ/QQEBAQCCwABAAAA/////wEAAAAAAAAABAEAAAAOU3lzdGVtLkJvb2xlYW4BAAAAB21fdmFsdWUAAQALAAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAAs=]]></Val>
+      </Bin>
+      <Disp Edtr="External" LocTbl="false" />
+    </Item>
+    <Item ItemId=";profiling/launchprofiling.baml" ItemType="0" PsrId="211" Leaf="true">
+      <Bin BinId="3">
+        <Val><![CDATA[AAEAAAD/////AQAAAAAAAAAEAQAAAAxTeXN0ZW0uSW50MzIBAAAAB21fdmFsdWUACAMAAAALAAEAAAD/////AQAAAAAAAAAGAQAAAB5wcm9maWxpbmcvbGF1bmNocHJvZmlsaW5nLmJhbWwLAAEAAAD/////AQAAAAAAAAAEAQAAAB9TeXN0ZW0uVW5pdHlTZXJpYWxpemF0aW9uSG9sZGVyAwAAAAREYXRhCVVuaXR5VHlwZQxBc3NlbWJseU5hbWUBAAEIBgIAAAAfU3lzdGVtLklPLlVubWFuYWdlZE1lbW9yeVN0cmVhbQQAAAAGAwAAAEttc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkLAAEAAAD/////AQAAAAAAAAAPAQAAAFwXAAACDAAAAE0AUwBCAEEATQBMAAAAYAAAAGAAAABgAAEA/////wAcZwAAY01pY3Jvc29mdC5QeXRob25Ub29scy5Qcm9maWxpbmcsIFZlcnNpb249MTcuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYRtRLWNsci1uYW1lc3BhY2U6TWljcm9zb2Z0LlB5dGhvblRvb2xzLlByb2ZpbGluZx9NaWNyb3NvZnQuUHl0aG9uVG9vbHMuUHJvZmlsaW5nAAAcXQEAWU1pY3Jvc29mdC5QeXRob25Ub29scywgVmVyc2lvbj0xNy4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhG3BMY2xyLW5hbWVzcGFjZTpNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvVG9vbHMuV3BmO2Fzc2VtYmx5PU1pY3Jvc29mdC5QeXRob25Ub29scx9NaWNyb3NvZnQuVmlzdWFsU3R1ZGlvVG9vbHMuV3BmAQAdNQAAAAAvTWljcm9zb2Z0LlB5dGhvblRvb2xzLlByb2ZpbGluZy5MYXVuY2hQcm9maWxpbmcDAAAAHFICAE5XaW5kb3dzQmFzZSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTMxYmYzODU2YWQzNjRlMzUcXAMAWFByZXNlbnRhdGlvbkZyYW1ld29yaywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTMxYmYzODU2YWQzNjRlMzUcVwQAU1ByZXNlbnRhdGlvbkNvcmUsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0zMWJmMzg1NmFkMzY0ZTM1FEQAOWh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbgMAAgADAAQAHFIFAE5TeXN0ZW0uWGFtbCwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkUOgF4LGh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sBAACAAMABAAFABQ8AnVpLWNsci1uYW1lc3BhY2U6TWljcm9zb2Z0LlB5dGhvblRvb2xzLlByb2ZpbGluZwQAAgADAAQABQAUXAN3cGZMY2xyLW5hbWVzcGFjZTpNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvVG9vbHMuV3BmO2Fzc2VtYmx5PU1pY3Jvc29mdC5QeXRob25Ub29scwQAAgADAAQABQAtAQAAAB1GAQAAAEBNaWNyb3NvZnQuUHl0aG9uVG9vbHMuUHJvZmlsaW5nLkRpYWxvZ1dpbmRvd1ZlcnNpb25pbmdXb3JrYXJvdW5kHwsAAAEAAwROYW1lJBsAABVMYXVuY2hQcm9maWxpbmdXaW5kb3eZ/R0tAgAAACdNaWNyb3NvZnQuUHl0aG9uVG9vbHMuUHJvZmlsaW5nLlN0cmluZ3MfIgEAAgAAG0xhdW5jaFByb2ZpbGluZ19XaW5kb3dUaXRsZR8MAgAd/QAFVGl0bGUjAgBaAgEAJAnM/wM0NDCk/iQJx/8DNzAwpP4kCcv/AzQwMKT+HxQDAB39AA1TaXplVG9Db250ZW50JAwDAAZIZWlnaHQ9/x8cBAAd/QAVV2luZG93U3RhcnR1cExvY2F0aW9uJBEEAAtDZW50ZXJPd25lcj3/HxQFAB39AA1TaG93SW5UYXNrYmFyBgYFAC4AAB0uAwABAChNaWNyb3NvZnQuVmlzdWFsU3R1ZGlvVG9vbHMuV3BmLkNvbnRyb2xzHxQGAAMAAA1CYWNrZ3JvdW5kS2V5I+j/vSAGAB8UBwADAAANRm9yZWdyb3VuZEtleSOH/70gBwAdJgQAAwAgU3lzdGVtLldpbmRvd3MuTWVkaWEuVGV4dE9wdGlvbnMfGQgABAAAElRleHRGb3JtYXR0aW5nTW9kZSQNCAAHRGlzcGxheT3/HxEJAB39AApSZXNpemVNb2RlJBcJABFDYW5SZXNpemVXaXRoR3JpcD3/HxAKAB7/AAlSZXNvdXJjZXMNCgAfGQsA9P0AEk1lcmdlZERpY3Rpb25hcmllcx8NDAD0/QAGU291cmNlHTUFAAEAL01pY3Jvc29mdC5WaXN1YWxTdHVkaW9Ub29scy5XcGYuTGFtYmRhRXh0ZW5zaW9uIAcAAANLZXkfDQ0ABQAABkxhbWJkYQP0/QALCwAD9P0AJFwMAFZwYWNrOi8vYXBwbGljYXRpb246LCwsL01pY3Jvc29mdC5QeXRob25Ub29scztjb21wb25lbnQvU2hhcmVkUHJvamVjdC9XcGYvQ29udHJvbHMueGFtbD/9BAP0/QADBQAAGRwYQm9vbFRvVmlzaWJsZU9yQ29sbGFwc2VkAAAuDQAQOzkoYm9vbCBiKSA9PiBiID8gVmlzaWJpbGl0eS5WaXNpYmxlIDogVmlzaWJpbGl0eS5Db2xsYXBzZWQEAwUAABkRDUJvb2xUb1Zpc2libGUAAC4NABA4Nihib29sIGIpID0+IGIgPyBWaXNpYmlsaXR5LlZpc2libGUgOiBWaXNpYmlsaXR5LkhpZGRlbgQDBQAAGRQQQm9vbFRvTm90VmlzaWJsZQAALg0AEDg2KGJvb2wgYikgPT4gYiA/IFZpc2liaWxpdHkuSGlkZGVuIDogVmlzaWJpbGl0eS5WaXNpYmxlBAQMJQAAAAAEDi7y/wMC/wAkDdD/B1N0cmV0Y2g9/yQNyP8HU3RyZXRjaD3/JAjP/wIxMnH9HxUOAAL/AA5Sb3dEZWZpbml0aW9ucwsOAAPj/QAkCqL/BGF1dG8A/wQD4/0AJAqi/wRhdXRvAP8EDC4r/wMC/wAkB8H/ATDF/gsOAAPj/QAkCqL/BGF1dG8A/wQD4/0AJAqi/wRhdXRvAP8EA+P9ACQKov8EYXV0bwD/BAPj/QAkCqL/BGF1dG8A/wQD4/0AJAqi/wRhdXRvAP8EDC4r/wOm/gAkB8H/ATDF/h8kDwACAAAdTGF1bmNoUHJvZmlsaW5nX1doYXRUb1Byb2ZpbGUj8v9aAg8AJA7P/wg2IDEyIDYgMHH9JArh/wRCb2xkIv8EAwn+ACQHwf8BMcX+JBDP/woxMiAxMiAxMiA0cf0fIhAAAgAAG0xhdW5jaFByb2ZpbGluZ19PcGVuUHJvamVjdCPy/1oCEAAdNAYABAAuU3lzdGVtLldpbmRvd3MuQXV0b21hdGlvbi5BdXRvbWF0aW9uUHJvcGVydGllcx8TEQAGAAAMQXV0b21hdGlvbklkJBQRAA5Qcm9maWxlUHJvamVjdJn9HxASAAn+AAlHcm91cE5hbWUkGRIAE1Byb2plY3RPclN0YW5kYWxvbmWZ/Qd7/wPs/wAqEBgWSXNBbnlBdmFpbGFibGVQcm9qZWN0cysECB8QEwBk/QAJSXNDaGVja2VkBxMAA+z/ACoQExFJc1Byb2plY3RTZWxlY3RlZCsECAQDpP8AJAfB/wEyxf4kCc//AzggNHH9JAnd/wM0IDZx/SQM2v8GQ2VudGVyPf8fGBQAt/4AEURpc3BsYXlNZW1iZXJQYXRoJAoUAAROYW1lmf0fNRUAAgAALkxhdW5jaFByb2ZpbGluZ19PcGVuUHJvamVjdENvbWJvQm94RGVzY3JpcHRpb24fCxYABgAABE5hbWUjFgBaAhUAJA0RAAdQcm9qZWN0mf0He/8D7P8AKhATEUlzUHJvamVjdFNlbGVjdGVkKwQIB67/A+z/ACoQExFBdmFpbGFibGVQcm9qZWN0cysECB8TFwDX/QAMU2VsZWN0ZWRJdGVtBxcAA+z/ACoQCQdQcm9qZWN0KwQIBAMJ/gAkB8H/ATPF/iQQz/8KMTIgMTIgMTIgNHH9HycYAAIAACBMYXVuY2hQcm9maWxpbmdfU3RhbmRhbG9uZVNjcmlwdCPy/1oCGAAkExEADVByb2ZpbGVTY3JpcHSZ/SQZEgATUHJvamVjdE9yU3RhbmRhbG9uZZn9BxMAA+z/ACoQFhRJc1N0YW5kYWxvbmVTZWxlY3RlZCsECAQD+P4AJAfB/wE0xf4fJBkAAgAAHUxhdW5jaFBy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]]></Val>
+      </Bin>
+      <Disp Edtr="External" LocTbl="false" />
+    </Item>
+  </Item>
+  <Item ItemId=";Microsoft.PythonTools.Strings.resources" ItemType="0" PsrId="211" Leaf="false">
+    <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" Path=" \ ;Managed Resources \ 0 \ 0" />
+    <Item ItemId=";Strings" ItemType="0" PsrId="211" Leaf="false">
+      <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";CannotFindGeneratedFile" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Can't find expected output file]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não é possível localizar o arquivo de saída esperado]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";CannotFindPythonInterpreter" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Can't find specified Python interpreter]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não é possível localizar o interpretador de Python especificado]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";CannotFindShellFolder" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cannot find shell folder for Visual Studio]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não é possível localizar a pasta do shell para o Visual Studio]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";CannotLocatePerformanceTools" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cannot locate performance tools.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não é possível localizar as ferramentas de desempenho.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";CannotOpenSystemRegistry" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Cannot open system registry]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não é possível abrir o Registro do sistema]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";CaptionDirty" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[{0} *]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[{0} *]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";CompareReports_BaselineFile" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[_Baseline File:]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[_Arquivo de Linha de Base:]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";CompareReports_Cancel" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[_Cancel]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[_Cancelar]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";CompareReports_ComparisonFile" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Co_mparison File:]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Ar_quivo de Comparação:]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";CompareReports_OK" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[_OK]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[_OK]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";CompareReports_WindowTitle" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Select analysis files for comparison]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Selecionar os arquivos de análise para comparação]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";ExecutableFilesFilter" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Executable files (*.exe;*.bat;*.cmd)|*.exe;*.bat;*.cmd|All Files (*.*)|*.*]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Arquivos executáveis (*.exe;*.bat;*.cmd)|*.exe;*.bat;*.cmd|Todos os Arquivos (*.*)|*.*]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FailedToOpenPerformanceSessionFile" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Failed to open file '{0}']D;]A;]D;]A;{1}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Falha ao abrir arquivo '{0}']D;]A;]D;]A;{1}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";FailedToReadPerformanceSession" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Failed to read performance session '{0}']D;]A;]D;]A;{1}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Falha ao ler a sessão de desempenho '{0}' ]D;]A;]D;]A;{1}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_BrowseButton" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text" UsrLk="true">
+          <Val><![CDATA[...]]></Val>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_Cancel" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[_Cancel]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[_Cancelar]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_CommandLineArguments" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Command Line _Arguments:]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Argumentos de Linha de C_omando:]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_InterpreterPath" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[I_nterpreter Path:]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[C_aminho do Intérprete:]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_InterpreterPathBrowseButtonDescription" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Browse file dialog for interpreter path]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Diálogo do arquivo de navegação para o caminho do interpretador]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_MixedModeProfiling" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Mi_xed Mode Profiling]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Criação de perfil de modo mi_sto]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_OK" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[_OK]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[_OK]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_OpenProject" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[_Open project]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A_brir projeto]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_OpenProjectComboBoxDescription" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Project to profile]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Projeto para o perfil]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_OtherInterpreter" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Other...]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Outro...]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_PythonInterpreter" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Python _Interpreter:]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Intérprete _Python:]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_Script" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Sc_ript:]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Sc_ript:]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_ScriptBrowseButtonDescription" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Browse file dialog for script]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Diálogo do arquivo de navegação para o script]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_ScriptOptions" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Script Options]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Opções de Script]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_StandaloneScript" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[S_tandalone script]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Scrip_t autônomo]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_Start" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[_Start]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[_Iniciar]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_WhatToProfile" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[What would you like to profile?]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[O que você gostaria de analisar?]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_WindowTitle" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Profiling Settings]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Configurações de Criação de Perfil]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_WorkingDirectory" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[_Working Directory:]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[_Diretório de Trabalho:]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";LaunchProfiling_WorkingDirectoryBrowseButtonDescription" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Browse folder dialog for working directory]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Diálogo da pasta de navegação para o diretório de trabalho]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";NoProfilingTargetTitle" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[No Profiling Target]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Nenhum Destino de Criação de Perfil]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";NoProjectStartupFile" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Project has no configured startup file, cannot start profiling.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[O projeto não tem um arquivo de inicialização configurado, não é possível iniciar a criação de perfil.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";PerformanceBaseFileName" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Performance]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Desempenho]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";PerformanceComparisonTitle" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Performance Comparison]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Comparação de Desempenho]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";PerformanceReportFilesFilter" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Performance Report Files (*.vsp;*.vsps)|*.vsp;*.vsps|All Files (*.*)|*.*]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Arquivos de Relatório de Desempenho (*.vsp;*.vsps)|*.vsp;*.vsps|Todos os Arquivos (*.*)|*.*]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";PerformanceReportNotFound" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Performance report no longer exists: {0}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[O relatório de desempenho não existe mais: {0}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";PerformanceSessionAlreadyOpen" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Performance '{0}' session is already open]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A sessão de desempenho '{0}' já está aberta]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";PerformanceToolWindowTitle" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Python Performance]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Desempenho Python]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";ProductTitle" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Visual Studio - Python support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Visual Studio – Suporte do Python]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";ProfilingSessionNotConfigured" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Profiling session has not been configured. Configure now and launch?]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A sessão de criação de perfil não foi configurada. Configurar agora e iniciar?]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";ProfilingSupportMissingError" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Profiling support seems to be missing or corrupt. Try repairing your Visual Studio installation.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[O suporte à criação de perfil parece estar ausente ou corrompido. Tente reparar sua instalação do Visual Studio.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";ProjectInterpreterNotFound" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Could not find interpreter for project {0}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não foi possível encontrar o intérprete para o projeto {0}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";ProjectNotFoundInSolution" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Project could not be found in current solution.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não foi possível localizar o projeto na solução atual.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";ProjectTargetUnknownName" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[(Unknown name)]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[(Nome desconhecido)]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";PythonFilesFilter" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Python files (*.py;*.pyw;*.pyi)|*.py;*.pyw;*.pyi|All Files (*.*)|*.*]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Arquivos Python (*.py;*.pyw;*.pyi)|*.py;*.pyw;*.pyi|Todos os arquivos (*.*)|*.*]]></Val>
+          </Tgt>
+          <Prev Cat="Text">
+            <Val><![CDATA[Python files (*.py;*.pyw)|*.py;*.pyw|All Files (*.*)|*.*]]></Val>
+          </Prev>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";Reports" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Reports]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Relatórios]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";SessionAlreadyRemoved" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Session has already been removed]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[A sessão já foi removida]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";StartPerfCmdError" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Failed to start performance monitor.]D;]A;]D;]A;Output:]D;]A;{0}]D;]A;]D;]A;Error:]D;]A;{1}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Falha ao iniciar o monitor de desempenho.]D;]A;]D;]A;Saída:]D;]A;{0}]D;]A;]D;]A;Erro:]D;]A;{1}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";StopPerfMonError" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Failed to shut down performance monitor.]D;]A;]D;]A;Output:]D;]A;{0}]D;]A;]D;]A;Error:]D;]A;{1}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Falha ao desligar o monitor de desempenho.]D;]A;]D;]A;Saída:]D;]A;{0}]D;]A;]D;]A;Erro:]D;]A;{1}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";UnableToStopPerfMon" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Unable to stop performance monitor: {0}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Não é possível parar o monitor de desempenho: {0}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";UnsupportedArchitecture" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Unsupported architecture: {0}]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Arquitetura sem suporte: {0}]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+    </Item>
+  </Item>
+  <Item ItemId=";Microsoft.VSPackage.resources" ItemType="0" PsrId="211" Leaf="false">
+    <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" Path=" \ ;Managed Resources \ 0 \ 0" />
+    <Item ItemId=";Images" ItemType="0" PsrId="211" Leaf="false">
+      <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
+      <Item ItemId=";400" ItemType="7" PsrId="211" Leaf="true">
+        <Bin BinId="3">
+          <Val><![CDATA[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ggkABBMACCYAEEwAIJgAQDABgGACAMEEAIIJAATzPABWueKz9Z75ZxqGYdf2JgAIJgAQTAAgmABAMAGAYAIAwQQAgp1+H8De7zHhmZ19D4IJAIIJAAQTAAgmABBMACCYAEAwAYBgAgDBBACCCQAEEwAIJgAQTAAgmABAMAGAYAIAwQQAggkABBMACCYAEEwAIJgAQDABgGACAMEEAIIJAAQTAAgmABBMACCYAEAwAYBgAgDBBACCCQAEEwAIJgAQTAAgmABAMAGAYAIAwQQAggkABBMACCYAEEwAIJgAQDABgGACAMEEAIIJAAQTAAgmABBMACCYAEAwAYBgAgDBBACCCQAEEwAIJgAQTAAgmABAMAGAYAIAwQQAggkABBMACCYAEEwAIJgAQDABgGACAMEEAIIJAAQTAAgmABBMACCYAEAwAYBgAgDBBACCCQAEEwAIJgAQTAAgmABAMAGAYAIAwQQAggkABBMACCYAEEwAIJgAQDABgGACAMEEAIIJAAQTAAgmABBMACCYAEAwAYBgAgDBBACCCQAEEwAIJgAQTAAgmABAMAGAYAIAwQQAggkABBMACCYAEEwAIJgAQDABgGACAMEEAIIJAAQTAAgmABBMACCYAEAwAYBgAgDBvp29A9M0nb0LEMsEAMEEAIIJAAQTAAgmABBMACCYAEAwAYBgAgDBBACCCQAEEwAIJgAQTAAgmABAsN3PAxiGocV+ACcwAUAwAYBgAgDBBACCCQAEEwAIJgAQTAAgmABAMAGAYAIAwQQAggkABHv7bcBlWV7O3BHg8UwAEEwAIJgAQDABgGACAMH+B55sLznBp42zAAAAAElFTkSuQmCCKAAAADAAAABgAAAAAQAEAAAAAACABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAIAAAACAgACAAAAAgACAAICAAACAgIAAwMDAAAAA/wAA/wAAAP//AP8AAAD/AP8A//8AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////////////////////////////////////////////////////////////////////////////////////////////////93d3d3d3d3d3d3d3d3d3d3d3d3d3f///93d3d3d3d3d3d3d3d3d3d3d3d3d3f///93d3d3d3d3d3d3d3d3d3d3d3d3d3f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93f///////////////////////93f///93d3d3d3d3d3d3d//////3f/////////93d3d3d3d3d3d3d//////3f/////////93d3d3d3d3d3d3d//////3f/////////93d3d3d3d3d3d3d//zM//3f/8zP/////93d3d3d3d3d3d3d//zM///f/8zP/////93d3d3d3d3d3d3d//zM/////8zP/////93d3d3d3d3d3d3d//zM3eP//gzOP////93d3d3d3d3d3d3d//zMzM3//czN//////////////////////zM/gzj/MzM//////////////////////zM/8zj4M3M4/////////////////////zM/gzjzM/Mz//8AAAAAAAAAAAAAAAAP/zM3Mz+DN/czj/8AAAAAAAAAAAAAAAAP/zMzN49zOPgzf/8AAAAAAAAAAAAAAAAP//////////////8AAAAAAAAAAAAAAAAP//////////////8AAAAAAAAAAAAAAAAP//////////////////////8AAP///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///4AAAAAA////gAAAAAD///+AAAAAAP///4AAAAAA////gAAAAAAoAAAAIAAAAEAAAAABAAQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////AP///////////////////wD/d3d3d3d3d3d3d3d3d/8A/3d3d3d3d3d3d3d3d3f/AP93//////////////93/wD/d///////////////d/8A/3f//////////////3f/AP93//////////////93/wD/d///////////////d/8A/3f//////////////3f/AP93//////////////93/wD/d///////////////d/8A/3f//////////////3f/AP93//////////////93/wD/d///////////////d/8A/3f//////////////3f/AP93//////////////93/wD/d///////////////d/8A/3d3d3d3d3//////////AP93d3d3d3d//////////wD/d3d3d3d3f/M////zP/8A/3d3d3d3d3/zP///8z//AP93d3d3d3d/8zeP/4M4/wD/d3d3d3d3f/M3N/+DOP8A///////////zP3P/N3P/AP//////////8zhz+DiDj/AAAAAAAAAAD/MzOPc4g3/wAAAAAAAAAA//////////8AAAAAAAAAAP//////////////////////////gAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAD//wAA//8AAP//AAAoAAAAGAAAADAAAAABAAQAAAAAACABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////////////////d3d3d3d3d3d3d3f/d3d3d3d3d3d3d3f/d////////////3f/d////////////3f/d////////////3f/d////////////3f/d////////////3f/d////////////3f/d////////////3f/d////////////3f/d////////////3f/d////////////3f/d////////////3f/d3d3d3d3d3d3d3f/d3d3d3d3d//3f///d3d3d3d3d/P3fz//d3d3d3d3d/OIfz//d3d3d3d3d/Nz+Dj///////////Pzh3fwAAAAAAAAAPM3g4OAAAAAAAAAAP/////////wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//gAA//4AACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAgICAAMDAwAAAAP8AAP8AAAD//wD/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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBFBQUFBQUAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBFBQUFBQUAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTAQEBFBQUFBQUAQEBAQEBAQEBAQEBAQEBAQEBAQEBARQUFBQUFBQUFAEBFBQUFBQUFBQUFBQUFBQUAQEBAQEBAQEBAQEBAQEBAQEBAQEBARQUFBQUFBQUFAEBFBQUFBQUFBQUFBQUFBQUAQEBAQEBAQEBAQEBAQEBAQEBAQEBARQUFBQUFBQUFAEBFBQUFBQUFBQUFBQUFBQUAQEBAQEBAQEBAQEBAQEBAQEBAQEBARQUFAMDAxQUFAIBFBQUAwMDFBQUFBQUFBQUAQEBAQEBAQEBAQEBAQEBAQEBAQEBARQUFAMDAxQUFBEKFBQUAwMDFBQUFBQUFBQUAQEBAQEBAQEBAQEBAQEBAQEBAQEBARQUFAMDAxQUFBQUFBQUAwMDFBQUFBQUFBQUAQEBAQEBAQEBAQEBAQEBAQEBAQEBARQUFAMDAwQHCxIUFBQPAwMDDxQUFBQUFBQUAQEBAQEBAQEBAQEBAQEBAQEBAQEBARQUFAMDAwMDAwYUFBQIAwMDCBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFAMDAxIMAwMNFBADAwMDAxAUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFAMDAxQUAwMLFAkDAwcDAwkUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFAMDAxQPAwMLEgMDAxADAwMSFBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQUFAMDAwUDAwMQCwMDCBQIAwMLFBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQUFAMDAwMDBQ4UBAMDDRQNAwMEFBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU////////AAD///////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///+AAAAAAP///4AAAAAA////gAAAAAD///+AAAAAAP///4AAAAAAKAAAACAAAABAAAAAAQAIAAAAAAAABAAAAAAAAAAAAAAAAQAAAAEAAAAAAABCQkIANpaHAEKcjgBaqJwAZq6jAHK0qgB+urEAisC4AJbGvwC62NMA0uThAN7q6ADq8O8A8e/wAPb29gD6+voAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PAAAPDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8AAA8PAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEPDwAADw8BAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ8PAAAPDwEBDg4ODg4ODg4ODg4ODg4ODg4ODg4ODgEBDw8AAA8PAQEODg4ODg4ODg4ODg4ODg4ODg4ODg4OAQEPDwAADw8BAQ4ODg4ODg4ODg4ODg4ODg4ODg4ODg4BAQ8PAAAPDwEBDg4ODg4ODg4ODg4ODg4ODg4ODg4ODgEBDw8AAA8PAQEODg4ODg4ODg4ODg4ODg4ODg4ODg4OAQEPDwAADw8BAQ4ODg4ODg4ODg4ODg4ODg4ODg4ODg4BAQ8PAAAPDwEBDg4ODg4ODg4ODg4ODg4ODg4ODg4ODgEBDw8AAA8PAQEODg4ODg4ODg4ODg4ODg4ODg4ODg4OAQEPDwAADw8BAQ4ODg4ODg4ODg4ODg4ODg4ODg4ODg4BAQ8PAAAPDwEBDg4ODg4ODg4ODg4ODg4ODg4ODg4ODgEBDw8AAA8PAQEODg4ODg4ODg4ODg4ODg4ODg4ODg4OAQEPDwAADw8BAQ4ODg4ODg4ODg4ODg4ODg4ODg4ODg4BAQ8PAAAPDwEBDg4ODg4ODg4ODg4ODg4ODg4ODg4ODgEBDw8AAA8PAQEODg4ODg4ODg4ODg4ODg4ODg4ODg4OAQEPDwAADw8BAQEBAQEBAQEBAQEBDw8PDw8PDw8PDw8PDw8PAAAPDwEBAQEBAQEBAQEBAQEPDw8PDw8PDw8PDw8PDw8AAA8PAQEBAQEBAQEBAQEBAQ8PAgIPDw8PDw8CAg8PDwAADw8BAQEBAQEBAQEBAQEBDw8CAg8PDw8PDwICDw8PAAAPDwEBAQEBAQEBAQEBAQEPDwICBQgNDw8LAgILDw8AAA8PAQEBAQEBAQEBAQEBAQ8PAgIFAgQPDwcCAgcPDwAADw8PDw8PDw8PDw8PDw8PDw8CAg8GAg8MAgMDAgwPAAAPDw8PDw8PDw8PDw8PDw8PDwICCgMCDwkCBwcCCQ8QAAAAAAAAAAAAAAAAAAAAAA8PAgICAgkPAwIKCgIDDw8AAAAAAAAAAAAAAAAAAAAADw8PDw8PDw8PDw8PDw8PDwAAAAAAAAAAAAAAAAAAAAAPDw8PDw8PDw8PDw8PDw8P////////////////gAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAD//wAA//8AAP//AAAoAAAAGAAAADAAAAABAAgAAAAAAEACAAAAAAAAAAAAAAABAAAAAQAAAAAAAEJCQgBkZGQANpaHAEKcjgBOopUAWqicAJbGvwCizMUArtLMAMjU0gDG3toA3uroAOrw7wDx7/AA9vb2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8BAQEBAQEBAQEBAQEBAQEBAQEBAQEBDw8BAQEBAQEBAQEBAQEBAQEBAQEBAQEBDw8BAQ4ODg4ODg4ODg4ODg4ODg4ODgEBDw8BAQ4ODg4ODg4ODg4ODg4ODg4ODgEBDw8BAQ4ODg4ODg4ODg4ODg4ODg4ODgEBDw8BAQ4ODg4ODg4ODg4ODg4ODg4ODgEBDw8BAQ4ODg4ODg4ODg4ODg4ODg4ODgEBDw8BAQ4ODg4ODg4ODg4ODg4ODg4ODgEBDw8BAQ4ODg4ODg4ODg4ODg4ODg4ODgEBDw8BAQ4ODg4ODg4ODg4ODg4ODg4ODgEBDw8BAQ4ODg4ODg4ODg4ODg4ODg4ODgEBDw8BAQ4ODg4ODg4ODg4ODg4ODg4ODgEBDw8BAQ4ODg4ODg4ODg4ODg4ODg4ODgEBDw8BAQEBAQEBAQEBAQEBAQEBAQEBAQEBDw8BAQEBAQEBAQEBAQEBAQ8PDwEBDw8PDw8BAQEBAQEBAQEBAQEBAQ8DDwEBDwMPDw8BAQEBAQEBAQEBAQEBAQ8DCAoCDQMNDw8BAQEBAQEBAQEBAQEBAQ8DBgMMBwMHDw8PDw8PDw8PDw8PDw8PDw8DDQMLBAUEDwAAAAAAAAAAAAAAAAAAAA8DAwQHAwsDCQAAAAAAAAAAAAAAAAAAAA8PDw8PDw8PD////wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//gAA//4AACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAABAAAAAAAANpaHAPHv8AD29vYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/NpaH/zaWh/82lof/NpaH//b29v/29vb/9vb2//b29v9CQkL/QkJC//b29v/29vb/9vb2//b29v82lof/NpaH/zaWh/82lof/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2/zaWh/82lof/NpaH/zaWh//29vb/9vb2//b29v/29vb/ycnJ/29vb//29vb/9vb2//b29v/29vb/NpaH/zaWh/82lof/NpaH//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v82lof/NpaH/zaWh/82lof/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/zaWh/82lof/NpaH/zaWh//29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/NpaH/zaWh/82lof/NpaH//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v82lof/NpaH/zaWh/82lof/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2/zaWh/82lof/NpaH/zaWh/9mrqP/Zq6j/4rAuP/e6uj/9vb2//b29v/29vb/9vb2//b29v/q8O//NpaH/zaWh/82lof/NpaH/9Lk4f/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v82lof/NpaH/zaWh/82lof/NpaH/zaWh/82lof/NpaH/67SzP/29vb/9vb2//b29v/29vb/oszF/zaWh/82lof/NpaH/zaWh/9+urH/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/NpaH/zaWh/82lof/NpaH/3K0qv9OopX/NpaH/zaWh/82lof/3uro//b29v/29vb/9vb2/06ilf82lof/NpaH/zaWh/82lof/NpaH/97q6P/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/zaWh/82lof/NpaH/zaWh//29vb/9vb2/2auo/82lof/NpaH/5bGv//29vb/9vb2/67SzP82lof/NpaH/zaWh/82lof/NpaH/zaWh/+Wxr//9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v82lof/NpaH/zaWh/82lof/9vb2//b29v+Wxr//NpaH/zaWh/+Wxr//9vb2//b29v9mrqP/NpaH/zaWh/9OopX/crSq/zaWh/82lof/QpyO/+rw7//29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/NpaH/zaWh/82lof/NpaH//b29v/29vb/frqx/zaWh/82lof/lsa///b29v/G3tr/NpaH/zaWh/82lof/isC4/67SzP82lof/NpaH/zaWh/+u0sz/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/zaWh/82lof/NpaH/zaWh/+u0sz/frqx/zaWh/82lof/NpaH/67SzP/29vb/frqx/zaWh/82lof/NpaH/9Lk4f/q8O//NpaH/zaWh/82lof/TqKV//b29v/29vb/9vb2//b29v/29vb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPb29v/29vb/9vb2//b29v82lof/NpaH/zaWh/82lof/NpaH/zaWh/82lof/NpaH/1qonP/q8O//3uro/zaWh/82lof/NpaH/06ilf/29vb/9vb2/3K0qv82lof/NpaH/zaWh/+62NP/9vb2//b29v/29vb/9vb2vwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD29vb/9vb2//b29v/29vb/NpaH/zaWh/82lof/NpaH/zaWh/82lof/QpyO/366sf/q8O//9vb2/4rAuP82lof/NpaH/zaWh/+KwLj/9vb2//b29v+u0sz/NpaH/zaWh/82lof/Zq6j//b29v/29vb/9vb2//b29v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPb29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/////////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////wAAAAP/////AAAAA/////8AAAAD/////wAAAAP/////AAAAA/////8AAAAAoAAAAMAAAAGAAAAABACAAAAAAAIAlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2/zaWh/82lof/NpaH//b29v/29vb/9vb2/01NTf9CQkL/9vb2//b29v/29vb/NpaH/zaWh/82lof/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2/zaWh/82lof/NpaH//b29v/29vb/9vb2/+vr6/+RkZH/9vb2//b29v/29vb/NpaH/zaWh/82lof/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2/zaWh/82lof/NpaH//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/NpaH/zaWh/82lof/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2/zaWh/82lof/NpaH/0Kcjv9mrqP/lsa//+rw7//29vb/9vb2//b29v/G3tr/NpaH/zaWh/82lof/xt7a//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2/zaWh/82lof/NpaH/zaWh/82lof/NpaH/1qonP/29vb/9vb2//b29v9ytKr/NpaH/zaWh/82lof/crSq//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/zaWh/82lof/NpaH/+rw7/+izMX/NpaH/zaWh/+u0sz/9vb2/97q6P82lof/NpaH/zaWh/82lof/NpaH/97q6P/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/zaWh/82lof/NpaH//b29v/29vb/NpaH/zaWh/+Wxr//9vb2/366sf82lof/NpaH/2auo/82lof/NpaH/366sf/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/zaWh/82lof/NpaH//b29v/G3tr/NpaH/zaWh/+Wxr//6vDv/zaWh/82lof/NpaH/97q6P82lof/NpaH/zaWh//q8O//9vb2//b29v/29vb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPb29v/29vb/9vb2/zaWh/82lof/NpaH/06ilf82lof/NpaH/zaWh//e6uj/lsa//zaWh/82lof/crSq//b29v9ytKr/NpaH/zaWh/+Wxr//9vb2//b29v/29vbPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPb29v/29vb/9vb2/zaWh/82lof/NpaH/zaWh/82lof/TqKV/7rY0//29vb/QpyO/zaWh/82lof/rtLM//b29v+u0sz/NpaH/zaWh/9CnI7/9vb2//b29v/29vb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPb29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPb29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPb29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/////////AAD///////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///+AAAAAAP///4AAAAAA////gAAAAAD///+AAAAAAP///4AAAAAAKAAAACAAAABAAAAAAQAgAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v8AAAAAAAAAAPb29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/wAAAAAAAAAA9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/AAAAAAAAAAD29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v8AAAAAAAAAAPb29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv/29vb/9vb2/wAAAAAAAAAA9vb2//b29v9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/AAAAAAAAAAD29vb/9vb2/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/9vb2//b29v8AAAAAAAAAAPb29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv/29vb/9vb2/wAAAAAAAAAA9vb2//b29v9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/AAAAAAAAAAD29vb/9vb2/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/9vb2//b29v8AAAAAAAAAAPb29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv/29vb/9vb2/wAAAAAAAAAA9vb2//b29v9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/AAAAAAAAAAD29vb/9vb2/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/9vb2//b29v8AAAAAAAAAAPb29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv/29vb/9vb2/wAAAAAAAAAA9vb2//b29v9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/AAAAAAAAAAD29vb/9vb2/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/9vb2//b29v8AAAAAAAAAAPb29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv/29vb/9vb2/wAAAAAAAAAA9vb2//b29v9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/AAAAAAAAAAD29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v8AAAAAAAAAAPb29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/wAAAAAAAAAA9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v82lof/NpaH//b29v/29vb/9vb2//b29v/29vb/9vb2/zaWh/82lof/9vb2//b29v/29vb/AAAAAAAAAAD29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2/zaWh/82lof/9vb2//b29v/29vb/9vb2//b29v/29vb/NpaH/zaWh//29vb/9vb2//b29v8AAAAAAAAAAPb29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/NpaH/zaWh/9mrqP/isC4/+rw7//29vb/9vb2/9Lk4f82lof/NpaH/9Lk4f/29vb/9vb2/wAAAAAAAAAA9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v82lof/NpaH/2auo/82lof/Wqic//b29v/29vb/frqx/zaWh/82lof/frqx//b29v/29vb/AAAAAAAAAAD29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2/zaWh/82lof/9vb2/3K0qv82lof/9vb2/97q6P82lof/QpyO/0Kcjv82lof/3uro//b29v/29vYQAAAAAPb29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/NpaH/zaWh/+62NP/QpyO/zaWh//29vb/lsa//zaWh/9+urH/frqx/zaWh/+Wxr//9vb2//b29oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9vb2//b29v82lof/NpaH/zaWh/82lof/lsa///b29v9CnI7/NpaH/7rY0/+62NP/NpaH/0Kcjv/29vb/9vb27wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPb29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v////////////////+AAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAABgAAAAYAAAAGAAAAAgAAAAP//AAD//wAA//8AACgAAAAYAAAAMAAAAAEAIAAAAAAAYAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/QkJC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]]></Val>
+        </Bin>
+        <Disp Edtr="External" Icon="Ico" LocTbl="false" />
+      </Item>
+    </Item>
+    <Item ItemId=";Menus.ctmenu" ItemType="0" PsrId="240" Leaf="false">
+      <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},256" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},256" ItemType=";Button" PsrId="240" Leaf="true">
+          <Str Cat="Button" IgnoreHK="true">
+            <Val><![CDATA[La&unch Python Profiling...]]></Val>
+            <Tgt Cat="Button" IgnoreHK="true" Stat="Loc" Orig="New">
+              <Val><![CDATA[In&iciar a Criação de Perfil do Python...]]></Val>
+            </Tgt>
+            <Prev Cat="Button" IgnoreHK="true">
+              <Val><![CDATA[Launch &Python Profiling...]]></Val>
+            </Prev>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},256" ItemType=";LocCanonical" PsrId="240" Leaf="true">
+          <Str Cat="Button">
+            <Val><![CDATA[Launch Profiling]]></Val>
+            <Tgt Cat="Button" Stat="Loc" Orig="New">
+              <Val><![CDATA[Iniciar Criação de Perfil]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},257" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},257" ItemType=";Button" PsrId="240" Leaf="true">
+          <Str Cat="Button">
+            <Val><![CDATA[Python Performance Explorer]]></Val>
+            <Tgt Cat="Button" Stat="Loc" Orig="New">
+              <Val><![CDATA[Gerenciador de Desempenho do Python]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},257" ItemType=";LocCanonical" PsrId="240" Leaf="true">
+          <Str Cat="Button">
+            <Val><![CDATA[Performance Explorer]]></Val>
+            <Tgt Cat="Button" Stat="Loc" Orig="New">
+              <Val><![CDATA[Gerenciador de Desempenho]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},258" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},258" ItemType=";Button" PsrId="240" Leaf="true">
+          <Str Cat="Button">
+            <Val><![CDATA[Add Performance Session]]></Val>
+            <Tgt Cat="Button" Stat="Loc" Orig="New">
+              <Val><![CDATA[Adicionar Sessão de Desempenho]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},259" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},259" ItemType=";Button" PsrId="240" Leaf="true">
+          <Str Cat="Button">
+            <Val><![CDATA[Start Profiling]]></Val>
+            <Tgt Cat="Button" Stat="Loc" Orig="New">
+              <Val><![CDATA[Iniciar Criação de Perfil]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},260" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},260" ItemType=";Button" PsrId="240" Leaf="true">
+          <Str Cat="Button" IgnoreHK="true">
+            <Val><![CDATA[&Start Profiling]]></Val>
+            <Tgt Cat="Button" IgnoreHK="true" Stat="Loc" Orig="New">
+              <Val><![CDATA[&Iniciar Criação de Perfil]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},261" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},261" ItemType=";Button" PsrId="240" Leaf="true">
+          <Str Cat="Button" IgnoreHK="true">
+            <Val><![CDATA[Set as &Current Session]]></Val>
+            <Tgt Cat="Button" IgnoreHK="true" Stat="Loc" Orig="New">
+              <Val><![CDATA[Definir como &Sessão Atual]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},262" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},262" ItemType=";Button" PsrId="240" Leaf="true">
+          <Str Cat="Button" IgnoreHK="true">
+            <Val><![CDATA[&Compare Performance Reports...]]></Val>
+            <Tgt Cat="Button" IgnoreHK="true" Stat="Loc" Orig="New">
+              <Val><![CDATA[&Comparar Relatórios de Desempenho...]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},262" ItemType=";LocCanonical" PsrId="240" Leaf="true">
+          <Str Cat="Button">
+            <Val><![CDATA[Compare Performance Reports]]></Val>
+            <Tgt Cat="Button" Stat="Loc" Orig="New">
+              <Val><![CDATA[Comparar Relatórios de Desempenho]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},263" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},263" ItemType=";Button" PsrId="240" Leaf="true">
+          <Str Cat="Button" IgnoreHK="true">
+            <Val><![CDATA[&Add Report...]]></Val>
+            <Tgt Cat="Button" IgnoreHK="true" Stat="Loc" Orig="New">
+              <Val><![CDATA[&Adicionar Relatório...]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},263" ItemType=";LocCanonical" PsrId="240" Leaf="true">
+          <Str Cat="Button">
+            <Val><![CDATA[Add Performance Report]]></Val>
+            <Tgt Cat="Button" Stat="Loc" Orig="New">
+              <Val><![CDATA[Adicionar Relatório de Desempenho]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},264" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},264" ItemType=";Button" PsrId="240" Leaf="true">
+          <Str Cat="Button" IgnoreHK="true">
+            <Val><![CDATA[&Open]]></Val>
+            <Tgt Cat="Button" IgnoreHK="true" Stat="Loc" Orig="New">
+              <Val><![CDATA[&Abrir]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},264" ItemType=";LocCanonical" PsrId="240" Leaf="true">
+          <Str Cat="Button">
+            <Val><![CDATA[Open Performance Report]]></Val>
+            <Tgt Cat="Button" Stat="Loc" Orig="New">
+              <Val><![CDATA[Abrir Relatório de Desempenho]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},265" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},265" ItemType=";Button" PsrId="240" Leaf="true">
+          <Str Cat="Button">
+            <Val><![CDATA[Stop Profiling]]></Val>
+            <Tgt Cat="Button" Stat="Loc" Orig="New">
+              <Val><![CDATA[Parar a Criação de Perfil]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},8192" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},8192" ItemType=";Menu" PsrId="240" Leaf="true">
+          <Str Cat="Menu Item">
+            <Val><![CDATA[Python Performance]]></Val>
+            <Tgt Cat="Menu Item" Stat="Loc" Orig="New">
+              <Val><![CDATA[Desempenho Python]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},8193" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},8193" ItemType=";Menu" PsrId="240" Leaf="true">
+          <Str Cat="Menu Item">
+            <Val><![CDATA[Performance Context]]></Val>
+            <Tgt Cat="Menu Item" Stat="Loc" Orig="New">
+              <Val><![CDATA[Contexto de Desempenho]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},8194" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},8194" ItemType=";Menu" PsrId="240" Leaf="true">
+          <Str Cat="Menu Item">
+            <Val><![CDATA[Performance Reports Context]]></Val>
+            <Tgt Cat="Menu Item" Stat="Loc" Orig="New">
+              <Val><![CDATA[Contexto de Relatórios de Desempenho]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+      <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},8195" ItemType="0" PsrId="240" Leaf="false">
+        <Disp Icon="Menu" Expand="true" Disp="true" LocTbl="false" />
+        <Item ItemId=";{c6e7bafe-d4b6-4e04-85af-9c83f18d8c78},8195" ItemType=";Menu" PsrId="240" Leaf="true">
+          <Str Cat="Menu Item">
+            <Val><![CDATA[Performance Report Context]]></Val>
+            <Tgt Cat="Menu Item" Stat="Loc" Orig="New">
+              <Val><![CDATA[Contexto de Relatório Desempenho]]></Val>
+            </Tgt>
+          </Str>
+          <Disp Icon="Str" Expand="true" />
+        </Item>
+      </Item>
+    </Item>
+    <Item ItemId=";Strings" ItemType="0" PsrId="211" Leaf="false">
+      <Disp Icon="Str" Disp="true" LocTbl="false" />
+      <Item ItemId=";105" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Python Performance Session File]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Arquivo de Sessão de Desempenho do Python]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";110" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Python - Profiling support]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Python – suporte à criação de perfil]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";112" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Profiling support for Python projects.]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Suporte à criação de perfil para projetos do Python.]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+      <Item ItemId=";113" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[Python Performance Session;*.pyperf]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[Sessão de Desempenho do Python;*.pyperf]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
+    </Item>
+  </Item>
+  <Item ItemId=";Version" ItemType="0" PsrId="211" Leaf="false">
+    <Disp Icon="Ver" Disp="true" LocTbl="false" Path=" \ ;Version \ 8 \ 0" />
+    <Item ItemId=";Comments" ItemType="0" PsrId="211" Leaf="true">
+      <Str Cat="Text">
+        <Val><![CDATA[Provides support for profiling Python projects.]]></Val>
+        <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Fornece suporte para projetos de criação de perfil do Python.]]></Val>
+        </Tgt>
+      </Str>
+      <Disp Icon="Str" />
+    </Item>
+    <Item ItemId=";CompanyName" ItemType="0" PsrId="211" Leaf="true">
+      <Str Cat="Text" UsrLk="true">
+        <Val><![CDATA[Microsoft Corporation]]></Val>
+      </Str>
+      <Disp Icon="Str" />
+    </Item>
+    <Item ItemId=";FileDescription" ItemType="0" PsrId="211" Leaf="true">
+      <Str Cat="Text">
+        <Val><![CDATA[Visual Studio - Python profiling support]]></Val>
+        <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Visual Studio – suporte à criação de perfil do Python]]></Val>
+        </Tgt>
+      </Str>
+      <Disp Icon="Str" />
+    </Item>
+    <Item ItemId=";InternalName" ItemType="0" PsrId="211" Leaf="true">
+      <Str Cat="Text" DevLk="true" UsrLk="true">
+        <Val><![CDATA[Microsoft.PythonTools.Profiling.dll]]></Val>
+      </Str>
+      <Disp Icon="Str" />
+    </Item>
+    <Item ItemId=";LegalCopyright" ItemType="0" PsrId="211" Leaf="true">
+      <Str Cat="Text">
+        <Val><![CDATA[© Microsoft Corporation]]></Val>
+        <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[© Microsoft Corporation]]></Val>
+        </Tgt>
+      </Str>
+      <Disp Icon="Str" />
+    </Item>
+    <Item ItemId=";OriginalFilename" ItemType="0" PsrId="211" Leaf="true">
+      <Str Cat="Text" DevLk="true" UsrLk="true">
+        <Val><![CDATA[Microsoft.PythonTools.Profiling.dll]]></Val>
+      </Str>
+      <Disp Icon="Str" />
+    </Item>
+    <Item ItemId=";ProductName" ItemType="0" PsrId="211" Leaf="true">
+      <Str Cat="Text">
+        <Val><![CDATA[Python support for Microsoft® Visual Studio®]]></Val>
+        <Tgt Cat="Text" Stat="Loc" Orig="New">
+          <Val><![CDATA[Suporte do Python para Microsoft® Visual Studio®]]></Val>
+        </Tgt>
+      </Str>
+      <Disp Icon="Str" />
+    </Item>
+  </Item>
+  <Item ItemId=";Version" ItemType="8" PsrId="211" Leaf="true">
+    <Disp Icon="Expand" Expand="true" Disp="true" LocTbl="false" />
+  </Item>
+</LCX>

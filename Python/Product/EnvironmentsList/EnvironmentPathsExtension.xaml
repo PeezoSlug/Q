@@ -1,0 +1,456 @@
+<UserControl x:Class="Microsoft.PythonTools.EnvironmentsList.EnvironmentPathsExtension"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:l="clr-namespace:Microsoft.PythonTools.EnvironmentsList"
+             xmlns:wpf="clr-namespace:Microsoft.VisualStudioTools.Wpf" 
+             xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.15.0"
+             UseLayoutRounding="True"
+             mc:Ignorable="d" 
+             Focusable="False"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.CommandBindings>
+        <CommandBinding Command="{x:Static l:EnvironmentPathsExtension.OpenInFileExplorer}"
+                        CanExecute="OpenInFileExplorer_CanExecute"
+                        Executed="OpenInFileExplorer_Executed" />
+        <CommandBinding Command="{x:Static l:EnvironmentPathsExtension.OpenInBrowser}"
+                        CanExecute="OpenInBrowser_CanExecute"
+                        Executed="OpenInBrowser_Executed" />
+    </UserControl.CommandBindings>
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Microsoft.PythonTools;component/PythonTools/Wpf/ModernStyles.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Microsoft.PythonTools.EnvironmentsList;component/EnvironmentView.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Microsoft.PythonTools.EnvironmentsList;component/FileNameLabel.xaml" />
+                <ResourceDictionary>
+                    <wpf:Lambda x:Key="BoolToVisible">(bool b) => b ? Visibility.Visible : Visibility.Collapsed</wpf:Lambda>
+                    <wpf:Lambda x:Key="BoolToCollapsed">(bool b) => b ? Visibility.Collapsed : Visibility.Visible</wpf:Lambda>
+
+                    <DataTemplate DataType="{x:Type l:EnvironmentView}" x:Key="EnvironmentIsDefault">
+                        <Grid>
+                            <Button x:Name="MakeDefaultButton"
+                                    Margin="6 9 6 6"
+                                    Style="{StaticResource NavigationButton}"
+                                    HorizontalAlignment="Stretch"
+                                    Command="{x:Static l:EnvironmentView.MakeGlobalDefault}"
+                                    CommandParameter="{Binding}"
+                                    Click="MakeDefaultButton_Click"
+                                    AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsExtensionMakeDefaultLabel}">
+                                <Grid Background="Transparent">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Control Grid.Column="0"
+                                             Margin="3 0"
+                                             Style="{StaticResource PythonEnvironmentImage}"
+                                             IsTabStop="False"/>
+                                    <TextBlock Grid.Column="1"
+                                               TextWrapping="WrapWithOverflow"
+                                               Text="{x:Static l:Resources.EnvironmentPathsExtensionMakeDefaultLabel}"/>
+                                </Grid>
+                            </Button>
+                            <Label x:Name="IsDefaultMessage"
+                                   Visibility="Collapsed"
+                                   Margin="6 9 6 6"
+                                   Padding="0"
+                                   AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsExtensionIsDefaultLabel}"
+                                   AutomationProperties.LiveSetting="Assertive">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+
+                                    <ContentControl Grid.Column="0"
+                                                    Margin="3 0"
+                                                    Style="{StaticResource ActiveEnvironmentImage}"
+                                                    IsTabStop="False"/>
+                                    <TextBlock Grid.Column="1"
+                                               TextWrapping="WrapWithOverflow"
+                                               Text="{x:Static l:Resources.EnvironmentPathsExtensionIsDefaultLabel}"/>
+                                </Grid>
+                            </Label>
+                            <Label x:Name="CannotBeDefaultMessage"
+                                   Visibility="Collapsed"
+                                   Margin="6 9 6 6"
+                                   Padding="0"
+                                   AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsExtensionCannotBeDefaultLabel}">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+
+                                    <ContentControl Grid.Column="0"
+                                                    Margin="3 0"
+                                                    Opacity="0.5"
+                                                    Style="{StaticResource PythonEnvironmentImage}"
+                                                    IsTabStop="False"/>
+                                    <TextBlock Grid.Column="1"
+                                               TextWrapping="WrapWithOverflow"
+                                               Text="{x:Static l:Resources.EnvironmentPathsExtensionCannotBeDefaultLabel}"/>
+                                </Grid>
+                            </Label>
+                        </Grid>
+                        <DataTemplate.Triggers>
+                            <DataTrigger Binding="{Binding IsDefault}" Value="True">
+                                <Setter TargetName="MakeDefaultButton" Property="Visibility" Value="Collapsed" />
+                                <Setter TargetName="IsDefaultMessage" Property="Visibility" Value="Visible" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding CanBeDefault}" Value="False">
+                                <Setter TargetName="MakeDefaultButton" Property="Visibility" Value="Collapsed" />
+                                <Setter TargetName="IsDefaultMessage" Property="Visibility" Value="Collapsed" />
+                                <Setter TargetName="CannotBeDefaultMessage" Property="Visibility" Value="Visible" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding IsBroken}" Value="True">
+                                <Setter TargetName="MakeDefaultButton" Property="Visibility" Value="Collapsed" />
+                            </DataTrigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+
+                    <DataTemplate DataType="{x:Type l:EnvironmentView}" x:Key="InteractiveLinks">
+                        <StackPanel Orientation="Vertical">
+                            <Button Command="{x:Static l:EnvironmentView.OpenInteractiveWindow}"
+                                    CommandParameter="{Binding}"
+                                    Style="{StaticResource NavigationButton}"
+                                    Margin="6"
+                                    HorizontalAlignment="Left"
+                                    AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsExtensionOpenInteractiveWindowLabel}">
+                                <Grid Background="Transparent">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Control Grid.Column="0"
+                                             Margin="3 0"
+                                             Style="{StaticResource InteractiveWindowImage}"
+                                             IsTabStop="False"/>
+                                    <TextBlock Grid.Column="1"
+                                               TextWrapping="WrapWithOverflow"
+                                               Text="{x:Static l:Resources.EnvironmentPathsExtensionOpenInteractiveWindowLabel}"/>
+                                </Grid>
+                            </Button>
+
+                            <Button Command="{x:Static l:EnvironmentView.OpenInteractiveScripts}"
+                                    CommandParameter="{Binding}"
+                                    Style="{StaticResource NavigationButton}"
+                                    Margin="12 6 6 6"
+                                    HorizontalAlignment="Left"
+                                    AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsExtensionOpenInteractiveScriptsLabel}">
+                                <Grid Background="Transparent">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Control Grid.Column="0"
+                                             Margin="3 0"
+                                             Style="{StaticResource SettingsImage}"
+                                             IsTabStop="False"/>
+                                    <TextBlock Grid.Column="1"
+                                               TextWrapping="WrapWithOverflow"
+                                               Text="{x:Static l:Resources.EnvironmentPathsExtensionOpenInteractiveScriptsLabel}"/>
+                                </Grid>
+                            </Button>
+
+                            <!--
+                            This is not expected to remain long-term,
+                            but should be replaced with a more general startup
+                            script tool.
+                            -->
+                            <CheckBox Margin="12 6 6 6"
+                                      Loaded="IsIPythonModeEnabled_Loaded"
+                                      IsChecked="{Binding IsIPythonModeEnabled}"
+                                      Content="{x:Static l:Resources.EnvironmentPathsExtensionEnableIPythonLabel}"
+                                      AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsExtensionEnableIPythonAutomationName}"/>
+
+                            <Button Command="{x:Static l:EnvironmentView.OpenInPowerShell}"
+                                    CommandParameter="{Binding Mode=OneWay}"
+                                    Style="{StaticResource NavigationButton}"
+                                    Margin="6"
+                                    HorizontalAlignment="Left"
+                                    x:Name="Button"
+                                    AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsExtensionOpenInPowerShell}">
+                                <Grid Background="Transparent">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <ContentControl Grid.Column="0"
+                                                    Margin="3 0"
+                                                    Style="{StaticResource ConsoleImage}"
+                                                    IsTabStop="False"/>
+                                    <TextBlock Grid.Column="1"
+                                               Text="{x:Static l:Resources.EnvironmentPathsExtensionOpenInPowerShell}"/>
+                                </Grid>
+                                <Button.ContextMenu>
+                                    <ContextMenu>
+                                        <MenuItem InputGestureText=""
+                                                  Command="{x:Static l:EnvironmentView.OpenInCommandPrompt}"
+                                                  CommandParameter="{Binding Mode=OneWay}"
+                                                  CommandTarget="{Binding PlacementTarget,RelativeSource={RelativeSource AncestorType={x:Type ContextMenu}}}"
+                                                  Header="{x:Static l:Resources.EnvironmentPathsExtensionOpenInCommandPromptMenuItem}">
+                                        </MenuItem>
+                                    </ContextMenu>
+                                </Button.ContextMenu>
+                            </Button>
+                        </StackPanel>
+                    </DataTemplate>
+
+                    <DataTemplate DataType="{x:Type l:EnvironmentView}" x:Key="EnvironmentLinks">
+                        <StackPanel Orientation="Vertical">
+                            <Button Name="ConfigureEnvironment"
+                                    Command="{x:Static l:EnvironmentPathsExtension.ConfigureEnvironment}"
+                                    CommandParameter="{Binding Mode=OneWay}"
+                                    Style="{StaticResource NavigationButton}"
+                                    Margin="6"
+                                    HorizontalAlignment="Left"
+                                    AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsExtensionConfigureEnvironmentLabel}">
+                                <Grid Background="Transparent">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <ContentControl Grid.Column="0"
+                                                    Margin="3 0"
+                                                    Style="{StaticResource SettingsImage}"
+                                                    IsTabStop="False"/>
+                                    <TextBlock Grid.Column="1"
+                                               TextWrapping="WrapWithOverflow"
+                                               Text="{x:Static l:Resources.EnvironmentPathsExtensionConfigureEnvironmentLabel}"/>
+                                </Grid>
+                            </Button>
+                            
+                            <Button Command="{x:Static l:EnvironmentPathsExtension.OpenInFileExplorer}"
+                                    CommandParameter="{Binding PrefixPath,Mode=OneWay}"
+                                    ToolTip="{Binding PrefixPath,Mode=OneWay}"
+                                    Style="{StaticResource NavigationButton}"
+                                    Margin="6"
+                                    HorizontalAlignment="Left"
+                                    AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsPrefixPath}"
+                                    AutomationProperties.HelpText="{Binding PrefixPath,Mode=OneWay}">
+                                <Grid Background="Transparent">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <ContentControl Grid.Column="0"
+                                                    Margin="3 0"
+                                                    Style="{StaticResource FolderClosedImage}"
+                                                    IsTabStop="False"/>
+                                    <Label Grid.Column="1" Style="{StaticResource FileNameLabel}"
+                                           Foreground="{Binding Foreground,RelativeSource={RelativeSource AncestorType=Button}}"
+                                           Content="{Binding PrefixPath,Mode=OneWay}" />
+                                </Grid>
+                                <Button.ContextMenu>
+                                    <ContextMenu>
+                                        <ContextMenu.CommandBindings>
+                                            <CommandBinding Command="ApplicationCommands.Copy"
+                                                            CanExecute="CopyToClipboard_CanExecute"
+                                                            Executed="CopyToClipboard_Executed" />
+                                        </ContextMenu.CommandBindings>
+                                        <MenuItem Header="_Copy path"
+                                                  InputGestureText=""
+                                                  Command="ApplicationCommands.Copy"
+                                                  CommandParameter="{Binding PrefixPath,Mode=OneWay}"/>
+                                    </ContextMenu>
+                                </Button.ContextMenu>
+                            </Button>
+
+                            <Button Command="{x:Static l:EnvironmentPathsExtension.StartInterpreter}"
+                                    CommandParameter="{Binding}"
+                                    ToolTip="{Binding InterpreterPath,Mode=OneWay}"
+                                    Style="{StaticResource NavigationButton}"
+                                    Margin="6"
+                                    HorizontalAlignment="Left"
+                                    AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsInterpreterPath}"
+                                    AutomationProperties.HelpText="{Binding InterpreterPath,Mode=OneWay}">
+                                <Grid Background="Transparent">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <ContentControl Grid.Column="0"
+                                                    Margin="3 0"
+                                                    Style="{StaticResource PythonConsoleApplicationImage}"
+                                                    IsTabStop="False"/>
+                                    <Label Grid.Column="1" Style="{StaticResource FileNameLabel}"
+                                           Foreground="{Binding Foreground,RelativeSource={RelativeSource AncestorType=Button}}"
+                                           Content="{Binding InterpreterPath,Mode=OneWay}" />
+                                </Grid>
+                                <Button.ContextMenu>
+                                    <ContextMenu>
+                                        <ContextMenu.CommandBindings>
+                                            <CommandBinding Command="ApplicationCommands.Copy"
+                                                            CanExecute="CopyToClipboard_CanExecute"
+                                                            Executed="CopyToClipboard_Executed" />
+                                        </ContextMenu.CommandBindings>
+                                        <MenuItem Header="_Copy path"
+                                                  InputGestureText=""
+                                                  Command="ApplicationCommands.Copy"
+                                                  CommandParameter="{Binding InterpreterPath,Mode=OneWay}"/>
+                                    </ContextMenu>
+                                </Button.ContextMenu>
+                            </Button>
+
+                            <Button Command="{x:Static l:EnvironmentPathsExtension.StartWindowsInterpreter}"
+                                    CommandParameter="{Binding}"
+                                    ToolTip="{Binding WindowsInterpreterPath,Mode=OneWay}"
+                                    Style="{StaticResource NavigationButton}"
+                                    Margin="6"
+                                    HorizontalAlignment="Left"
+                                    AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsWindowsInterpreterPath}"
+                                    AutomationProperties.HelpText="{Binding WindowsInterpreterPath,Mode=OneWay}">
+                                <Grid Background="Transparent">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <ContentControl Grid.Column="0"
+                                                    Margin="3 0"
+                                                    Style="{StaticResource PythonApplicationImage}"
+                                                    IsTabStop="False"/>
+                                    <Label Grid.Column="1" Style="{StaticResource FileNameLabel}"
+                                           Foreground="{Binding Foreground,RelativeSource={RelativeSource AncestorType=Button}}"
+                                           Content="{Binding WindowsInterpreterPath,Mode=OneWay}" />
+                                </Grid>
+                                <Button.ContextMenu>
+                                    <ContextMenu>
+                                        <ContextMenu.CommandBindings>
+                                            <CommandBinding Command="ApplicationCommands.Copy"
+                                                            CanExecute="CopyToClipboard_CanExecute"
+                                                            Executed="CopyToClipboard_Executed" />
+                                        </ContextMenu.CommandBindings>
+                                        <MenuItem Header="_Copy path"
+                                                  InputGestureText=""
+                                                  Command="ApplicationCommands.Copy"
+                                                  CommandParameter="{Binding WindowsInterpreterPath,Mode=OneWay}"/>
+                                    </ContextMenu>
+                                </Button.ContextMenu>
+                            </Button>
+                        </StackPanel>
+
+                        <DataTemplate.Triggers>
+                            <DataTrigger Binding="{Binding IsConfigurable,Mode=OneWay}" Value="False">
+                                <Setter TargetName="ConfigureEnvironment" Property="Visibility" Value="Collapsed" />
+                            </DataTrigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+
+                    <DataTemplate DataType="{x:Type l:EnvironmentView}" x:Key="SupportInformation">
+                        <StackPanel Orientation="Vertical">
+                            <Button x:Name="BrokenEnvironmentUrl"
+                                Command="{x:Static l:EnvironmentPathsExtension.OpenInBrowser}"
+                                    CommandParameter="{Binding BrokenEnvironmentHelpUrl,Mode=OneWay}"
+                                    ToolTip="{Binding BrokenEnvironmentHelpUrl,Mode=OneWay}"
+                                    Style="{StaticResource NavigationButton}"
+                                    Margin="6 9 6 4"
+                                    HorizontalAlignment="Left"
+                                    AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsExtensionBrokenEnvironmentLabel}"
+                                    AutomationProperties.HelpText="{Binding SupportUrl,Mode=OneWay}">
+                                <Grid Background="Transparent">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <ContentControl Grid.Column="0"
+                                                    Margin="3 0"
+                                                    Style="{StaticResource BrokenEnvironmentImage}"
+                                                    IsTabStop="False"/>
+                                    <Label Grid.Column="1" Style="{StaticResource FileNameLabel}"
+                                           Foreground="{Binding Foreground,RelativeSource={RelativeSource AncestorType=Button}}"
+                                           Content="{x:Static l:Resources.EnvironmentPathsExtensionBrokenEnvironmentLabel}"/>
+                                </Grid>
+                            </Button>
+                            <Grid
+                                x:Name="SupportUrl"
+                                Background="Transparent"
+                                  Margin="6 9 6 6">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <ContentControl Grid.Column="0"
+                                                    Margin="3 0"
+                                                    Style="{StaticResource HelpImage}"
+                                                    IsTabStop="False"/>
+                                <vsui:HyperlinkButton
+                                    Grid.Column="1"
+                                    HorizontalAlignment="Left"
+                                    Content="{x:Static l:Resources.EnvironmentPathsExtensionSupportInformationLabel}"
+                                    Command="{x:Static l:EnvironmentPathsExtension.OpenInBrowser}"
+                                    CommandParameter="{Binding SupportUrl,Mode=OneWay}"
+                                    ToolTip="{Binding SupportUrl,Mode=OneWay}"
+                                    AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsExtensionSupportInformationLabel}"
+                                    AutomationProperties.HelpText="{Binding SupportUrl,Mode=OneWay}">
+                                </vsui:HyperlinkButton>
+                            </Grid>
+                        </StackPanel>
+
+                        <DataTemplate.Triggers>
+                            <DataTrigger Binding="{Binding SupportUrl,Mode=OneWay}" Value="">
+                                <Setter TargetName="SupportUrl" Property="Visibility" Value="Collapsed" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding IsBroken}" Value="False">
+                                <Setter TargetName="BrokenEnvironmentUrl" Property="Visibility" Value="Collapsed" />
+                            </DataTrigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+
+                    <DataTemplate DataType="{x:Type l:EnvironmentView}" x:Key="DeleteEnv">
+                        <Grid>
+                            <Button x:Name="DeleteEnvButton"
+                                    Margin="6 9 6 6"
+                                    Style="{StaticResource NavigationButton}"
+                                    HorizontalAlignment="Stretch"
+                                    Command="{x:Static l:EnvironmentView.Delete}"
+                                    CommandParameter="{Binding}"
+                                    AutomationProperties.Name="{x:Static l:Resources.EnvironmentPathsExtensionDeleteEnvironment}">
+                                <Grid Background="Transparent">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Control Grid.Column="0"
+                                             Margin="3 0"
+                                             Style="{StaticResource DeleteFolderImage}"
+                                             IsTabStop="False"/>
+                                    <TextBlock Grid.Column="1"
+                                               TextWrapping="WrapWithOverflow"
+                                               Text="{x:Static l:Resources.EnvironmentPathsExtensionDeleteEnvironment}"/>
+                                </Grid>
+                            </Button>
+                        </Grid>
+                        <DataTemplate.Triggers>
+                            <DataTrigger Binding="{Binding CanBeDeleted}" Value="True">
+                                <Setter TargetName="DeleteEnvButton" Property="Visibility" Value="Visible" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding CanBeDeleted}" Value="False">
+                                <Setter TargetName="DeleteEnvButton" Property="Visibility" Value="Collapsed" />
+                            </DataTrigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled">
+        <StackPanel Orientation="Vertical">
+            <StackPanel.Resources>
+                <Style TargetType="ContentControl">
+                    <Setter Property="Focusable" Value="False"/>
+                </Style>
+            </StackPanel.Resources>
+            <ContentControl Content="{Binding}" ContentTemplate="{StaticResource EnvironmentIsDefault}" Margin="0" />
+            <ContentControl Content="{Binding}" ContentTemplate="{StaticResource SupportInformation}" Margin="0" />
+            <ContentControl Content="{Binding}" ContentTemplate="{StaticResource InteractiveLinks}" Margin="0 3" Visibility="{Binding IsBroken, Converter={StaticResource BoolToCollapsed}}" />
+            <ContentControl Content="{Binding}" ContentTemplate="{StaticResource EnvironmentLinks}" Margin="0 3" />
+            <ContentControl Content="{Binding}" ContentTemplate="{StaticResource DeleteEnv}" Margin="0 3" />
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

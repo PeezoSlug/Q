@@ -1,0 +1,54 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="TestProjectBefore.settings" />
+
+  <ItemGroup>
+    <ProjectFile Include="$(BuildRoot)\Python\Product\dirs.proj"/>
+    <ProjectFile Include="$(BuildRoot)\Common\Tests\dirs.proj"/>
+    <ProjectFile Include="TestRunnerInterop\TestRunnerInterop.csproj" />
+    <ProjectFile Include="CookiecutterTests\CookiecutterTests.csproj" />
+    <ProjectFile Include="DebuggerTests\DebuggerTests.csproj" />
+    <ProjectFile Include="DebuggerUITests\DebuggerUITests.csproj" />
+    <ProjectFile Include="DebuggerUITestsRunner\DebuggerUITestsRunner.csproj" />
+    <ProjectFile Include="DjangoTests\DjangoTests.csproj" />
+    <ProjectFile Include="DjangoUITests\DjangoUITests.csproj" />
+    <ProjectFile Include="DjangoUITestsRunner\DjangoUITestsRunner.csproj" />
+    <ProjectFile Include="FastCgi\FastCgiTests.csproj" />
+    <ProjectFile Include="TestAdapterTests\TestAdapterTests.csproj" />
+    <ProjectFile Include="VSInterpretersTests\VSInterpretersTests.csproj" />
+    <ProjectFile Include="ProfilingTests\ProfilingTests.csproj" />
+    <ProjectFile Include="ProfilingUITests\ProfilingUITests.csproj" />
+    <ProjectFile Include="ProfilingUITestsRunner\ProfilingUITestsRunner.csproj" />
+    <ProjectFile Include="Core\PythonToolsTests.csproj" />
+    <ProjectFile Include="Core.UI\PythonToolsUITests.csproj" />
+    <ProjectFile Include="PythonToolsUITestsRunner\PythonToolsUITestsRunner.csproj" />
+    <ProjectFile Include="ReplWindowUITests\ReplWindowUITests.csproj" />
+    <ProjectFile Include="Utilities.Python\TestUtilities.Python.csproj" />
+    <ProjectFile Include="PythonToolsMockTests\PythonToolsMockTests.csproj" />
+    <ProjectFile Include="ProjectUITests\ProjectUITests.csproj" />
+    <ProjectFile Include="ProjectUITestsRunner\ProjectUITestsRunner.csproj" />
+  </ItemGroup>
+
+  <Import Project="$(TargetsPath)\Common.Build.Traversal.targets" />
+
+  <Target Name="_CopyTestData" Condition="'$(CopyTestData)' == 'true'" AfterTargets="Build">
+    <ItemGroup>
+      <_RawTestDataFiles Include="TestData\**\*" />
+      <_TestDataFiles Include="@(_RawTestDataFiles)">
+        <TargetPath>$(OutputPath)TestData\%(_RawTestDataFiles.RecursiveDir)%(_RawTestDataFiles.Filename)%(_RawTestDataFiles.Extension)</TargetPath>
+      </_TestDataFiles>
+      <_TestDataFiles Include="fullanalysistest.py">
+        <TargetPath>$(OutputPath)fullanalysistest.py</TargetPath>
+      </_TestDataFiles>
+    </ItemGroup>
+    <Copy SourceFiles="@(_TestDataFiles)"
+          DestinationFiles="@(_TestDataFiles->'%(TargetPath)')"
+          SkipUnchangedFiles="true"
+          OverwriteReadOnlyFiles="true"
+          Retries="3"
+          RetryDelayMilliseconds="1000" />
+    
+    <WriteLinesToFile File="$(OutputPath)build.root" Lines="Test data was included, so mark as top of tree" Overwrite="true" />
+  </Target>
+
+</Project>

@@ -1,0 +1,3 @@
+<PoliCheckExclusions>
+  <Exclusion Type="FileType">.LCL</Exclusion>
+</PoliCheckExclusions>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\TestProjectBefore.settings" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62641B47-1ABB-4638-A3D5-2A834D089667}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestUtilities.Python</RootNamespace>
+    <AssemblyName>TestUtilities.Python</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <UseCodebase>true</UseCodebase>
+    <UseVSSDK>true</UseVSSDK>
+    <CreateVsixContainer>true</CreateVsixContainer>
+    <DeployExtension>$(BuildingInsideVisualStudio)</DeployExtension>
+    <IsProductComponent>true</IsProductComponent>
+    <ExtensionInstallationRoot>Extensions</ExtensionInstallationRoot>
+    <ExtensionInstallationFolder>Microsoft\PythonTests\TestUtilities</ExtensionInstallationFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build, Version=$(MicrosoftBuildAssemblyVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.PythonTools.Ipc.Json" />
+    <Reference Include="Microsoft.VisualStudio.InteractiveWindow" />
+    <Reference Include="Microsoft.VisualStudio.VsInteractiveWindow" />
+    <Reference Include="Microsoft.VisualStudio.ComponentModelHost" />
+    <Reference Include="Microsoft.VisualStudio.Composition" />
+    <Reference Include="Microsoft.VisualStudio.Language.StandardClassification" />
+    <Reference Include="Microsoft.VisualStudio.CoreUtility" />
+    <Reference Include="Microsoft.VisualStudio.Editor" />
+    <Reference Include="Microsoft.VisualStudio.Language.Intellisense" />
+    <Reference Include="Microsoft.VisualStudio.Interop" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+    <Reference Include="Microsoft.VisualStudio.Shell.15.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Framework" />
+    <Reference Include="Microsoft.VisualStudio.Text.Data" />
+    <Reference Include="Microsoft.VisualStudio.Text.Logic" />
+    <Reference Include="Microsoft.VisualStudio.Text.UI" />
+    <Reference Include="Microsoft.VisualStudio.Text.UI.Wpf" />
+    <Reference Include="Microsoft.VisualStudio.Threading">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Utilities" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(BuildRoot)\Common\Tests\MockVsTests\MockVsTests.csproj">
+      <Project>{a390e1c0-0d90-4a9e-8413-3e959bb07292}</Project>
+      <Name>MockVsTests</Name>
+      <IncludeInVsix>true</IncludeInVsix>
+    </ProjectReference>
+    <ProjectReference Include="$(BuildRoot)\Common\Tests\SccPackage\TestSccPackage.csproj">
+      <Project>{e75e5db1-0ea0-4247-a830-fe467c016816}</Project>
+      <Name>TestSccPackage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Product\VSInterpreters\VSInterpreters.csproj">
+      <Project>{815db0cd-c0dd-4997-b43c-abee4dbeffe7}</Project>
+      <Name>VSInterpreters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Product\PythonTools\PythonTools.csproj">
+      <Project>{fa7be5f5-e04f-4613-b7ac-70ce10d1bb68}</Project>
+      <Name>Microsoft.PythonTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="$(BuildRoot)\Common\Tests\Utilities.UI\TestUtilities.UI.csproj">
+      <Project>{E8150EBC-6B62-40BF-BF91-1DC60149B530}</Project>
+      <Name>TestUtilities.UI</Name>
+      <IncludeInVsix>true</IncludeInVsix>
+    </ProjectReference>
+    <ProjectReference Include="$(BuildRoot)\Common\Tests\Utilities\TestUtilities.csproj">
+      <Project>{d092d54e-ff29-4d32-9aee-4ef704c92f67}</Project>
+      <Name>TestUtilities</Name>
+      <IncludeInVsix>true</IncludeInVsix>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities.Python.Analysis\TestUtilities.Python.Analysis.csproj">
+      <Project>{a731c4c3-3741-4080-a946-c47574c1f3bf}</Project>
+      <Name>TestUtilities.Python.Analysis</Name>
+      <IncludeInVsix>true</IncludeInVsix>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Product\Common\Common.csproj">
+      <Project>{b3db0521-d9e3-4f48-9e2e-e5ecae886049}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Product\VSCommon\VSCommon.csproj">
+      <Project>{a52ac77f-6df9-4387-bb08-8ded3fd95a0f}</Project>
+      <Name>VSCommon</Name>
+    </ProjectReference>
+  </ItemGroup>  
+  <ItemGroup>
+    <Compile Include="AddEnvironmentDialogWrapperBase.cs" />
+    <Compile Include="AddExistingEnvironmentDialogWrapper.cs" />
+    <Compile Include="AddVirtualEnvironmentDialogWrapper.cs" />
+    <Compile Include="ComparePerfReports.cs" />
+    <Compile Include="DebuggingGeneralOptionsSetter.cs" />
+    <Compile Include="DefaultInterpreterSetter.cs" />
+    <Compile Include="Django\NewAppDialog.cs" />
+    <None Include="EditorTestToolset.cs" />
+    <Compile Include="EnvironmentVariableSetter.cs" />
+    <None Include="EventTaskSources.cs" />
+    <Compile Include="InterpreterWithPackageSetter.cs" />
+    <Compile Include="MefExportProviders.cs" />
+    <Compile Include="MockInteractiveWindowCommandsFactory.cs" />
+    <Compile Include="MockPackageManager.cs" />
+    <Compile Include="MockPythonToolsOptionsService.cs" />
+    <Compile Include="MockReplWindow.cs" />
+    <Compile Include="MockUIThread.cs" />
+    <Compile Include="AddCondaEnvironmentDialogWrapper.cs" />
+    <Compile Include="PythonInstallPackagesInfoBar.cs" />
+    <Compile Include="PythonCreateCondaEnvInfoBar.cs" />
+    <Compile Include="PythonCreateVirtualEnvInfoBar.cs" />
+    <None Include="PythonProjectExtensions.cs" />
+    <Compile Include="PythonServiceGeneralOptionsSetter.cs" />
+    <Compile Include="PythonOptionsSetter.cs" />
+    <Compile Include="PythonProjectDebugProperties.cs" />
+    <Compile Include="FormattingOptionsTreeView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PythonLaunchWithErrorsDialog.cs" />
+    <Compile Include="PythonPerfExplorer.cs" />
+    <Compile Include="PythonPerfTarget.cs" />
+    <Compile Include="PythonPerfToolBar.cs" />
+    <Compile Include="PythonProjectGenerator.cs" />
+    <Compile Include="PythonProjectProcessor.cs" />
+    <Compile Include="PythonTestDefinitions.cs" />
+    <Compile Include="PythonTestExplorerGridView.cs" />
+    <Compile Include="PythonToolsTestUtilities.cs" />
+    <Compile Include="EditorWindowExtensions.cs" />
+    <Compile Include="PythonVisualStudioApp.cs" />
+    <Compile Include="ReplWindowProxy.cs" />
+    <Compile Include="ReplWindowProxySettings.cs" />
+    <Compile Include="PythonTestExplorer.cs" />
+    <Compile Include="WpfTextViewExtensions.cs" />
+    <Compile Include="VSPackage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source.extension.vsixmanifest" />
+  </ItemGroup>
+  <Import Project="..\TestProjectAfter.settings" />
+  <Target Name="BeforeBuild">
+    <Message Text="Configuration and Platform and BuildRoot = $(Configuration) $(Platform) $(BuildRoot)" />
+  </Target>
+</Project>
